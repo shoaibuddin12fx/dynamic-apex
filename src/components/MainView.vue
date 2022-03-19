@@ -39,7 +39,9 @@ export default {
 
 .rightside-chart{
   background: purple;
-  min-height: 50px;;
+  min-height: 50px;
+  height: calc(100vh - 340px);
+  overflow-y: scroll;
 }
 
 </style>

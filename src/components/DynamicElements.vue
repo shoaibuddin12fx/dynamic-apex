@@ -87,8 +87,9 @@
                   <div class="form-group row">
                     <label class="col-sm-6 col-form-label">{{
                       element.label
-                    }}</label>
-                    <div class="col-sm-6">
+                    }} <span v-if="element.type == 'range'">({{element.selected_value}})</span></label>
+                    <div class="col-sm-6" v-if="element.type != 'array'">
+                      
                       <select
                         class="form-control"
                         id="positon"
@@ -112,10 +113,18 @@
                         class="form-control"
                       />
                       <input
+                        v-on:change="passOptions($event, element)"
+                        v-model="element.selected_value"
+                        :min="element.min"
+                        :max="element.max"
+                        :step="element.step"
                         v-if="element.type == 'range'"
                         type="range"
                         class="form-control"
                       />
+                    </div>
+                    <div class="col-sm-12" v-if="element.type == 'array'">
+                      <button class="add-button">Add + </button>
                     </div>
                   </div>
                 </div>
@@ -198,5 +207,13 @@ export default {
   font-weight: bold;
   border-bottom: 1px solid gray;
   margin-bottom: 19px;
+}
+
+.accordion *:first-letter {
+  text-transform: capitalize;
+}
+
+.add-button{
+  
 }
 </style>
