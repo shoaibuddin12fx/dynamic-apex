@@ -4,20 +4,694 @@
         "index": 1,
         "label": "annotations",
         "elements": [
-            {
-                "index": 1.1,
-                "type": "select",
-                "label": "position",
-                "options": [
-                    "front",
-                    "back"
-                ]
-            }
+          {
+            "label": "colors",
+            "type": "color",
+            "key":[]
+          }
         ]
-    },
-    {
-        "id": 2,
-        "index": 2,
+      },
+      {
+        "id": 4,
+        "label": "data labels",
+        "elements": [
+          {
+            "label": "data label",
+            "type": "select",
+            "options": ["true", "false"]
+          },
+          {
+            "label": "enabledOnSeries",
+            "type": "text",
+            "key":"dataLabels.enabledOnSeries"
+          },
+          {
+            "label": "text anchor",
+            "type": "select",
+            "options": ["start", "middle", "end"],
+            "key":"dataLabels.textAnchor"
+          },
+          {
+            "label": "distributed",
+            "type": "select",
+            "options": ["true", "false"],
+            "key":"dataLabels.distributed"
+          },
+          {
+            "label": "ofsetX",
+            "type": "text",
+            "key":"dataLabels.offsetX"
+          },
+          {
+            "label": "ofsetY",
+            "type": "text",
+            "key":"dataLabels.offsetY"
+          },
+          {
+            "label": "style",
+            "heading": "true"
+          },
+          {
+            "label": "font size",
+            "type": "text",
+            "key":"dataLabels.style.fontSize"
+          },
+          {
+            "label": "font family",
+            "type": "select",
+            "options": ["Helvetica", "Arial", "sans-serif"],
+            "key":"dataLabels.style.fontFamily"
+          },
+          {
+            "label": "font weight",
+            "type": "select",
+            "options": [
+              "100",
+              "200",
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800",
+              "900",
+              "bold",
+              "bolder",
+              "light",
+              "normal"
+            ],
+            "key":"dataLabels.style.fontWeight"
+          },
+          {
+            "label": "colors",
+            "type": "color",
+            "key":"dataLabels.style.colors"
+          },
+          {
+            "label": "background",
+            "heading": "true"
+          },
+          {
+            "label": "Enabled",
+            "type": "select",
+            "options": ["true", "false"],
+            "key":"dataLabels.background.enabled"
+          },
+          {
+            "label": "fore color",
+            "type": "color",
+            "key":"dataLabels.background.foreColor"
+          },
+          {
+            "label": "padding",
+            "type": "text",
+            "key":"dataLabels.background.padding"
+          },
+          {
+            "label": "border-radius",
+            "type": "range",
+            "key":"dataLabels.background.borderRadius"
+          },
+          {
+            "label": "border width",
+            "type": "text",
+            "key":"dataLabels.background.borderWidth"
+          },
+          {
+            "label": "border color",
+            "type": "color",
+            "key":"dataLabels.background.borderColor"
+          },
+          {
+            "label": "opacity",
+            "type": "range",
+            "key":"dataLabels.background.opacity"
+          },
+          {
+            "label": "drop shadow",
+            "heading": "true"
+          },
+          {
+            "label": "enabled",
+            "type": "select",
+            "options": ["true", "false"],
+            "key":"dataLabels.dropShadow.enabled"
+          },
+          {
+            "label": "top",
+            "type": "text",
+            "key":"dataLabels.dropShadow.top"
+          },
+          {
+            "label": "left",
+            "type": "text",
+            "key":"dataLabels.dropShadow.left"
+          },
+          {
+            "label": "blur",
+            "type": "text",
+            "key":"dataLabels.dropShadow.blur"
+          },
+          {
+            "label": "color",
+            "type": "text",
+            "key":"dataLabels.dropShadow.color"
+          },
+          {
+            "label": "opacity",
+            "type": "text",
+            "key":"dataLabels.dropShadow.opacity"
+          }
+        ]
+      },
+      {
+        "label": "easing",
+        "type": "select",
+        "options": ["linear", "easein", "easeout", "easeinout"],
+        "key":"chart.animations.easing"
+      },
+      {
+        "label": "speed",
+        "type": "text",
+        "key":"chart.animations.speed"
+      },
+      {
+        "label": "animateGradually",
+        "heading": true
+      },
+      {
+        "label": "Enable Animation Gradually",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.animations.animateGradually.enabled"
+      },
+      {
+        "label": "Add Delay For Gradual Animation",
+        "type": "text",
+        "key":"chart.animations.animateGradually.delay"
+      },
+      {
+        "label": "dynamicAnimation",
+        "heading": true
+      },
+      {
+        "label": "Enable Dynamic Animation",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.animations.dynamicAnimation.enabled"
+      },
+      {
+        "label": "Add Speed For Dynamic Animation",
+        "type": "text",
+        "key":"chart.animations.dynamicAnimation.speed"
+      },
+      {
+        "label": "background",
+        "heading": true
+      },
+      {
+        "label": "background",
+        "type": "color"
+      },
+      {
+        "label": "brush",
+        "heading": true
+      },
+      {
+        "label": "Enable Brush",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.background.brush.enabled"
+      },
+      {
+        "label": "target",
+        "type": "text",
+        "key":"chart.background.brush.target"
+      },
+      {
+        "label": "autoScaleYaxis",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.background.brush.autoScaleYaxis"
+      },
+      {
+        "label": "Default Locale",
+        "heading": true
+      },
+      {
+        "label": "Set Default Locale",
+        "type": "text",
+        "key":"chart.defaultLocale"
+      },
+      {
+        "label": "Drop Shadow",
+        "heading": true
+      },
+      {
+        "label": "Enable Drop Shadow",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.dropShadow.enabled"
+      },
+      {
+        "label": "Enable On Series",
+        "type": "text",
+        "key":"chart.dropShadow.enableOnSeries"
+      },
+      {
+        "label": "Top",
+        "type": "text",
+        "key":"chart.dropShadow.top"
+      },
+      {
+        "label": "Left",
+        "type": "text",
+        "key":"chart.dropShadow.left"
+      },
+      {
+        "label": "Blur",
+        "type": "text",
+        "key":"chart.dropShadow.blur"
+      },
+      {
+        "label": "Color",
+        "type": "color",
+        "key":"chart.dropShadow.color"
+      },
+      {
+        "label": "Opacity",
+        "type": "text",
+        "key":"chart.dropShadow.opacity"
+      },
+      {
+        "label": "Font Family",
+        "heading": true
+      },
+      {
+        "label": "Set Font Family",
+        "type": "text",
+        "key":"chart.fontFamily"
+      },
+      {
+        "label": "Fore Color",
+        "heading": true
+      },
+      {
+        "label": "Fore Color",
+        "type": "color",
+        "key":"chart.foreColor"
+      },
+      {
+        "label": "Group",
+        "heading": true
+      },
+      {
+        "label": "Set Group",
+        "type": "text",
+        "key":"chart.group"
+      },
+      {
+        "label": "Height",
+        "heading": true
+      },
+      {
+        "label": "Set height",
+        "type": "text",
+        "key":"chart.height"
+      },
+      {
+        "label": "Id",
+        "heading": true
+      },
+      {
+        "label": "Set Id",
+        "type": "text",
+        "key":"chart.id"
+      },
+      {
+        "label": "Locales",
+        "heading": true
+      },
+      {
+        "label": "Default Locale",
+        "type": "select",
+        "options": ["en", "fi", "ge", "est"],
+        "key":"chart.defaultLocale"
+      },
+      {
+        "label": "locales",
+        "type": "select",
+        "options": [],
+        "key":"chart.locales"
+      },
+      {
+        "label": "name",
+        "type": "select",
+        "options": ["en", "fi", "ge", "est"]
+      },
+      {
+        "label": "options",
+        "heading": true
+      },
+      {
+        "label": "months",
+        "type": "select",
+        "options": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          " July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ]
+      },
+      {
+        "label": "Short Months",
+        "type": "select",
+        "options": [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          " Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec"
+        ]
+      },
+      {
+        "label": "Days",
+        "type": "select",
+        "options": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ]
+      },
+      {
+        "label": "Short Days",
+        "type": "select",
+        "options": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+      },
+      {
+        "label": "Toolbar",
+        "heading": true
+      },
+      {
+        "label": "Zoom In",
+        "type": "range"
+      },
+      {
+        "label": "Zoom Out",
+        "type": "range"
+      },
+      {
+        "label": "Offset X",
+        "heading": true
+      },
+      {
+        "label": "offsetX",
+        "type": "text",
+        "key":"chart.offsetX"
+      },
+      {
+        "label": "Offset Y",
+        "heading": true
+      },
+      {
+        "label": "Offset Y",
+        "type": "text",
+        "key":"chart.offsetY"
+      },
+      {
+        "label": "Parent Height Offset",
+        "heading": true
+      },
+      {
+        "label": "Set Parent Height Offset",
+        "type": "text",
+        "key":"chart.parentHeightOffset"
+      },
+      {
+        "label": "Redraw On Parent Resize",
+        "heading": true
+      },
+      {
+        "label": "Set Redraw On Parent Resize",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.redrawOnParentResize"
+      },
+      {
+        "label": "Redraw On Window Resize",
+        "heading": true
+      },
+      {
+        "label": "Set Redraw On Window Resize",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.redrawOnWindowResize"
+      },
+      {
+        "label": "Selection",
+        "heading": true
+      },
+      {
+        "label": "Enable Selection",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.selection.enabled"
+      },
+      {
+        "label": "Type",
+        "type": "select",
+        "options": ["x", "y", "xy"],
+        "key":"chart.selection.type"
+      },
+      {
+        "label": "Fill",
+        "heading": true
+      },
+      {
+        "label": "Set Fill Color",
+        "type": "color",
+        "key":"chart.selection.fill.color"
+      },
+      {
+        "label": "Opacity",
+        "type": "text",
+        "key":"chart.selection.fill.opacity"
+      },
+      {
+        "label": "Stroke",
+        "heading": true
+      },
+      {
+        "label": "Width",
+        "type": "text",
+        "key":"chart.selection.stroke.width"
+      },
+      {
+        "label": "Dash Array",
+        "type": "text",
+        "key":"chart.selection.stroke.dashArray"
+      },
+      {
+        "label": "Set Stroke Color",
+        "type": "text",
+        "key":"chart.selection.stroke.color"
+      },
+      {
+        "label": "Set Stroke Opacity",
+        "type": "text",
+        "key":"chart.selection.stroke.opacity"
+      },
+      {
+        "label": "X axis",
+        "heading": true
+      },
+      {
+        "label": "Min",
+        "type": "text",
+        "key":"chart.selection.xaxis.min"
+      },
+      {
+        "label": "Max",
+        "type": "text",
+        "key":"chart.selection.xaxis.max"
+      },
+      {
+        "label": "Y axis",
+        "heading": true
+      },
+      {
+        "label": "Min",
+        "type": "text",
+        "key":"chart.selection.yaxis.min"
+      },
+      {
+        "label": "Max",
+        "type": "text",
+        "key":"chart.selection.yaxis.max"
+      },
+      {
+        "label": "Sparkline",
+        "heading": true
+      },
+      {
+        "label": "Set Sparkline",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.sparkline.enabled"
+      },
+      {
+        "label": "Stacked",
+        "heading": true
+      },
+      {
+        "label": "Stack",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.stacked"
+      },
+      {
+        "label": "Stack Type",
+        "heading": true
+      },
+      {
+        "label": "Set Stack Type",
+        "type": "select",
+        "options": ["normal", "100%"],
+        "key":"chart.stackType"
+      },
+      {
+        "label": "toolbar",
+        "heading": "true"
+      },
+      {
+        "label": "toolbar show",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.show"
+      },
+      {
+        "label": "offsetX",
+        "type": "text",
+        "key":"chart.toolbar.offsetX"
+      },
+      {
+        "label": "offsetY",
+        "type": "text",
+        "key":"chart.toolbar.offsetY"
+      },
+      {
+        "label": "tools",
+        "heading": "true"
+      },
+      {
+        "label": "download",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.download"
+      },
+      {
+        "label": "selection",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.selection"
+      },
+      {
+        "label": "zoom",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.zoom"
+      },
+      {
+        "label": "zoom in",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.zoomin"
+      },
+      {
+        "label": "zoom out",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.zoomout"
+      },
+      {
+        "label": "pan",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.pan"
+      },
+      {
+        "label": "reset",
+        "type": "select",
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.reset"
+      },
+      {
+        "label": "export",
+        "heading": true
+      },
+      {
+        "label": "csv",
+        "heading": true
+      },
+      {
+        "label": "file name",
+        "type": "text",
+        "key":"chart.export.csv.filename"
+      },
+      {
+        "label": "haeder catagory",
+        "type": "text",
+        "key":"chart.export.csv.headerCategory"
+      },
+      {
+        "label": "header value",
+        "type": "text",
+        "key":"chart.export.csv.headerValue"
+      },
+      {
+        "label": "svg",
+        "heading": "true"
+      },
+      {
+        "label": "file name",
+        "type": "text",
+        "key":"chart.toolbar.svg.filename"
+      },
+      {
+        "label": "png",
+        "heading": "true"
+      },
+      {
+        "label": "file name",
+        "type": "text",
+        "key":"chart.toolbar.png.filename"
+      },
+      {
+        "label": "auto selected",
+        "type": "select",
+        "options": ["zoom", "selection", "pan"],
+        "key":"chart.toolbar.autoSelected"
+      },
+      {
         "label": "chart",
         "elements": [
             {
@@ -49,169 +723,6 @@
                     {
                         "label": "colors",
                         "type": "color"
-                    }
-                ]
-            },
-            {
-                "id": 4,
-                "label": "data labels",
-                "elements": [
-                    {
-                        "label": "data label",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "enabledOnSeries",
-                        "type": "text"
-                    },
-                    {
-                        "label": "text anchor",
-                        "type": "select",
-                        "options": [
-                            "start",
-                            "middle",
-                            "end"
-                        ]
-                    },
-                    {
-                        "label": "distributed",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "ofsetX",
-                        "type": "text"
-                    },
-                    {
-                        "label": "ofsetY",
-                        "type": "text"
-                    },
-                    {
-                        "label": "style",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "font size",
-                        "type": "text"
-                    },
-                    {
-                        "label": "font family",
-                        "type": "select",
-                        "options": [
-                            "Helvetica",
-                            "Arial",
-                            "sans-serif"
-                        ]
-                    },
-                    {
-                        "label": "font weight",
-                        "type": "select",
-                        "options": [
-                            "100",
-                            "200",
-                            "300",
-                            "400",
-                            "500",
-                            "600",
-                            "700",
-                            "800",
-                            "900",
-                            "bold",
-                            "bolder",
-                            "light",
-                            "normal"
-                        ]
-                    },
-                    {
-                        "label": "colors",
-                        "type": "color"
-                    },
-                    {
-                        "label": "background",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "background",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "fore color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "padding",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border-radius",
-                        "type": "range"
-                    },
-                    {
-                        "label": "border width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "padding",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border-radius",
-                        "type": "range"
-                    },
-                    {
-                        "label": "border width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "opacity",
-                        "type": "range"
-                    },
-                    {
-                        "label": "drop shadow",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "enabled",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "top",
-                        "type": "text"
-                    },
-                    {
-                        "label": "right",
-                        "type": "text"
-                    },
-                    {
-                        "label": "bottom",
-                        "type": "text"
-                    },
-                    {
-                        "label": "left",
-                        "type": "text"
                     }
                 ]
             },
