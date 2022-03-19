@@ -241,16 +241,19 @@
       {
         "label": "Enable Brush",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.background.brush.enabled"
       },
       {
         "label": "target",
-        "type": "text"
+        "type": "text",
+        "key":"chart.background.brush.target"
       },
       {
         "label": "autoScaleYaxis",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.background.brush.autoScaleYaxis"
       },
       {
         "label": "Default Locale",
@@ -258,7 +261,8 @@
       },
       {
         "label": "Set Default Locale",
-        "type": "text"
+        "type": "text",
+        "key":"chart.defaultLocale"
       },
       {
         "label": "Drop Shadow",
@@ -267,31 +271,38 @@
       {
         "label": "Enable Drop Shadow",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.dropShadow.enabled"
       },
       {
         "label": "Enable On Series",
-        "type": "text"
+        "type": "text",
+        "key":"chart.dropShadow.enableOnSeries"
       },
       {
         "label": "Top",
-        "type": "text"
+        "type": "text",
+        "key":"chart.dropShadow.top"
       },
       {
         "label": "Left",
-        "type": "text"
+        "type": "text",
+        "key":"chart.dropShadow.left"
       },
       {
         "label": "Blur",
-        "type": "text"
+        "type": "text",
+        "key":"chart.dropShadow.blur"
       },
       {
         "label": "Color",
-        "type": "color"
+        "type": "color",
+        "key":"chart.dropShadow.color"
       },
       {
         "label": "Opacity",
-        "type": "text"
+        "type": "text",
+        "key":"chart.dropShadow.opacity"
       },
       {
         "label": "Font Family",
@@ -299,7 +310,8 @@
       },
       {
         "label": "Set Font Family",
-        "type": "text"
+        "type": "text",
+        "key":"chart.fontFamily"
       },
       {
         "label": "Fore Color",
@@ -307,7 +319,8 @@
       },
       {
         "label": "Fore Color",
-        "type": "color"
+        "type": "color",
+        "key":"chart.foreColor"
       },
       {
         "label": "Group",
@@ -315,7 +328,8 @@
       },
       {
         "label": "Set Group",
-        "type": "text"
+        "type": "text",
+        "key":"chart.group"
       },
       {
         "label": "Height",
@@ -323,7 +337,8 @@
       },
       {
         "label": "Set height",
-        "type": "text"
+        "type": "text",
+        "key":"chart.height"
       },
       {
         "label": "Id",
@@ -331,16 +346,24 @@
       },
       {
         "label": "Set Id",
-        "type": "text"
-      },
-      {
-        "label": "Default Locale",
-        "type": "select",
-        "options": ["en", "fi", "ge", "est"]
+        "type": "text",
+        "key":"chart.id"
       },
       {
         "label": "Locales",
         "heading": true
+      },
+      {
+        "label": "Default Locale",
+        "type": "select",
+        "options": ["en", "fi", "ge", "est"],
+        "key":"chart.defaultLocale"
+      },
+      {
+        "label": "locales",
+        "type": "select",
+        "options": [],
+        "key":"chart.locales"
       },
       {
         "label": "name",
@@ -423,7 +446,8 @@
       },
       {
         "label": "offsetX",
-        "type": "text"
+        "type": "text",
+        "key":"chart.offsetX"
       },
       {
         "label": "Offset Y",
@@ -431,7 +455,8 @@
       },
       {
         "label": "Offset Y",
-        "type": "text"
+        "type": "text",
+        "key":"chart.offsetY"
       },
       {
         "label": "Parent Height Offset",
@@ -439,7 +464,8 @@
       },
       {
         "label": "Set Parent Height Offset",
-        "type": "text"
+        "type": "text",
+        "key":"chart.parentHeightOffset"
       },
       {
         "label": "Redraw On Parent Resize",
@@ -448,7 +474,8 @@
       {
         "label": "Set Redraw On Parent Resize",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.redrawOnParentResize"
       },
       {
         "label": "Redraw On Window Resize",
@@ -457,7 +484,8 @@
       {
         "label": "Set Redraw On Window Resize",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.redrawOnWindowResize"
       },
       {
         "label": "Selection",
@@ -466,12 +494,14 @@
       {
         "label": "Enable Selection",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.selection.enabled"
       },
       {
         "label": "Type",
         "type": "select",
-        "options": ["x", "y", "xy"]
+        "options": ["x", "y", "xy"],
+        "key":"chart.selection.type"
       },
       {
         "label": "Fill",
@@ -479,11 +509,13 @@
       },
       {
         "label": "Set Fill Color",
-        "type": "color"
+        "type": "color",
+        "key":"chart.selection.fill.color"
       },
       {
         "label": "Opacity",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.fill.opacity"
       },
       {
         "label": "Stroke",
@@ -491,15 +523,18 @@
       },
       {
         "label": "Width",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.stroke.width"
       },
       {
         "label": "Dash Array",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.stroke.dashArray"
       },
       {
         "label": "Set Stroke Color",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.stroke.dashArray"
       },
       {
         "label": "Set Stroke Opacity",
