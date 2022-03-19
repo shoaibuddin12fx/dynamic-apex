@@ -40,21 +40,15 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.animations.enabled"
+                ]
             },
             {
                 "id": 3,
                 "label": "colors",
                 "elements": [
                     {
-                        "index": 1.1,
-                        "type": "select",
-                        "label": "position",
-                        "options": [
-                            "front",
-                            "back"
-                        ]
+                        "label": "colors",
+                        "type": "color"
                     }
                 ]
             },
@@ -229,8 +223,7 @@
                     "easein",
                     "easeout",
                     "easeinout"
-                ],
-                "key": "chart.animations.easing"
+                ]
             },
             {
                 "label": "speed",
@@ -616,12 +609,11 @@
             {
                 "label": "Set Stroke Color",
                 "type": "text",
-                "key": "chart.selection.stroke.color"
+                "key": "chart.selection.stroke.dashArray"
             },
             {
                 "label": "Set Stroke Opacity",
-                "type": "text",
-                "key": "chart.selection.stroke.opacity"
+                "type": "text"
             },
             {
                 "label": "X axis",
@@ -629,13 +621,11 @@
             },
             {
                 "label": "Min",
-                "type": "text",
-                "key": "chart.selection.xaxis.min"
+                "type": "text"
             },
             {
                 "label": "Max",
-                "type": "text",
-                "key": "chart.selection.xaxis.max"
+                "type": "text"
             },
             {
                 "label": "Y axis",
@@ -643,13 +633,11 @@
             },
             {
                 "label": "Min",
-                "type": "text",
-                "key": "chart.selection.yaxis.min"
+                "type": "text"
             },
             {
                 "label": "Max",
-                "type": "text",
-                "key": "chart.selection.yaxis.max"
+                "type": "text"
             },
             {
                 "label": "Sparkline",
@@ -661,8 +649,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.sparkline.enabled"
+                ]
             },
             {
                 "label": "Stacked",
@@ -674,8 +661,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.stacked"
+                ]
             },
             {
                 "label": "Stack Type",
@@ -687,8 +673,7 @@
                 "options": [
                     "normal",
                     "100%"
-                ],
-                "key": "chart.stackType"
+                ]
             },
             {
                 "label": "toolbar",
@@ -700,18 +685,15 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.show"
+                ]
             },
             {
                 "label": "offsetX",
-                "type": "text",
-                "key": "chart.toolbar.offsetX"
+                "type": "text"
             },
             {
-                "label": "offsetY",
-                "type": "text",
-                "key": "chart.toolbar.offsetY"
+                "label": "ofsetY",
+                "type": "text"
             },
             {
                 "label": "tools",
@@ -723,8 +705,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.tools.download"
+                ]
             },
             {
                 "label": "selection",
@@ -732,8 +713,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.tools.selection"
+                ]
             },
             {
                 "label": "zoom",
@@ -741,8 +721,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.tools.zoom"
+                ]
             },
             {
                 "label": "zoom in",
@@ -750,8 +729,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.tools.zoomin"
+                ]
             },
             {
                 "label": "zoom out",
@@ -759,8 +737,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.tools.zoomout"
+                ]
             },
             {
                 "label": "pan",
@@ -768,8 +745,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.tools.pan"
+                ]
             },
             {
                 "label": "reset",
@@ -777,31 +753,27 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.toolbar.tools.reset"
+                ]
             },
             {
                 "label": "export",
-                "heading": true
+                "heading": "true"
             },
             {
                 "label": "csv",
-                "heading": true
+                "heading": "true"
             },
             {
                 "label": "file name",
-                "type": "text",
-                "key": "chart.export.csv.filename"
+                "type": "text"
             },
             {
                 "label": "haeder catagory",
-                "type": "text",
-                "key": "chart.export.csv.headerCategory"
+                "type": "text"
             },
             {
                 "label": "header value",
-                "type": "text",
-                "key": "chart.export.csv.headerValue"
+                "type": "text"
             },
             {
                 "label": "svg",
@@ -809,8 +781,7 @@
             },
             {
                 "label": "file name",
-                "type": "text",
-                "key": "chart.toolbar.svg.filename"
+                "type": "text"
             },
             {
                 "label": "png",
@@ -818,8 +789,7 @@
             },
             {
                 "label": "file name",
-                "type": "text",
-                "key": "chart.toolbar.png.filename"
+                "type": "text"
             },
             {
                 "label": "auto selected",
@@ -828,8 +798,7 @@
                     "zoom",
                     "selection",
                     "pan"
-                ],
-                "key": "chart.toolbar.autoSelected"
+                ]
             },
             {
                 "label": "chart",
@@ -851,8 +820,7 @@
                     "bubble",
                     "heatmap",
                     "candlestick"
-                ],
-                "key": "chart.type"
+                ]
             },
             {
                 "label": "Chart width",
@@ -860,8 +828,7 @@
             },
             {
                 "label": "chart width",
-                "type": "text",
-                "key": "chart.width"
+                "type": "text"
             },
             {
                 "label": "zoom",
@@ -873,8 +840,7 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.zoom.enabled"
+                ]
             },
             {
                 "label": "type",
@@ -883,8 +849,7 @@
                     "X",
                     "Y",
                     "XY"
-                ],
-                "key": "chart.zoom.type"
+                ]
             },
             {
                 "label": "auto scal y axis",
@@ -892,41 +857,35 @@
                 "options": [
                     "true",
                     "false"
-                ],
-                "key": "chart.zoom.autoScaleYaxis"
+                ]
             },
             {
                 "label": "zoom area",
-                "header": true
+                "header": "true"
             },
             {
                 "label": "colors",
-                "type": "color",
-                "key": "chart.zoom.zoomedArea.fill.color"
+                "type": "color"
             },
             {
                 "label": "opacity",
-                "type": "range",
-                "key": "chart.zoom.zoomedArea.fill.opacity"
+                "type": "range"
             },
             {
                 "label": "stroke",
-                "heading": true
+                "heading": "true"
             },
             {
                 "label": "color",
-                "type": "color",
-                "key": "chart.zoom.zoomedArea.stroke.color"
+                "type": "color"
             },
             {
                 "label": "opacity",
-                "type": "range",
-                "key": "chart.zoom.zoomedArea.stroke.opacity"
+                "type": "range"
             },
             {
                 "label": "width",
-                "type": "text",
-                "key": "chart.zoom.zoomedArea.stroke.width"
+                "type": "text"
             }
         ]
     },
@@ -1043,2589 +1002,2603 @@
                 ]
             },
             {
-                "id": 6,
-                "label": "fore cast data points",
-                "elements": [
-                    {
-                        "label": "count",
-                        "type": "text"
-                    },
-                    {
-                        "label": "fill opacity",
-                        "type": "range"
-                    },
-                    {
-                        "label": "stroke width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "dash array",
-                        "type": "text"
-                    }
+                "label": "width",
+                "type": "text"
+            },
+            {
+                "label": "height",
+                "type": "text"
+            },
+            {
+                "label": "stroke width",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "label": "fore cast data points",
+        "elements": [
+            {
+                "label": "count",
+                "type": "text"
+            },
+            {
+                "label": "fill opacity",
+                "type": "range"
+            },
+            {
+                "label": "stroke width",
+                "type": "text"
+            },
+            {
+                "label": "dash array",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "label": "grid",
+        "elements": [
+            {
+                "label": "show grid",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
                 ]
             },
             {
-                "id": 7,
-                "label": "grid",
-                "elements": [
-                    {
-                        "label": "show grid",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "border color",
-                        "type": "text"
-                    },
-                    {
-                        "label": "stroke dash array",
-                        "type": "text"
-                    },
-                    {
-                        "label": "position",
-                        "type": "select",
-                        "options": [
-                            "back",
-                            "front"
-                        ]
-                    },
-                    {
-                        "label": "x axis",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "lines show",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "y axis",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "lines show",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "row",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "colors",
-                        "type": "color"
-                    },
-                    {
-                        "label": "opacity",
-                        "type": "range"
-                    },
-                    {
-                        "label": "padding",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "top",
-                        "type": "text"
-                    },
-                    {
-                        "label": "right",
-                        "type": "text"
-                    },
-                    {
-                        "label": "bottom",
-                        "type": "text"
-                    },
-                    {
-                        "label": "left",
-                        "type": "text"
-                    }
+                "label": "border color",
+                "type": "text"
+            },
+            {
+                "label": "stroke dash array",
+                "type": "text"
+            },
+            {
+                "label": "position",
+                "type": "select",
+                "options": [
+                    "back",
+                    "front"
                 ]
             },
             {
-                "id": 8,
-                "label": "labels",
-                "elements": [
-                    {
-                        "label": "label",
-                        "type": "select",
-                        "options": [
-                            "1",
-                            "2",
-                            "3"
-                        ]
-                    }
+                "label": "x axis",
+                "heading": "true"
+            },
+            {
+                "label": "lines show",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
                 ]
             },
             {
-                "id": 9,
-                "label": "legend",
-                "elements": [
-                    {
-                        "label": "show legend",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "show for single series",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "show for null series",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "show for zero series",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "position",
-                        "type": "select",
-                        "options": [
-                            "top",
-                            "right",
-                            "bottom",
-                            "left"
-                        ]
-                    },
-                    {
-                        "label": "horizontal align",
-                        "type": "select",
-                        "options": [
-                            "left",
-                            "center",
-                            "right"
-                        ]
-                    },
-                    {
-                        "label": "floating",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "font size",
-                        "type": "text"
-                    },
-                    {
-                        "label": "font family",
-                        "type": "select",
-                        "options": [
-                            "arial",
-                            "serif",
-                            "sans-serif",
-                            "Helvetica"
-                        ]
-                    },
-                    {
-                        "label": "font weight",
-                        "type": "text"
-                    },
-                    {
-                        "label": "formatter",
-                        "type": "text"
-                    },
-                    {
-                        "label": "inverse order",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "height",
-                        "type": "text"
-                    },
-                    {
-                        "label": "tool tip hover formatter",
-                        "type": "text"
-                    },
-                    {
-                        "label": "custom legend items",
-                        "type": "select",
-                        "options": [
-                            "click",
-                            "mouse hover"
-                        ]
-                    },
-                    {
-                        "label": "ofsetX",
-                        "type": "text"
-                    },
-                    {
-                        "label": "ofsetY",
-                        "type": "text"
-                    },
-                    {
-                        "label": "labels",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "colors",
-                        "type": "color"
-                    },
-                    {
-                        "label": "use series color",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "makers",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "height",
-                        "type": "text"
-                    },
-                    {
-                        "label": "stroke width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "stroke color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "fill color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "radius",
-                        "type": "range"
-                    },
-                    {
-                        "label": "ofsetX",
-                        "type": "text"
-                    },
-                    {
-                        "label": "ofsetY",
-                        "type": "text"
-                    },
-                    {
-                        "label": "item margin",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "horizontal",
-                        "type": "text"
-                    },
-                    {
-                        "label": "vertical",
-                        "type": "text"
-                    },
-                    {
-                        "label": "on item click",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "toggle series data",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "on item hover",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    }
+                "label": "y axis",
+                "heading": "true"
+            },
+            {
+                "label": "lines show",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
                 ]
             },
             {
-                "id": 10,
-                "label": "markers",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "text",
-                        "label": "size"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "color",
-                        "label": "strokeColors"
-                    },
-                    {
-                        "type": "text",
-                        "label": "strokeWidth"
-                    },
-                    {
-                        "type": "range",
-                        "label": "strokeOpacity"
-                    },
-                    {
-                        "type": "text",
-                        "label": "strokeDashArray"
-                    },
-                    {
-                        "type": "range",
-                        "label": "fillOpacity"
-                    },
-                    {
-                        "type": "select",
-                        "label": "shape",
-                        "options": [
-                            "circle",
-                            "square"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "type": "select",
-                        "label": "showNullDataPoints",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "heading": true,
-                        "label": "markers > hover"
-                    },
-                    {
-                        "type": "text",
-                        "label": "size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "type": "select",
-                        "label": "align",
-                        "options": [
-                            "left",
-                            "center",
-                            "right"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "verticalAlign",
-                        "options": [
-                            "top",
-                            "middle",
-                            "bottom"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "heading": true,
-                        "label": "noData > style"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    }
-                ]
+                "label": "row",
+                "heading": "true"
             },
             {
-                "id": 11,
-                "label": "noData",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "text",
-                        "label": "text"
-                    },
-                    {
-                        "type": "select",
-                        "label": "align",
-                        "options": [
-                            "left",
-                            "center",
-                            "right"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "verticalAlign",
-                        "options": [
-                            "top",
-                            "middle",
-                            "bottom"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "heading": true,
-                        "label": "noData > style"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    }
-                ]
+                "label": "colors",
+                "type": "color"
             },
             {
-                "id": 12,
-                "label": "plot Options",
-                "inputs": true,
-                "elements": [
-                    {
-                        "label": "area > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "fill To"
-                    },
-                    {
-                        "label": "bar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "horizontal",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "range",
-                        "label": "border Radius"
-                    },
-                    {
-                        "type": "text",
-                        "label": "column Width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "bar Height"
-                    },
-                    {
-                        "type": "select",
-                        "label": "distributed",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "range Bar Overlap",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "range Bar Group Rows",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "colors > bar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "label": "ranges > colors > bar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "form"
-                    },
-                    {
-                        "type": "text",
-                        "label": "to"
-                    },
-                    {
-                        "type": "text",
-                        "label": "color"
-                    },
-                    {
-                        "type": "color",
-                        "label": "background Bar Colors"
-                    },
-                    {
-                        "type": "text",
-                        "label": "background Bar Opacity"
-                    },
-                    {
-                        "type": "range",
-                        "label": "background Bar Radius"
-                    },
-                    {
-                        "label": "dataLabels > bar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "position",
-                        "options": [
-                            "top",
-                            "center",
-                            "bottom"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "orientation",
-                        "options": [
-                            "horizontal",
-                            "vertical"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "max Items"
-                    },
-                    {
-                        "type": "select",
-                        "label": "hide Over Flowing Labels",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "bubble > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "range",
-                        "label": "min Bubble Radius"
-                    },
-                    {
-                        "type": "range",
-                        "label": "max Bubble Radius"
-                    },
-                    {
-                        "label": "candlestick > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "label": "color > candlestick > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "upward"
-                    },
-                    {
-                        "type": "color",
-                        "label": "downward"
-                    },
-                    {
-                        "label": "wick > candlestick > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "use Fill Color",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "boxPlot > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "label": "colors > boxPlot > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "upper"
-                    },
-                    {
-                        "type": "color",
-                        "label": "lower"
-                    },
-                    {
-                        "label": "heatmap > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "range",
-                        "label": "radius"
-                    },
-                    {
-                        "type": "select",
-                        "label": "enable Shades",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "shade Intensity"
-                    },
-                    {
-                        "type": "select",
-                        "label": "reverse Negative Shade",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "distributed",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "use Fill Color As Stroke",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "colorScale > heatmap > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "label": "ranges > colorScale > heatmap > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "from"
-                    },
-                    {
-                        "type": "text",
-                        "label": "to"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fore Color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "name"
-                    },
-                    {
-                        "type": "select",
-                        "label": "inverse",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "min"
-                    },
-                    {
-                        "type": "text",
-                        "label": "max"
-                    },
-                    {
-                        "label": "treemap > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "enable Shades",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "shade Intensity"
-                    },
-                    {
-                        "type": "select",
-                        "label": "reverse Negative Shade",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "distributed",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "use Fill Color As Stroke",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "colorScale > treemap > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "label": "ranges > colorScale > treemap > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "from"
-                    },
-                    {
-                        "type": "text",
-                        "label": "to"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fore color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "name"
-                    },
-                    {
-                        "type": "select",
-                        "label": "inverse",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "min"
-                    },
-                    {
-                        "type": "text",
-                        "label": "max"
-                    },
-                    {
-                        "label": "pie > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "starting Angle"
-                    },
-                    {
-                        "type": "text",
-                        "label": "end Angle"
-                    },
-                    {
-                        "type": "select",
-                        "label": "expand onClick",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-X"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-Y"
-                    },
-                    {
-                        "type": "text",
-                        "label": "custom Scale"
-                    },
-                    {
-                        "label": "dataLabels > pie > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset"
-                    },
-                    {
-                        "type": "text",
-                        "label": "min Angle To Show Label"
-                    },
-                    {
-                        "label": "donut > pie > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "size"
-                    },
-                    {
-                        "type": "color",
-                        "label": "background"
-                    },
-                    {
-                        "label": "labels > donut > pie > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "name > labels > donut > pie > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Family"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Weight"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-Y"
-                    },
-                    {
-                        "label": "value > labels > donut > pie > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Family"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Weight"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-Y"
-                    },
-                    {
-                        "label": "total > labels > donut > pie > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "show Always",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "label"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Family"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Weight"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "label": "polarArea > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "label": "rings > polarArea > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "stroke Width"
-                    },
-                    {
-                        "type": "color",
-                        "label": "stroke Color"
-                    },
-                    {
-                        "label": "spokes > polarArea > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "stroke Width"
-                    },
-                    {
-                        "type": "color",
-                        "label": "connector Colors"
-                    },
-                    {
-                        "label": "radar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-X"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-Y"
-                    },
-                    {
-                        "label": "polygons > radar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "stroke Colors"
-                    },
-                    {
-                        "type": "text",
-                        "label": "stroke Width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "connector Colors"
-                    },
-                    {
-                        "label": "fills > polygons > radar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "colors"
-                    },
-                    {
-                        "label": "radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "inverse Order",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "start Angle"
-                    },
-                    {
-                        "type": "text",
-                        "label": "end Angle"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-X"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-Y"
-                    },
-                    {
-                        "label": "hollow > radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "margin"
-                    },
-                    {
-                        "type": "text",
-                        "label": "size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "background"
-                    },
-                    {
-                        "type": "text",
-                        "label": "image"
-                    },
-                    {
-                        "type": "text",
-                        "label": "image width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "image Height"
-                    },
-                    {
-                        "type": "text",
-                        "label": "image Offset-X"
-                    },
-                    {
-                        "type": "text",
-                        "label": "image Offset-Y"
-                    },
-                    {
-                        "type": "select",
-                        "label": "image Clipped",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "position",
-                        "options": [
-                            "front",
-                            "back"
-                        ]
-                    },
-                    {
-                        "label": "dropShadow > hollow > radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "enabled",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "top"
-                    },
-                    {
-                        "type": "text",
-                        "label": "left"
-                    },
-                    {
-                        "type": "text",
-                        "label": "blur"
-                    },
-                    {
-                        "type": "text",
-                        "label": "opacity"
-                    },
-                    {
-                        "label": "track > radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "front",
-                            "back"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "start Angle"
-                    },
-                    {
-                        "type": "text",
-                        "label": "end Angle"
-                    },
-                    {
-                        "type": "color",
-                        "label": "background"
-                    },
-                    {
-                        "type": "text",
-                        "label": "width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "opacity"
-                    },
-                    {
-                        "type": "text",
-                        "label": "margin"
-                    },
-                    {
-                        "label": "dataLabels > radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "name > dataLabels > radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Family"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Weight"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-Y"
-                    },
-                    {
-                        "label": "value > dataLabels > radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font family"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Weight"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offset-Y"
-                    },
-                    {
-                        "label": "total > dataLabels > radialBar > plotOptions",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "label"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Size"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font family"
-                    },
-                    {
-                        "type": "text",
-                        "label": "font Weight"
-                    }
-                ]
+                "label": "opacity",
+                "type": "range"
             },
             {
-                "id": 13,
-                "label": "responsive",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "text",
-                        "label": "breakpoint"
-                    }
-                ]
+                "label": "padding",
+                "heading": "true"
             },
             {
-                "id": 14,
-                "label": "series",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "text",
-                        "label": "name"
-                    },
-                    {
-                        "type": "text",
-                        "label": "data"
-                    }
-                ]
+                "label": "top",
+                "type": "text"
             },
             {
-                "id": 15,
-                "label": "states",
-                "inputs": true,
-                "elements": [
-                    {
-                        "label": "normal > states",
-                        "heading": true
-                    },
-                    {
-                        "label": "filter > normal > states",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "type",
-                        "options": [
-                            "none",
-                            "lighten",
-                            "darken"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "value"
-                    },
-                    {
-                        "label": "hover > states",
-                        "heading": true
-                    },
-                    {
-                        "label": "filter > hover > states",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "type",
-                        "options": [
-                            "none",
-                            "lighten",
-                            "darken"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "value"
-                    },
-                    {
-                        "label": "active > states",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "allowMultipleDataPointsSelection",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "filter > active > states",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "type",
-                        "options": [
-                            "none",
-                            "lighten",
-                            "darken"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "value"
-                    }
-                ]
+                "label": "right",
+                "type": "text"
             },
             {
-                "id": 16,
-                "label": "stroke",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "curve",
-                        "options": [
-                            "smooth",
-                            "straight",
-                            "stepline"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "lineCap"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "dashArray"
-                    }
-                ]
+                "label": "bottom",
+                "type": "text"
             },
             {
-                "id": 17,
-                "label": "subtitle",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "text",
-                        "label": "text"
-                    },
-                    {
-                        "type": "text",
-                        "label": "align"
-                    },
-                    {
-                        "type": "text",
-                        "label": "margin"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "type": "select",
-                        "label": "floating",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "style > subtitle",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontWeight"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    }
-                ]
-            },
+                "label": "left",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "label": "labels",
+        "elements": [
             {
-                "id": 18,
-                "label": "theme",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "select",
-                        "label": "mode",
-                        "options": [
-                            "light",
-                            "dark"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "palette"
-                    },
-                    {
-                        "label": "theme >  monochrome",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "enabled",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "select",
-                        "label": " shadeTo",
-                        "options": [
-                            "light",
-                            "dark"
-                        ]
-                    },
-                    {
-                        "type": "range",
-                        "label": "shadeIntensity"
-                    }
-                ]
-            },
-            {
-                "id": 19,
-                "label": "title",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "text",
-                        "label": "text"
-                    },
-                    {
-                        "type": "text",
-                        "label": "align"
-                    },
-                    {
-                        "type": "text",
-                        "label": "margin"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "type": "select",
-                        "label": "floating",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "title > style",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontWeight"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    }
-                ]
-            },
-            {
-                "id": 20,
-                "label": "tooltip",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "select",
-                        "label": "enabled",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "enabledOnSeries"
-                    },
-                    {
-                        "type": "select",
-                        "label": "shared",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "followCursor",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "intersect",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "inverseOrder",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": " fillSeriesColor",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "  theme",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "tooltip > style",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": " fontFamily"
-                    },
-                    {
-                        "label": "tooltip > onDatasetHover",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "highlightDataSeries",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "tooltip > x",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "format"
-                    },
-                    {
-                        "label": "tooltip > y",
-                        "heading": true
-                    },
-                    {
-                        "label": "tooltip > y > title",
-                        "heading": true
-                    },
-                    {
-                        "label": "tooltip > z",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "title"
-                    },
-                    {
-                        "label": "tooltip > marker",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "tooltip > items",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "display"
-                    },
-                    {
-                        "label": "tooltip > fixed",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "enabled",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "position",
-                        "options": [
-                            "topLeft",
-                            "topRight",
-                            "bottomLeft",
-                            "bottomRight"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    }
-                ]
-            },
-            {
-                "id": 21,
-                "label": "xaxis",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "select",
-                        "label": "type",
-                        "options": [
-                            "category",
-                            "datetime",
-                            "numeric"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "categories",
-                        "options": [
-                            "xaxis",
-                            "xaxis",
-                            "xaxis"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "tickamount"
-                    },
-                    {
-                        "type": "text",
-                        "label": "tickplacement"
-                    },
-                    {
-                        "type": "text",
-                        "label": "min"
-                    },
-                    {
-                        "type": "text",
-                        "label": "max"
-                    },
-                    {
-                        "type": "text",
-                        "label": "range"
-                    },
-                    {
-                        "type": "select",
-                        "label": "floating",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "decimalinfloat"
-                    },
-                    {
-                        "type": "text",
-                        "label": "overwritecategories"
-                    },
-                    {
-                        "type": "select",
-                        "label": "position",
-                        "options": [
-                            "bottom",
-                            "top"
-                        ]
-                    },
-                    {
-                        "label": "labels > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "rotate",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "rotateAlways",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "hideOverlapingLabels",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "showDuplicates",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "trim",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "minHeight"
-                    },
-                    {
-                        "type": "text",
-                        "label": "maxHeight"
-                    },
-                    {
-                        "label": "style > labels > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "colors",
-                        "options": [
-                            "red",
-                            "blue",
-                            "yellow"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontWeight"
-                    },
-                    {
-                        "type": "text",
-                        "label": "cssClass"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "type": "text",
-                        "label": "format"
-                    },
-                    {
-                        "type": "select",
-                        "label": "datetimeUTC",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "datetimeFormatter > labels > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "year"
-                    },
-                    {
-                        "type": "text",
-                        "label": "month"
-                    },
-                    {
-                        "type": "text",
-                        "label": "day"
-                    },
-                    {
-                        "type": "text",
-                        "label": "hour"
-                    },
-                    {
-                        "label": "axisBorder > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "height"
-                    },
-                    {
-                        "type": "text",
-                        "label": "width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "label": "axisTicks > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "borderType"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "select",
-                        "label": "height",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "label": "title > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "text"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "label": "style > title > axixs",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontWeight"
-                    },
-                    {
-                        "type": "text",
-                        "label": "cssClass"
-                    },
-                    {
-                        "label": "crosshairs > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "position"
-                    },
-                    {
-                        "type": "text",
-                        "label": "opacity"
-                    },
-                    {
-                        "label": "stroke > crosshairs > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "dashArray"
-                    },
-                    {
-                        "label": "fill > crosshairs > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "type"
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "label": "gradient > fill > crosshairs > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "colorForm"
-                    },
-                    {
-                        "type": "color",
-                        "label": "colorTo"
-                    },
-                    {
-                        "type": "text",
-                        "label": "stops"
-                    },
-                    {
-                        "type": "text",
-                        "label": "opacityForm"
-                    },
-                    {
-                        "type": "text",
-                        "label": "opacityTo"
-                    },
-                    {
-                        "label": "dropShadow > crosshairs > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "enabled",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "top"
-                    },
-                    {
-                        "type": "text",
-                        "label": "left"
-                    },
-                    {
-                        "type": "text",
-                        "label": "blur"
-                    },
-                    {
-                        "type": "text",
-                        "label": "opacity"
-                    },
-                    {
-                        "label": "tooltip > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "enabled",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "label": "style > tooltip > xaxis",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    }
-                ]
-            },
-            {
-                "id": 22,
-                "label": "yaxis",
-                "inputs": true,
-                "elements": [
-                    {
-                        "type": "select",
-                        "label": "position",
-                        "options": [
-                            "front",
-                            "back"
-                        ],
-                        "key": "yaxis.show"
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "showAlways",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "showForNullSeries",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "showForNullSeries"
-                    },
-                    {
-                        "type": "select",
-                        "label": "opposite",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "reversed",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "logarithmic",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "logBase"
-                    },
-                    {
-                        "type": "text",
-                        "label": "tickAmount"
-                    },
-                    {
-                        "type": "text",
-                        "label": "min"
-                    },
-                    {
-                        "type": "text",
-                        "label": "max"
-                    },
-                    {
-                        "type": "select",
-                        "label": "forceNiceScale",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "floating",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "decimalsInFloat"
-                    },
-                    {
-                        "label": "label",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "align",
-                        "options": [
-                            "left",
-                            "center",
-                            "right"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "minWidth"
-                    },
-                    {
-                        "type": "text",
-                        "label": "maxWidth"
-                    },
-                    {
-                        "label": "style",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "colors",
-                        "options": [
-                            "Single Colors",
-                            "Array of Colors"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontWeight"
-                    },
-                    {
-                        "type": "text",
-                        "label": "cssClass"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "type": "text",
-                        "label": "rotate"
-                    },
-                    {
-                        "label": "axisBorder",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "label": "axisTicks",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": "borderType",
-                        "options": [
-                            "solid",
-                            "dotted"
-                        ]
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "width"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "label": "title",
-                        "heading": true
-                    },
-                    {
-                        "type": "text",
-                        "label": "text"
-                    },
-                    {
-                        "type": "text",
-                        "label": " rotate"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetX"
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY"
-                    },
-                    {
-                        "label": "style",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontSize"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontFamily"
-                    },
-                    {
-                        "type": "text",
-                        "label": "fontWeight"
-                    },
-                    {
-                        "type": "text",
-                        "label": "cssClass"
-                    },
-                    {
-                        "label": "crosshairs",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "show",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "type": "select",
-                        "label": " position",
-                        "options": [
-                            "front",
-                            "back"
-                        ]
-                    },
-                    {
-                        "label": "stroke",
-                        "heading": true
-                    },
-                    {
-                        "type": "color",
-                        "label": "color"
-                    },
-                    {
-                        "type": "text",
-                        "label": "width"
-                    },
-                    {
-                        "type": "text",
-                        "label": " dashArray"
-                    },
-                    {
-                        "label": " tooltip",
-                        "heading": true
-                    },
-                    {
-                        "type": "select",
-                        "label": "enabled",
-                        "options": [
-                            "front",
-                            "back"
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "label": "offsetY",
-                        "key": "chart.background"
-                    }
+                "label": "label",
+                "type": "select",
+                "options": [
+                    "1",
+                    "2",
+                    "3"
                 ]
             }
         ]
+    },
+    {
+        "id": 9,
+        "label": "legend",
+        "elements": [
+            {
+                "label": "show legend",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "show for single series",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "show for null series",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "show for zero series",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "position",
+                "type": "select",
+                "options": [
+                    "top",
+                    "right",
+                    "bottom",
+                    "left"
+                ]
+            },
+            {
+                "label": "horizontal align",
+                "type": "select",
+                "options": [
+                    "left",
+                    "center",
+                    "right"
+                ]
+            },
+            {
+                "label": "floating",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "font size",
+                "type": "text"
+            },
+            {
+                "label": "font family",
+                "type": "select",
+                "options": [
+                    "arial",
+                    "serif",
+                    "sans-serif",
+                    "Helvetica"
+                ]
+            },
+            {
+                "label": "font weight",
+                "type": "text"
+            },
+            {
+                "label": "formatter",
+                "type": "text"
+            },
+            {
+                "label": "inverse order",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "width",
+                "type": "text"
+            },
+            {
+                "label": "height",
+                "type": "text"
+            },
+            {
+                "label": "tool tip hover formatter",
+                "type": "text"
+            },
+            {
+                "label": "custom legend items",
+                "type": "select",
+                "options": [
+                    "click",
+                    "mouse hover"
+                ]
+            },
+            {
+                "label": "ofsetX",
+                "type": "text"
+            },
+            {
+                "label": "ofsetY",
+                "type": "text"
+            },
+            {
+                "label": "labels",
+                "heading": "true"
+            },
+            {
+                "label": "colors",
+                "type": "color"
+            },
+            {
+                "label": "use series color",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "makers",
+                "heading": "true"
+            },
+            {
+                "label": "width",
+                "type": "text"
+            },
+            {
+                "label": "height",
+                "type": "text"
+            },
+            {
+                "label": "stroke width",
+                "type": "text"
+            },
+            {
+                "label": "stroke color",
+                "type": "color"
+            },
+            {
+                "label": "fill color",
+                "type": "color"
+            },
+            {
+                "label": "radius",
+                "type": "range"
+            },
+            {
+                "label": "ofsetX",
+                "type": "text"
+            },
+            {
+                "label": "ofsetY",
+                "type": "text"
+            },
+            {
+                "label": "item margin",
+                "heading": "true"
+            },
+            {
+                "label": "horizontal",
+                "type": "text"
+            },
+            {
+                "label": "vertical",
+                "type": "text"
+            },
+            {
+                "label": "on item click",
+                "heading": "true"
+            },
+            {
+                "label": "toggle series data",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "on item hover",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "label": "markers",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "text",
+                "label": "size"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "color",
+                "label": "strokeColors"
+            },
+            {
+                "type": "text",
+                "label": "strokeWidth"
+            },
+            {
+                "type": "range",
+                "label": "strokeOpacity"
+            },
+            {
+                "type": "text",
+                "label": "strokeDashArray"
+            },
+            {
+                "type": "range",
+                "label": "fillOpacity"
+            },
+            {
+                "type": "select",
+                "label": "shape",
+                "options": [
+                    "circle",
+                    "square"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "type": "select",
+                "label": "showNullDataPoints",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "heading": true,
+                "label": "markers > hover"
+            },
+            {
+                "type": "text",
+                "label": "size"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "type": "select",
+                "label": "align",
+                "options": [
+                    "left",
+                    "center",
+                    "right"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "verticalAlign",
+                "options": [
+                    "top",
+                    "middle",
+                    "bottom"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "heading": true,
+                "label": "noData > style"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "label": "noData",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "text",
+                "label": "text"
+            },
+            {
+                "type": "select",
+                "label": "align",
+                "options": [
+                    "left",
+                    "center",
+                    "right"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "verticalAlign",
+                "options": [
+                    "top",
+                    "middle",
+                    "bottom"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "heading": true,
+                "label": "noData > style"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "label": "plot Options",
+        "inputs": true,
+        "elements": [
+            {
+                "label": "area > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "fill To"
+            },
+            {
+                "label": "bar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "horizontal",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "range",
+                "label": "border Radius"
+            },
+            {
+                "type": "text",
+                "label": "column Width"
+            },
+            {
+                "type": "text",
+                "label": "bar Height"
+            },
+            {
+                "type": "select",
+                "label": "distributed",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "range Bar Overlap",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "range Bar Group Rows",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "colors > bar > plotOptions",
+                "heading": true
+            },
+            {
+                "label": "ranges > colors > bar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "form"
+            },
+            {
+                "type": "text",
+                "label": "to"
+            },
+            {
+                "type": "text",
+                "label": "color"
+            },
+            {
+                "type": "color",
+                "label": "background Bar Colors"
+            },
+            {
+                "type": "text",
+                "label": "background Bar Opacity"
+            },
+            {
+                "type": "range",
+                "label": "background Bar Radius"
+            },
+            {
+                "label": "dataLabels > bar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "position",
+                "options": [
+                    "top",
+                    "center",
+                    "bottom"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "orientation",
+                "options": [
+                    "horizontal",
+                    "vertical"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "max Items"
+            },
+            {
+                "type": "select",
+                "label": "hide Over Flowing Labels",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "bubble > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "range",
+                "label": "min Bubble Radius"
+            },
+            {
+                "type": "range",
+                "label": "max Bubble Radius"
+            },
+            {
+                "label": "candlestick > plotOptions",
+                "heading": true
+            },
+            {
+                "label": "color > candlestick > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "upward"
+            },
+            {
+                "type": "color",
+                "label": "downward"
+            },
+            {
+                "label": "wick > candlestick > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "use Fill Color",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "boxPlot > plotOptions",
+                "heading": true
+            },
+            {
+                "label": "colors > boxPlot > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "upper"
+            },
+            {
+                "type": "color",
+                "label": "lower"
+            },
+            {
+                "label": "heatmap > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "range",
+                "label": "radius"
+            },
+            {
+                "type": "select",
+                "label": "enable Shades",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "shade Intensity"
+            },
+            {
+                "type": "select",
+                "label": "reverse Negative Shade",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "distributed",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "use Fill Color As Stroke",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "colorScale > heatmap > plotOptions",
+                "heading": true
+            },
+            {
+                "label": "ranges > colorScale > heatmap > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "from"
+            },
+            {
+                "type": "text",
+                "label": "to"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "fore Color"
+            },
+            {
+                "type": "text",
+                "label": "name"
+            },
+            {
+                "type": "select",
+                "label": "inverse",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "min"
+            },
+            {
+                "type": "text",
+                "label": "max"
+            },
+            {
+                "label": "treemap > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "enable Shades",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "shade Intensity"
+            },
+            {
+                "type": "select",
+                "label": "reverse Negative Shade",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "distributed",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "use Fill Color As Stroke",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "colorScale > treemap > plotOptions",
+                "heading": true
+            },
+            {
+                "label": "ranges > colorScale > treemap > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "from"
+            },
+            {
+                "type": "text",
+                "label": "to"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "fore color"
+            },
+            {
+                "type": "text",
+                "label": "name"
+            },
+            {
+                "type": "select",
+                "label": "inverse",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "min"
+            },
+            {
+                "type": "text",
+                "label": "max"
+            },
+            {
+                "label": "pie > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "starting Angle"
+            },
+            {
+                "type": "text",
+                "label": "end Angle"
+            },
+            {
+                "type": "select",
+                "label": "expand onClick",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offset-X"
+            },
+            {
+                "type": "text",
+                "label": "offset-Y"
+            },
+            {
+                "type": "text",
+                "label": "custom Scale"
+            },
+            {
+                "label": "dataLabels > pie > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "offset"
+            },
+            {
+                "type": "text",
+                "label": "min Angle To Show Label"
+            },
+            {
+                "label": "donut > pie > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "size"
+            },
+            {
+                "type": "color",
+                "label": "background"
+            },
+            {
+                "label": "labels > donut > pie > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "name > labels > donut > pie > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "font Size"
+            },
+            {
+                "type": "text",
+                "label": "font Family"
+            },
+            {
+                "type": "text",
+                "label": "font Weight"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "offset-Y"
+            },
+            {
+                "label": "value > labels > donut > pie > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "font Size"
+            },
+            {
+                "type": "text",
+                "label": "font Family"
+            },
+            {
+                "type": "text",
+                "label": "font Weight"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "offset-Y"
+            },
+            {
+                "label": "total > labels > donut > pie > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "show Always",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "label"
+            },
+            {
+                "type": "text",
+                "label": "font Size"
+            },
+            {
+                "type": "text",
+                "label": "font Family"
+            },
+            {
+                "type": "text",
+                "label": "font Weight"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "label": "polarArea > plotOptions",
+                "heading": true
+            },
+            {
+                "label": "rings > polarArea > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "stroke Width"
+            },
+            {
+                "type": "color",
+                "label": "stroke Color"
+            },
+            {
+                "label": "spokes > polarArea > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "stroke Width"
+            },
+            {
+                "type": "color",
+                "label": "connector Colors"
+            },
+            {
+                "label": "radar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "size"
+            },
+            {
+                "type": "text",
+                "label": "offset-X"
+            },
+            {
+                "type": "text",
+                "label": "offset-Y"
+            },
+            {
+                "label": "polygons > radar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "stroke Colors"
+            },
+            {
+                "type": "text",
+                "label": "stroke Width"
+            },
+            {
+                "type": "text",
+                "label": "connector Colors"
+            },
+            {
+                "label": "fills > polygons > radar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "colors"
+            },
+            {
+                "label": "radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "inverse Order",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "start Angle"
+            },
+            {
+                "type": "text",
+                "label": "end Angle"
+            },
+            {
+                "type": "text",
+                "label": "offset-X"
+            },
+            {
+                "type": "text",
+                "label": "offset-Y"
+            },
+            {
+                "label": "hollow > radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "margin"
+            },
+            {
+                "type": "text",
+                "label": "size"
+            },
+            {
+                "type": "text",
+                "label": "background"
+            },
+            {
+                "type": "text",
+                "label": "image"
+            },
+            {
+                "type": "text",
+                "label": "image width"
+            },
+            {
+                "type": "text",
+                "label": "image Height"
+            },
+            {
+                "type": "text",
+                "label": "image Offset-X"
+            },
+            {
+                "type": "text",
+                "label": "image Offset-Y"
+            },
+            {
+                "type": "select",
+                "label": "image Clipped",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "position",
+                "options": [
+                    "front",
+                    "back"
+                ]
+            },
+            {
+                "label": "dropShadow > hollow > radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "enabled",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "top"
+            },
+            {
+                "type": "text",
+                "label": "left"
+            },
+            {
+                "type": "text",
+                "label": "blur"
+            },
+            {
+                "type": "text",
+                "label": "opacity"
+            },
+            {
+                "label": "track > radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "front",
+                    "back"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "start Angle"
+            },
+            {
+                "type": "text",
+                "label": "end Angle"
+            },
+            {
+                "type": "color",
+                "label": "background"
+            },
+            {
+                "type": "text",
+                "label": "width"
+            },
+            {
+                "type": "text",
+                "label": "opacity"
+            },
+            {
+                "type": "text",
+                "label": "margin"
+            },
+            {
+                "label": "dataLabels > radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "name > dataLabels > radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "font Size"
+            },
+            {
+                "type": "text",
+                "label": "font Family"
+            },
+            {
+                "type": "text",
+                "label": "font Weight"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "offset-Y"
+            },
+            {
+                "label": "value > dataLabels > radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "font Size"
+            },
+            {
+                "type": "text",
+                "label": "font family"
+            },
+            {
+                "type": "text",
+                "label": "font Weight"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "offset-Y"
+            },
+            {
+                "label": "total > dataLabels > radialBar > plotOptions",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "label"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "font Size"
+            },
+            {
+                "type": "text",
+                "label": "font family"
+            },
+            {
+                "type": "text",
+                "label": "font Weight"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "label": "responsive",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "text",
+                "label": "breakpoint"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "label": "series",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "text",
+                "label": "name"
+            },
+            {
+                "type": "text",
+                "label": "data"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "label": "states",
+        "inputs": true,
+        "elements": [
+            {
+                "label": "normal > states",
+                "heading": true
+            },
+            {
+                "label": "filter > normal > states",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "type",
+                "options": [
+                    "none",
+                    "lighten",
+                    "darken"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "value"
+            },
+            {
+                "label": "hover > states",
+                "heading": true
+            },
+            {
+                "label": "filter > hover > states",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "type",
+                "options": [
+                    "none",
+                    "lighten",
+                    "darken"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "value"
+            },
+            {
+                "label": "active > states",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "allowMultipleDataPointsSelection",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "filter > active > states",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "type",
+                "options": [
+                    "none",
+                    "lighten",
+                    "darken"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "value"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "label": "stroke",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "curve",
+                "options": [
+                    "smooth",
+                    "straight",
+                    "stepline"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "lineCap"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "width"
+            },
+            {
+                "type": "text",
+                "label": "dashArray"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "label": "subtitle",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "text",
+                "label": "text"
+            },
+            {
+                "type": "text",
+                "label": "align"
+            },
+            {
+                "type": "text",
+                "label": "margin"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "type": "select",
+                "label": "floating",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "style > subtitle",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontWeight"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "label": "theme",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "select",
+                "label": "mode",
+                "options": [
+                    "light",
+                    "dark"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "palette"
+            },
+            {
+                "label": "theme >  monochrome",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "enabled",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "select",
+                "label": " shadeTo",
+                "options": [
+                    "light",
+                    "dark"
+                ]
+            },
+            {
+                "type": "range",
+                "label": "shadeIntensity"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "label": "title",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "text",
+                "label": "text"
+            },
+            {
+                "type": "text",
+                "label": "align"
+            },
+            {
+                "type": "text",
+                "label": "margin"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "type": "select",
+                "label": "floating",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "title > style",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontWeight"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "label": "tooltip",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "select",
+                "label": "enabled",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "enabledOnSeries"
+            },
+            {
+                "type": "select",
+                "label": "shared",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "followCursor",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "intersect",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "inverseOrder",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": " fillSeriesColor",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "  theme",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "tooltip > style",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": " fontFamily"
+            },
+            {
+                "label": "tooltip > onDatasetHover",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "highlightDataSeries",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "tooltip > x",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "format"
+            },
+            {
+                "label": "tooltip > y",
+                "heading": true
+            },
+            {
+                "label": "tooltip > y > title",
+                "heading": true
+            },
+            {
+                "label": "tooltip > z",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "title"
+            },
+            {
+                "label": "tooltip > marker",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "tooltip > items",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "display"
+            },
+            {
+                "label": "tooltip > fixed",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "enabled",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "position",
+                "options": [
+                    "topLeft",
+                    "topRight",
+                    "bottomLeft",
+                    "bottomRight"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "label": "xaxis",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "select",
+                "label": "type",
+                "options": [
+                    "category",
+                    "datetime",
+                    "numeric"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "categories",
+                "options": [
+                    "xaxis",
+                    "xaxis",
+                    "xaxis"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "tickamount"
+            },
+            {
+                "type": "text",
+                "label": "tickplacement"
+            },
+            {
+                "type": "text",
+                "label": "min"
+            },
+            {
+                "type": "text",
+                "label": "max"
+            },
+            {
+                "type": "text",
+                "label": "range"
+            },
+            {
+                "type": "select",
+                "label": "floating",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "decimalinfloat"
+            },
+            {
+                "type": "text",
+                "label": "overwritecategories"
+            },
+            {
+                "type": "select",
+                "label": "position",
+                "options": [
+                    "bottom",
+                    "top"
+                ]
+            },
+            {
+                "label": "labels > xaxis",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "rotate",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "rotateAlways",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "hideOverlapingLabels",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "showDuplicates",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "trim",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "minHeight"
+            },
+            {
+                "type": "text",
+                "label": "maxHeight"
+            },
+            {
+                "label": "style > labels > xaxis",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "colors",
+                "options": [
+                    "red",
+                    "blue",
+                    "yellow"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            },
+            {
+                "type": "text",
+                "label": "fontWeight"
+            },
+            {
+                "type": "text",
+                "label": "cssClass"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "type": "text",
+                "label": "format"
+            },
+            {
+                "type": "select",
+                "label": "datetimeUTC",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "datetimeFormatter > labels > xaxis",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "year"
+            },
+            {
+                "type": "text",
+                "label": "month"
+            },
+            {
+                "type": "text",
+                "label": "day"
+            },
+            {
+                "type": "text",
+                "label": "hour"
+            },
+            {
+                "label": "axisBorder > xaxis",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "height"
+            },
+            {
+                "type": "text",
+                "label": "width"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "label": "axisTicks > xaxis",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "borderType"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "select",
+                "label": "height",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "label": "title > xaxis",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "text"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "label": "style > title > axixs",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            },
+            {
+                "type": "text",
+                "label": "fontWeight"
+            },
+            {
+                "type": "text",
+                "label": "cssClass"
+            },
+            {
+                "label": "crosshairs > xaxis",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "width"
+            },
+            {
+                "type": "text",
+                "label": "position"
+            },
+            {
+                "type": "text",
+                "label": "opacity"
+            },
+            {
+                "label": "stroke > crosshairs > xaxis",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "width"
+            },
+            {
+                "type": "text",
+                "label": "dashArray"
+            },
+            {
+                "label": "fill > crosshairs > xaxis",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "type"
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "label": "gradient > fill > crosshairs > xaxis",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "colorForm"
+            },
+            {
+                "type": "color",
+                "label": "colorTo"
+            },
+            {
+                "type": "text",
+                "label": "stops"
+            },
+            {
+                "type": "text",
+                "label": "opacityForm"
+            },
+            {
+                "type": "text",
+                "label": "opacityTo"
+            },
+            {
+                "label": "dropShadow > crosshairs > xaxis",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "enabled",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "top"
+            },
+            {
+                "type": "text",
+                "label": "left"
+            },
+            {
+                "type": "text",
+                "label": "blur"
+            },
+            {
+                "type": "text",
+                "label": "opacity"
+            },
+            {
+                "label": "tooltip > xaxis",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "enabled",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "label": "style > tooltip > xaxis",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "label": "yaxis",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "select",
+                "label": "position",
+                "options": [
+                    "front",
+                    "back"
+                ],
+                "key": "yaxis.background"
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "showAlways",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "showForNullSeries",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "showForNullSeries"
+            },
+            {
+                "type": "select",
+                "label": "opposite",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "reversed",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "logarithmic",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "logBase"
+            },
+            {
+                "type": "text",
+                "label": "tickAmount"
+            },
+            {
+                "type": "text",
+                "label": "min"
+            },
+            {
+                "type": "text",
+                "label": "max"
+            },
+            {
+                "type": "select",
+                "label": "forceNiceScale",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "floating",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "decimalsInFloat"
+            },
+            {
+                "label": "label",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "align",
+                "options": [
+                    "left",
+                    "center",
+                    "right"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "minWidth"
+            },
+            {
+                "type": "text",
+                "label": "maxWidth"
+            },
+            {
+                "label": "style",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "colors",
+                "options": [
+                    "Single Colors",
+                    "Array of Colors"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            },
+            {
+                "type": "text",
+                "label": "fontWeight"
+            },
+            {
+                "type": "text",
+                "label": "cssClass"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "type": "text",
+                "label": "rotate"
+            },
+            {
+                "label": "axisBorder",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "label": "axisTicks",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": "borderType",
+                "options": [
+                    "solid",
+                    "dotted"
+                ]
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "width"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "label": "title",
+                "heading": true
+            },
+            {
+                "type": "text",
+                "label": "text"
+            },
+            {
+                "type": "text",
+                "label": " rotate"
+            },
+            {
+                "type": "text",
+                "label": "offsetX"
+            },
+            {
+                "type": "text",
+                "label": "offsetY"
+            },
+            {
+                "label": "style",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "fontSize"
+            },
+            {
+                "type": "text",
+                "label": "fontFamily"
+            },
+            {
+                "type": "text",
+                "label": "fontWeight"
+            },
+            {
+                "type": "text",
+                "label": "cssClass"
+            },
+            {
+                "label": "crosshairs",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "show",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "type": "select",
+                "label": " position",
+                "options": [
+                    "front",
+                    "back"
+                ]
+            },
+            {
+                "label": "stroke",
+                "heading": true
+            },
+            {
+                "type": "color",
+                "label": "color"
+            },
+            {
+                "type": "text",
+                "label": "width"
+            },
+            {
+                "type": "text",
+                "label": " dashArray"
+            },
+            {
+                "label": " tooltip",
+                "heading": true
+            },
+            {
+                "type": "select",
+                "label": "enabled",
+                "options": [
+                    "front",
+                    "back"
+                ]
+            },
+            {
+                "type": "text",
+                "label": "offsetY",
+                "key": "chart.background"
+            }
+        ]
+    }
+]
