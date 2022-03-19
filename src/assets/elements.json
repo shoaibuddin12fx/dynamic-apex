@@ -2,7 +2,6 @@
     {
         "id": 1,
         "label": "annotations",
-        "inputs": true,
         "elements": [
             {
                 "type": "select",
@@ -17,27 +16,21 @@
     },
     {
         "id": 2,
-        "label": "chart",
-        "inputs": false,
+        "label": "chart",        
         "elements": [
             {
                 "label": "animations",
-                "inputs": true,
-                "elements": [
-
-                ]
+                "heading": true
             },
             {
-                "label": "background",
-                "inputs": true,
-                "elements": [
-                    {
-                        "label": "background",
-                        "type": "color"                        
-                    }
+                "type": "select",
+                "label": "Enable Animations",
+                "options": [
+                    "true",
+                    "false"
                 ]
-                
             }
+            
         ]
     }
 ]
