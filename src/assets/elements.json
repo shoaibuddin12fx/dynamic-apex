@@ -649,6 +649,61 @@
                 "label": "chart type",
                 "type": "select",
                 "options": ["line", "area", "bar", "radar", "histogram", "pie", "donut", "radialBar", "scatter", "bubble", "heatmap", "candlestick"]
+            },
+            {
+                "label": "Chart width",
+                "heading": "true"
+            },
+            {
+                "label": "chart width",
+                "type": "text"
+            },
+            {
+                "label": "zoom",
+                "heading": "true"
+            },
+            {
+                "label": "zoom enable",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "type",
+                "type": "select",
+                "options": ["X", "Y", "XY"]
+            },
+            {
+                "label": "auto scal y axis",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "zoom area",
+                "header": "true"
+            },
+            {
+                "label": "colors",
+                "type": "color"
+            },
+            {
+                "label": "opacity",
+                "type": "range"
+            },
+            {
+                "label": "stroke",
+                "heading": "true"
+            },
+            {
+                "label": "color",
+                "type": "color"
+            },
+            {
+                "label": "opacity",
+                "type": "range"
+            },
+            {
+                "label": "width",
+                "type": "text"
             }
         ]
     },
