@@ -5,9 +5,7 @@
       type="bar"
       :options="options"
       :series="series"
-    ></apexchart>
-    <input type="number" v-model="newValue" />
-    <button @click="completed()">ok</button>
+    ></apexchart>    
   </div>
 </template>
 
