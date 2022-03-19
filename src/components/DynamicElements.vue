@@ -107,6 +107,7 @@
                       />
                       <input
                         v-if="element.type == 'text'"
+                        v-on:change="passOptions($event, element)"
                         type="text"
                         class="form-control"
                       />

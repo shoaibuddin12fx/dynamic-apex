@@ -22,25 +22,30 @@
           },
           {
             "label": "enabledOnSeries",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.enabledOnSeries"
           },
           {
             "label": "text anchor",
             "type": "select",
-            "options": ["start", "middle", "end"]
+            "options": ["start", "middle", "end"],
+            "key":"dataLabels.textAnchor"
           },
           {
             "label": "distributed",
             "type": "select",
-            "options": ["true", "false"]
+            "options": ["true", "false"],
+            "key":"dataLabels.distributed"
           },
           {
             "label": "ofsetX",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.offsetX"
           },
           {
             "label": "ofsetY",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.offsetY"
           },
           {
             "label": "style",
@@ -48,12 +53,14 @@
           },
           {
             "label": "font size",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.style.fontSize"
           },
           {
             "label": "font family",
             "type": "select",
-            "options": ["Helvetica", "Arial", "sans-serif"]
+            "options": ["Helvetica", "Arial", "sans-serif"],
+            "key":"dataLabels.style.fontFamily"
           },
           {
             "label": "font weight",
@@ -72,60 +79,53 @@
               "bolder",
               "light",
               "normal"
-            ]
+            ],
+            "key":"dataLabels.style.fontWeight"
           },
           {
             "label": "colors",
-            "type": "color"
+            "type": "color",
+            "key":"dataLabels.style.colors"
           },
           {
             "label": "background",
             "heading": "true"
           },
           {
-            "label": "background",
+            "label": "Enabled",
             "type": "select",
-            "options": ["true", "false"]
+            "options": ["true", "false"],
+            "key":"dataLabels.background.enabled"
           },
           {
             "label": "fore color",
-            "type": "color"
+            "type": "color",
+            "key":"dataLabels.background.foreColor"
           },
           {
             "label": "padding",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.background.padding"
           },
           {
             "label": "border-radius",
-            "type": "range"
+            "type": "range",
+            "key":"dataLabels.background.borderRadius"
           },
           {
             "label": "border width",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.background.borderWidth"
           },
           {
             "label": "border color",
-            "type": "color"
-          },
-          {
-            "label": "padding",
-            "type": "text"
-          },
-          {
-            "label": "border-radius",
-            "type": "range"
-          },
-          {
-            "label": "border width",
-            "type": "text"
-          },
-          {
-            "label": "border color",
-            "type": "color"
+            "type": "color",
+            "key":"dataLabels.background.borderColor"
           },
           {
             "label": "opacity",
-            "type": "range"
+            "type": "range",
+            "key":"dataLabels.background.opacity"
           },
           {
             "label": "drop shadow",
@@ -134,23 +134,33 @@
           {
             "label": "enabled",
             "type": "select",
-            "options": ["true", "false"]
+            "options": ["true", "false"],
+            "key":"dataLabels.dropShadow.enabled"
           },
           {
             "label": "top",
-            "type": "text"
-          },
-          {
-            "label": "right",
-            "type": "text"
-          },
-          {
-            "label": "bottom",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.dropShadow.top"
           },
           {
             "label": "left",
-            "type": "text"
+            "type": "text",
+            "key":"dataLabels.dropShadow.left"
+          },
+          {
+            "label": "blur",
+            "type": "text",
+            "key":"dataLabels.dropShadow.blur"
+          },
+          {
+            "label": "color",
+            "type": "text",
+            "key":"dataLabels.dropShadow.color"
+          },
+          {
+            "label": "opacity",
+            "type": "text",
+            "key":"dataLabels.dropShadow.opacity"
           }
         ]
       },
@@ -713,169 +723,6 @@
                     {
                         "label": "colors",
                         "type": "color"
-                    }
-                ]
-            },
-            {
-                "id": 4,
-                "label": "data labels",
-                "elements": [
-                    {
-                        "label": "data label",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "enabledOnSeries",
-                        "type": "text"
-                    },
-                    {
-                        "label": "text anchor",
-                        "type": "select",
-                        "options": [
-                            "start",
-                            "middle",
-                            "end"
-                        ]
-                    },
-                    {
-                        "label": "distributed",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "ofsetX",
-                        "type": "text"
-                    },
-                    {
-                        "label": "ofsetY",
-                        "type": "text"
-                    },
-                    {
-                        "label": "style",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "font size",
-                        "type": "text"
-                    },
-                    {
-                        "label": "font family",
-                        "type": "select",
-                        "options": [
-                            "Helvetica",
-                            "Arial",
-                            "sans-serif"
-                        ]
-                    },
-                    {
-                        "label": "font weight",
-                        "type": "select",
-                        "options": [
-                            "100",
-                            "200",
-                            "300",
-                            "400",
-                            "500",
-                            "600",
-                            "700",
-                            "800",
-                            "900",
-                            "bold",
-                            "bolder",
-                            "light",
-                            "normal"
-                        ]
-                    },
-                    {
-                        "label": "colors",
-                        "type": "color"
-                    },
-                    {
-                        "label": "background",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "background",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "fore color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "padding",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border-radius",
-                        "type": "range"
-                    },
-                    {
-                        "label": "border width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "padding",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border-radius",
-                        "type": "range"
-                    },
-                    {
-                        "label": "border width",
-                        "type": "text"
-                    },
-                    {
-                        "label": "border color",
-                        "type": "color"
-                    },
-                    {
-                        "label": "opacity",
-                        "type": "range"
-                    },
-                    {
-                        "label": "drop shadow",
-                        "heading": "true"
-                    },
-                    {
-                        "label": "enabled",
-                        "type": "select",
-                        "options": [
-                            "true",
-                            "false"
-                        ]
-                    },
-                    {
-                        "label": "top",
-                        "type": "text"
-                    },
-                    {
-                        "label": "right",
-                        "type": "text"
-                    },
-                    {
-                        "label": "bottom",
-                        "type": "text"
-                    },
-                    {
-                        "label": "left",
-                        "type": "text"
                     }
                 ]
             },
