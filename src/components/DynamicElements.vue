@@ -9,7 +9,6 @@
             </button>
           </h2>
         </div>
-
         <div
           id="collapseOne"
           class="collapse show"
@@ -18,87 +17,46 @@
         >
           <div class="card-body">
             <form>
-              <div class="form-group" v-for="element of obj.elements" :key="element.label">
-                <label for="exampleInputEmail1">{{element.label}} {{element}}</label>
-                <select class="form-control" id="positon" v-if="element.type == 'select'">
-                    <option v-for="opt of element.options" :key="opt">{{opt}}</option>
-                  </select>
-                  <input  v-if="element.type == 'color'"
-                  type="color"
-                  class="form-control"                  
-                />                                
-              </div>              
+              <div v-for="element of obj.elements" :key="element.label">
+                <div v-if="element.heading" class="headings">
+                  {{ element.label }}
+                </div>
+
+                <div v-if="!element.heading" class="element">
+                  <div class="form-group row">
+                    <label class="col-sm-6 col-form-label">{{
+                      element.label
+                    }}</label>
+                    <div class="col-sm-6">
+                      <select
+                        class="form-control"
+                        id="positon"
+                        v-if="element.type == 'select'"
+                      >
+                        <option v-for="opt of element.options" :key="opt">
+                          {{ opt }}
+                        </option>
+                      </select>
+                      <input
+                        v-if="element.type == 'color'"
+                        type="color"
+                        class="form-control"
+                      />
+                      <input
+                        v-if="element.type == 'text'"
+                        type="text"
+                        class="form-control"
+                      />
+                      <input
+                        v-if="element.type == 'range'"
+                        type="range"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </form>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button
-              class="btn btn-link collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Collapsible Group Item #2
-            </button>
-          </h2>
-        </div>
-        <div
-          id="collapseTwo"
-          class="collapse"
-          aria-labelledby="headingTwo"
-          data-parent="#accordionExample"
-        >
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-            single-origin coffee nulla assumenda shoreditch et. Nihil anim
-            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-            occaecat craft beer farm-to-table, raw denim aesthetic synth
-            nesciunt you probably haven't heard of them accusamus labore
-            sustainable VHS.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button
-              class="btn btn-link collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Collapsible Group Item #3
-            </button>
-          </h2>
-        </div>
-        <div
-          id="collapseThree"
-          class="collapse"
-          aria-labelledby="headingThree"
-          data-parent="#accordionExample"
-        >
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-            skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-            single-origin coffee nulla assumenda shoreditch et. Nihil anim
-            keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-            sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-            occaecat craft beer farm-to-table, raw denim aesthetic synth
-            nesciunt you probably haven't heard of them accusamus labore
-            sustainable VHS.
           </div>
         </div>
       </div>
@@ -113,11 +71,20 @@ export default {
   data() {
     return {
       json: json,
+      options: {},
     };
   },
 };
 </script>
 
-
 <style scoped>
+.accordion {
+  text-align: left;
+}
+
+.headings {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  margin-bottom: 19px;
+}
 </style>
