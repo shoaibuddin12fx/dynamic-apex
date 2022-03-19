@@ -543,6 +543,112 @@
                 "label":"Set Stack Type",
                 "type":"select",
                 "options":["normal","100%"]
+            },
+            {
+                "label": "toolbar",
+                "heading":"true"
+            },
+            {
+                "label":"toolbar show",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "offsetX",
+                "type": "text"
+            },
+            {
+                "label": "ofsetY",
+                "type": "text"
+            },
+            {
+                "label": "tools",
+                "heading": "true"
+            },
+            {
+                "label": "download",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "selection",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "zoom",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "zoom in",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "zoom out",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "pan",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "reset",
+                "type": "select",
+                "options":["true", "false"]
+            },
+            {
+                "label": "export",
+                "heading":"true"
+            },
+            {
+                "label": "csv",
+                "heading": "true"
+            },
+            {
+                "label": "file name",
+                "type": "text"
+            },
+            {
+                "label": "haeder catagory",
+                "type": "text"
+            },
+            {
+                "label": "header value",
+                "type": "text"
+            },
+            {
+                "label": "svg",
+                "heading":"true"
+            },
+            {
+                "label": "file name",
+                "type": "text"
+            },
+            {
+                "label": "png",
+                "heading": "true"
+            },
+            {
+                "label": "file name",
+                "type": "text"
+            },
+            {
+                "label": "auto selected",
+                "type": "select",
+                "options": ["zoom", "selection", "pan"]
+            },
+            {
+                "label": "chart",
+                "heading":"true"
+            },
+            {
+                "label": "chart type",
+                "type": "select",
+                "options": ["line", "area", "bar", "radar", "histogram", "pie", "donut", "radialBar", "scatter", "bubble", "heatmap", "candlestick"]
             }
         ]
     },
