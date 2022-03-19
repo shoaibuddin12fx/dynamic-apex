@@ -194,7 +194,8 @@
       {
         "label": "easing",
         "type": "select",
-        "options": ["linear", "easein", "easeout", "easeinout"]
+        "options": ["linear", "easein", "easeout", "easeinout"],
+        "key":"chart.animations.easing"
       },
       {
         "label": "speed",
@@ -534,11 +535,12 @@
       {
         "label": "Set Stroke Color",
         "type": "text",
-        "key":"chart.selection.stroke.dashArray"
+        "key":"chart.selection.stroke.color"
       },
       {
         "label": "Set Stroke Opacity",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.stroke.opacity"
       },
       {
         "label": "X axis",
@@ -546,11 +548,13 @@
       },
       {
         "label": "Min",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.xaxis.min"
       },
       {
         "label": "Max",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.xaxis.max"
       },
       {
         "label": "Y axis",
@@ -558,11 +562,13 @@
       },
       {
         "label": "Min",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.yaxis.min"
       },
       {
         "label": "Max",
-        "type": "text"
+        "type": "text",
+        "key":"chart.selection.yaxis.max"
       },
       {
         "label": "Sparkline",
@@ -571,7 +577,8 @@
       {
         "label": "Set Sparkline",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.sparkline.enabled"
       },
       {
         "label": "Stacked",
@@ -580,7 +587,8 @@
       {
         "label": "Stack",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.stacked"
       },
       {
         "label": "Stack Type",
@@ -589,7 +597,8 @@
       {
         "label": "Set Stack Type",
         "type": "select",
-        "options": ["normal", "100%"]
+        "options": ["normal", "100%"],
+        "key":"chart.stackType"
       },
       {
         "label": "toolbar",
@@ -598,15 +607,18 @@
       {
         "label": "toolbar show",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.show"
       },
       {
         "label": "offsetX",
-        "type": "text"
+        "type": "text",
+        "key":"chart.toolbar.offsetX"
       },
       {
-        "label": "ofsetY",
-        "type": "text"
+        "label": "offsetY",
+        "type": "text",
+        "key":"chart.toolbar.offsetY"
       },
       {
         "label": "tools",
@@ -615,57 +627,67 @@
       {
         "label": "download",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.download"
       },
       {
         "label": "selection",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.selection"
       },
       {
         "label": "zoom",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.zoom"
       },
       {
         "label": "zoom in",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.zoomin"
       },
       {
         "label": "zoom out",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.zoomout"
       },
       {
         "label": "pan",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.pan"
       },
       {
         "label": "reset",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.toolbar.tools.reset"
       },
       {
         "label": "export",
-        "heading": "true"
+        "heading": true
       },
       {
         "label": "csv",
-        "heading": "true"
+        "heading": true
       },
       {
         "label": "file name",
-        "type": "text"
+        "type": "text",
+        "key":"chart.export.csv.filename"
       },
       {
         "label": "haeder catagory",
-        "type": "text"
+        "type": "text",
+        "key":"chart.export.csv.headerCategory"
       },
       {
         "label": "header value",
-        "type": "text"
+        "type": "text",
+        "key":"chart.export.csv.headerValue"
       },
       {
         "label": "svg",
@@ -673,7 +695,8 @@
       },
       {
         "label": "file name",
-        "type": "text"
+        "type": "text",
+        "key":"chart.toolbar.svg.filename"
       },
       {
         "label": "png",
@@ -681,12 +704,14 @@
       },
       {
         "label": "file name",
-        "type": "text"
+        "type": "text",
+        "key":"chart.toolbar.png.filename"
       },
       {
         "label": "auto selected",
         "type": "select",
-        "options": ["zoom", "selection", "pan"]
+        "options": ["zoom", "selection", "pan"],
+        "key":"chart.toolbar.autoSelected"
       },
       {
         "label": "chart",
@@ -708,7 +733,8 @@
           "bubble",
           "heatmap",
           "candlestick"
-        ]
+        ],
+        "key":"chart.type"
       },
       {
         "label": "Chart width",
@@ -716,7 +742,8 @@
       },
       {
         "label": "chart width",
-        "type": "text"
+        "type": "text",
+        "key":"chart.width"
       },
       {
         "label": "zoom",
@@ -725,45 +752,53 @@
       {
         "label": "zoom enable",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.zoom.enabled"
       },
       {
         "label": "type",
         "type": "select",
-        "options": ["X", "Y", "XY"]
+        "options": ["X", "Y", "XY"],
+        "key":"chart.zoom.type"
       },
       {
         "label": "auto scal y axis",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.zoom.autoScaleYaxis"
       },
       {
         "label": "zoom area",
-        "header": "true"
+        "header": true
       },
       {
         "label": "colors",
-        "type": "color"
+        "type": "color",
+        "key":"chart.zoom.zoomedArea.fill.color"
       },
       {
         "label": "opacity",
-        "type": "range"
+        "type": "range",
+        "key":"chart.zoom.zoomedArea.fill.opacity"
       },
       {
         "label": "stroke",
-        "heading": "true"
+        "heading": true
       },
       {
         "label": "color",
-        "type": "color"
+        "type": "color",
+        "key":"chart.zoom.zoomedArea.stroke.color"
       },
       {
         "label": "opacity",
-        "type": "range"
+        "type": "range",
+        "key":"chart.zoom.zoomedArea.stroke.opacity"
       },
       {
         "label": "width",
-        "type": "text"
+        "type": "text",
+        "key":"chart.zoom.zoomedArea.stroke.width"
       }
     ]
   },
