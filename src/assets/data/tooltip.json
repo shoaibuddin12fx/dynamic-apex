@@ -1,0 +1,46 @@
+{
+  "attributeType": "tooltip",
+  "enabled": true,
+  "enabledOnSeries": [],
+  "shared": true,
+  "followCursor": false,
+  "intersect": false,
+  "inverseOrder": false,
+  "custom": [],
+  "fillSeriesColor": false,
+  "theme": false,
+  "style": {
+    "fontSize": "12px",
+    "fontFamily": ""
+  },
+  "onDatasetHover": {
+    "highlightDataSeries": false
+  },
+  "x": {
+    "show": true,
+    "format": "dd MMM",
+    "formatter": null
+  },
+  "y": {
+    "formatter": null,
+    "title": {
+      "formatter": null
+    }
+  },
+  "z": {
+    "formatter": null,
+    "title": "Size: "
+  },
+  "marker": {
+    "show": true
+  },
+  "items": {
+    "display": ""
+  },
+  "fixed": {
+    "enabled": false,
+    "position": "topRight",
+    "offsetX": 0,
+    "offsetY": 0
+  }
+}

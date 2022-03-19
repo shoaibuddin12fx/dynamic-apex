@@ -1,0 +1,9 @@
+{
+  "attributeType": "series",
+  "series": [
+    {
+      "name": "Series 1",
+      "data": [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
+    }
+  ]
+}

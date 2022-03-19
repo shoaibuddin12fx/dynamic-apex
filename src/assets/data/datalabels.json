@@ -1,0 +1,40 @@
+{
+  "attributeType": "datalabels",
+  "enabled": true,
+  "enabledOnSeries": "",
+  "textAnchor": "middle",
+  "distributed": false,
+  "offsetX": 0,
+  "offsetY": 0,
+  "style": {
+    "fontSize": "14px",
+    "fontFamily": "Helvetica, Arial, sans-serif",
+    "fontWeight": "bold",
+    "colors": ""
+  },
+  "background": {
+    "enabled": true,
+    "foreColor": "#fff",
+    "padding": 4,
+    "borderRadius": 2,
+    "borderWidth": 1,
+    "borderColor": "#fff",
+    "opacity": 0.9,
+    "dropShadow": {
+      "enabled": false,
+      "top": 1,
+      "left": 1,
+      "blur": 1,
+      "color": "#000",
+      "opacity": 0.45
+    }
+  },
+  "dropShadow": {
+    "enabled": false,
+    "top": 1,
+    "left": 1,
+    "blur": 1,
+    "color": "#000",
+    "opacity": 0.45
+  }
+}

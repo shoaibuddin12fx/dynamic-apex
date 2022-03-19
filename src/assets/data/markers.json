@@ -1,0 +1,22 @@
+{
+  "attributeType": "markers",
+  "size": 0,
+  "colors": null,
+  "strokeColors": "#fff",
+  "strokeWidth": 2,
+  "strokeOpacity": 0.9,
+  "strokeDashArray": 0,
+  "fillOpacity": 1,
+  "discrete": [],
+  "shape": "circle",
+  "radius": 2,
+  "offsetX": 0,
+  "offsetY": 0,
+  "onClick": null,
+  "onDblClick": null,
+  "showNullDataPoints": true,
+  "hover": {
+    "size": null,
+    "sizeOffset": 3
+  }
+}

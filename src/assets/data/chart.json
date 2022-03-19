@@ -1,0 +1,52 @@
+{
+  "attributeType": "chart",
+  "title": {
+    "text": "Charts",
+    "align": "left",
+    "margin": 10,
+    "offsetX": 0,
+    "offsetY": 0,
+    "floating": false,
+    "style": {
+      "fontSize": "14px",
+      "fontWeight": "bold",
+      "fontFamily": "",
+      "color": "#263238"
+    }
+  },
+  "stroke": {
+    "curve": ""
+  },
+  "chart": {
+    "type": "line",
+    "animations": {
+      "enabled": true,
+      "easing": "easeinout",
+      "speed": 800,
+      "animateGradually": {
+        "enabled": true,
+        "delay": 150
+      },
+      "dynamicAnimation": {
+        "enabled": true,
+        "speed": 350
+      }
+    }
+  },
+  "types": [
+    "line",
+    "area",
+    "bar",
+    "radar",
+    "histogram",
+    "pie",
+    "donut",
+    "radialBar",
+    "scatter",
+    "bubble",
+    "heatmap",
+    "candlestick"
+  ],
+  "strokes": ["smooth", "straight", "stepline"],
+  "key": "box"
+}

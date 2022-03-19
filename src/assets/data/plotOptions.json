@@ -1,0 +1,35 @@
+{
+  "attributeType": "plotOptions",
+  "area": {
+    "fillTo": "origin"
+  },
+  "bar": {
+    "horizontal": false,
+    "s̶t̶a̶r̶t̶i̶n̶g̶S̶h̶a̶p̶e̶": "flat",
+    "e̶n̶d̶i̶n̶g̶S̶h̶a̶p̶e̶": "flat",
+    "borderRadius": 0,
+    "columnWidth": "70%",
+    "barHeight": "70%",
+    "distributed": false,
+    "rangeBarOverlap": true,
+    "rangeBarGroupRows": false,
+    "colors": {
+      "ranges": [
+        {
+          "from": 0,
+          "to": 0,
+          "color": ""
+        }
+      ],
+      "backgroundBarColors": [],
+      "backgroundBarOpacity": 1,
+      "backgroundBarRadius": 0
+    },
+    "dataLabels": {
+      "position": "top",
+      "maxItems": 100,
+      "hideOverflowingLabels": true,
+      "orientation": "horizontal"
+    }
+  }
+}
