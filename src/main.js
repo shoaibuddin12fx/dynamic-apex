@@ -4,11 +4,10 @@ import { BootstrapVue } from 'bootstrap-vue'
 // import { IconsPlugin, BootstrapVueIcons } from 'bootstrap-vue'
 import 'bootstrap-vue/dist/bootstrap-vue-icons.min.css'
 
-
 Vue.use(BootstrapVue)
 // Vue.use(BootstrapVueIcons)
 Vue.config.productionTip = false;
-
+export const bus = new Vue();
 new Vue({
   render: h => h(App),
 }).$mount('#app')

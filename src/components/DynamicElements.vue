@@ -32,6 +32,7 @@
                         class="form-control"
                         id="positon"
                         v-if="element.type == 'select'"
+                        v-on:change="passOptions($event)"
                       >
                         <option v-for="opt of element.options" :key="opt">
                           {{ opt }}
@@ -65,7 +66,7 @@
 </template>
 <script>
 const json = require("./../assets/elements.json");
-
+import { bus } from '../main'
 export default {
   name: "DynamicElements",
   data() {
@@ -74,6 +75,22 @@ export default {
       options: {},
     };
   },
+  methods:{
+    passOptions($event){
+      console.log($event.target.value);
+      console.log(this.options.chart);
+      bus.$emit("send dynamic options",{'options':this.options});
+    },
+    setOptionValues(){
+      this.options = {
+       "chart": {...this.json.filter((value)=>value.id == 2)},
+      }
+      console.log(this.options.chart);
+    }
+  },
+  mounted(){
+    this.setOptionValues()
+  }
 };
 </script>
 

@@ -7,6 +7,7 @@
 <script>
 
 import VueApexCharts from 'vue-apexcharts'
+import { bus } from '../main'
 export default {
   name: 'DynamicChart', 
   components: {
@@ -27,6 +28,11 @@ export default {
         data: [30, 40, 45, 50, 49, 60, 70, 91]
       }]
     }
+  },
+  mounted(){
+    bus.$on("send dynamic options",(data)=>{
+      console.log(data);
+    })
   } 
 }
 
