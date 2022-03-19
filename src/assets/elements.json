@@ -45,7 +45,8 @@
         "elements": [
           {
             "label": "colors",
-            "type": "color"
+            "type": "color",
+            "key":[]
           }
         ]
       },
@@ -200,7 +201,8 @@
       },
       {
         "label": "speed",
-        "type": "text"
+        "type": "text",
+        "key":"chart.animations.speed"
       },
       {
         "label": "animateGradually",
@@ -209,11 +211,13 @@
       {
         "label": "Enable Animation Gradually",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.animations.animateGradually.enabled"
       },
       {
         "label": "Add Delay For Gradual Animation",
-        "type": "text"
+        "type": "text",
+        "key":"chart.animations.animateGradually.delay"
       },
       {
         "label": "dynamicAnimation",
@@ -222,11 +226,13 @@
       {
         "label": "Enable Dynamic Animation",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.animations.dynamicAnimation.enabled"
       },
       {
-        "label": "Add Delay For Dynamic Animation",
-        "type": "text"
+        "label": "Add Speed For Dynamic Animation",
+        "type": "text",
+        "key":"chart.animations.dynamicAnimation.speed"
       },
       {
         "label": "background",
