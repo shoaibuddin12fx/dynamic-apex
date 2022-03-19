@@ -8,9 +8,6 @@ Vue.use(BootstrapVue)
 // Vue.use(BootstrapVueIcons)
 Vue.config.productionTip = false;
 
-import mitt from 'mitt'
-const emitter = mitt()
-
 export const bus = new Vue();
 new Vue({
   render: h => h(App),

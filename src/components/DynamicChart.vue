@@ -14,6 +14,8 @@
 <script>
 import VueApexCharts from "vue-apexcharts";
 import { bus } from "../main";
+import _ from 'lodash';
+
 export default {
   name: "DynamicChart",
   components: {
@@ -47,19 +49,10 @@ export default {
   mounted() {
     bus.$on("send dynamic options", (data) => {
 
-      const value = { ...data};  
-
-
-        
-
-
-
-      this.options[value.key] = value.selected_value;  
-
-
-
-      console.log({...this.options});
-
+      const value = { ...data};
+      var op = {...this.options}
+      _.set(op, value.key, value.selected_value);
+      this.options = op;
       console.log("send dynamic options", value);
     });
   },
