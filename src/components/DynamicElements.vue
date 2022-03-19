@@ -49,6 +49,11 @@
                       type="text"
                       class="form-control"
                     />
+                    <input
+                      v-if="element.type == 'range'"
+                      type="range"
+                      class="form-control"
+                    />
 
                     </div>
                     
