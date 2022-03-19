@@ -35,7 +35,8 @@
       {
         "type": "select",
         "label": "Enable Animations",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key":"chart.animations.enabled"
       },
 
       {
