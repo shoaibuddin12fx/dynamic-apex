@@ -10,6 +10,8 @@
         </div>
         <div class="rightside-chart col-4">
 
+          <DynamicElements />
+
         </div>
 
 
@@ -18,11 +20,13 @@
 <script>
 
 import DynamicChart from './DynamicChart.vue'
+import DynamicElements from './DynamicElements.vue'
 
 export default {
   name: 'MainView',  
   components: {
-    DynamicChart
+    DynamicChart,
+    DynamicElements
   }
 }
 </script>

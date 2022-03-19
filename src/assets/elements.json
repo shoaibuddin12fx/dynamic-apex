@@ -1,5 +1,43 @@
 [
     {
+        "id": 1,
+        "label": "annotations",
+        "inputs": true,
+        "elements": [
+            {
+                "type": "select",
+                "label": "position",
+                "options": [
+                    "front",
+                    "back"
+                ]
+            }
+        ]
         
+    },
+    {
+        "id": 2,
+        "label": "chart",
+        "inputs": false,
+        "elements": [
+            {
+                "label": "animations",
+                "inputs": true,
+                "elements": [
+
+                ]
+            },
+            {
+                "label": "background",
+                "inputs": true,
+                "elements": [
+                    {
+                        "label": "background",
+                        "type": "color"                        
+                    }
+                ]
+                
+            }
+        ]
     }
 ]
