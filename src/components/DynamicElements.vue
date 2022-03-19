@@ -17,7 +17,7 @@
         >
           <div class="card-body">
             <form>
-              <div v-for="element of obj.elements" :key="element.label">
+              <div v-for="element of obj.elements" :key="element.index">
                 <div v-if="element.heading" class="headings">
                   {{ element.label }}
                 </div>
@@ -32,14 +32,15 @@
                         class="form-control"
                         id="positon"
                         v-if="element.type == 'select'"
-                        v-on:change="passOptions($event)"
+                        v-on:change="passOptions($event, element )"
                       >
-                        <option v-for="opt of element.options" :key="opt">
+                        <option v-for="opt of element.options" :key="opt.index">
                           {{ opt }}
                         </option>
                       </select>
                       <input
-                        v-if="element.type == 'color'"
+                       v-on:change="passOptions($event, element)"
+                        v-if="element.type == 'color'" 
                         type="color"
                         class="form-control"
                       />
@@ -66,7 +67,11 @@
 </template>
 <script>
 const json = require("./../assets/elements.json");
-import { bus } from '../main'
+import { bus } from '../main';
+
+
+
+
 export default {
   name: "DynamicElements",
   data() {
@@ -76,16 +81,19 @@ export default {
     };
   },
   methods:{
-    passOptions($event){
-      console.log($event.target.value);
-      console.log(this.options.chart);
-      bus.$emit("send dynamic options",{'options':this.options});
+    passOptions($event, element){
+      console.log(element, $event.target.value);
+
+      var obj = { ...element }
+      obj['selected_value'] =  $event.target.value;
+    //   console.log(this.options.chart);
+      bus.$emit("send dynamic options",obj);
     },
     setOptionValues(){
       this.options = {
-       "chart": {...this.json.filter((value)=>value.id == 2)},
+       "chart": this.json.filter((value)=>value.id == 2),
       }
-      console.log(this.options.chart);
+      console.log("opt",this.options.chart);
     }
   },
   mounted(){
