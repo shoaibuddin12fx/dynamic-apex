@@ -18,45 +18,41 @@
           <div class="card-body">
             <form>
               <div v-for="element of obj.elements" :key="element.label">
-                <!-- {{ element.label }} {{ element.heading }} -->
-
                 <div v-if="element.heading" class="headings">
                   {{ element.label }}
                 </div>
 
                 <div v-if="!element.heading" class="element">
                   <div class="form-group row">
-                    <label class="col-sm-6 col-form-label"
-                      >{{ element.label }}</label
-                    >
+                    <label class="col-sm-6 col-form-label">{{
+                      element.label
+                    }}</label>
                     <div class="col-sm-6">
-                        <select
-                      class="form-control"
-                      id="positon"
-                      v-if="element.type == 'select'"
-                    >
-                      <option v-for="opt of element.options" :key="opt">
-                        {{ opt }}
-                      </option>
-                    </select>
-                    <input
-                      v-if="element.type == 'color'"
-                      type="color"
-                      class="form-control"
-                    />
-                    <input
-                      v-if="element.type == 'text'"
-                      type="text"
-                      class="form-control"
-                    />
-                    <input
-                      v-if="element.type == 'range'"
-                      type="range"
-                      class="form-control"
-                    />
-
+                      <select
+                        class="form-control"
+                        id="positon"
+                        v-if="element.type == 'select'"
+                      >
+                        <option v-for="opt of element.options" :key="opt">
+                          {{ opt }}
+                        </option>
+                      </select>
+                      <input
+                        v-if="element.type == 'color'"
+                        type="color"
+                        class="form-control"
+                      />
+                      <input
+                        v-if="element.type == 'text'"
+                        type="text"
+                        class="form-control"
+                      />
+                      <input
+                        v-if="element.type == 'range'"
+                        type="range"
+                        class="form-control"
+                      />
                     </div>
-                    
                   </div>
                 </div>
               </div>
@@ -75,7 +71,7 @@ export default {
   data() {
     return {
       json: json,
-      options: {}
+      options: {},
     };
   },
 };
@@ -86,9 +82,9 @@ export default {
   text-align: left;
 }
 
-.headings{
-    font-weight: bold;
-        border-bottom: 1px solid gray;
-    margin-bottom: 19px;
+.headings {
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  margin-bottom: 19px;
 }
 </style>
