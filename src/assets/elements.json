@@ -362,5 +362,253 @@
                 "type": "text"
             }
         ]
+    },
+    {
+        "id": 7,
+        "label": "grid",
+        "elements": [
+            {
+                "label": "show grid",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "border color",
+                "type": "text"
+            },
+            {
+                "label": "stroke dash array",
+                "type": "text"
+            },
+            {
+                "label": "position",
+                "type": "select",
+                "options": ["back", "front"]
+            },
+            {
+                "label": "x axis",
+                "heading": "true"
+            },
+            {
+                "label": "lines show",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "y axis",
+                "heading": "true"
+            },
+            {
+                "label": "lines show",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "row",
+                "heading": "true"
+            },
+            {
+                "label": "colors",
+                "type": "color"
+            },
+            {
+                "label": "opacity",
+                "type": "range"
+            },
+            {
+                "label": "padding",
+                "heading": "true"
+            },
+            {
+                "label": "top",
+                "type": "text"
+            },
+            {
+                "label": "right",
+                "type": "text"
+            },
+            {
+                "label": "bottom",
+                "type": "text"
+            },
+            {
+                "label": "left",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "label": "labels",
+        "elements": [
+            {
+                "label": "label",
+                "type": "select",
+                "options": ["1", "2", "3"]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "label": "legend",
+        "elements": [
+            {
+                "label": "show legend",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "show for single series",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "show for null series",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "show for zero series",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "position",
+                "type": "select",
+                "options": ["top", "right", "bottom", "left"]
+            },
+            {
+                "label": "horizontal align",
+                "type": "select",
+                "options": ["left", "center", "right"]
+            },
+            {
+                "label": "floating",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "font size",
+                "type": "text"
+            },
+            {
+                "label": "font family",
+                "type": "select",
+                "options": ["arial", "serif", "sans-serif", "Helvetica"]
+            },
+            {
+                "label": "font weight",
+                "type": "text"
+            },
+            {
+                "label": "formatter",
+                "type": "text"
+            },
+            {
+                "label": "inverse order",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "width",
+                "type": "text"
+            },
+            {
+                "label": "height",
+                "type": "text"
+            },
+            {
+                "label": "tool tip hover formatter",
+                "type": "text"
+            },
+            {
+                "label": "custom legend items",
+                "type": "select",
+                "options": ["click", "mouse hover"]
+            },
+            {
+                "label": "ofsetX",
+                "type": "text"
+            },
+            {
+                "label": "ofsetY",
+                "type": "text"
+            },
+            {
+                "label": "labels",
+                "heading": "true"
+            },
+            {
+                "label": "colors",
+                "type": "color"
+            },
+            {
+                "label": "use series color",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "makers",
+                "heading": "true"
+            },
+            {
+                "label": "width",
+                "type": "text"
+            },
+            {
+                "label": "height",
+                "type": "text"
+            },
+            {
+                "label": "stroke width",
+                "type": "text"
+            },
+            {
+                "label": "stroke color",
+                "type": "color"
+            },
+            {
+                "label": "fill color",
+                "type": "color"
+            },
+            {
+                "label": "radius",
+                "type": "range"
+            },
+            {
+                "label": "ofsetX",
+                "type": "text"
+            },
+            {
+                "label": "ofsetY",
+                "type": "text"
+            },
+            {
+                "label" :"item margin",
+                "heading": "true"
+            },
+            {
+                "label": "horizontal",
+                "type": "text" 
+            },
+            {
+                "label": "vertical",
+                "type": "text"
+            },
+            {
+                "label": "on item click",
+                "heading": "true"
+            },
+            {
+                "label": "toggle series data",
+                "type": "select",
+                "options": ["true", "false"]
+            },
+            {
+                "label": "on item hover",
+                "type": "select",
+                "options": ["true", "false"]
+            }
+        ]
     }
 ]
