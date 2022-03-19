@@ -13,7 +13,6 @@
                 ]
             }
         ]
-        
     },
     {
         "id": 2,
@@ -23,9 +22,7 @@
             {
                 "label": "animations",
                 "inputs": true,
-                "elements": [
-
-                ]
+                "elements": []
             },
             {
                 "label": "background",
@@ -33,23 +30,21 @@
                 "elements": [
                     {
                         "label": "background",
-                        "type": "color"                        
+                        "type": "color"
                     }
                 ]
-                
             }
         ]
     },
     {
         "id": 3,
         "label": "colors",
-        "elements":[
+        "elements": [
             {
                 "label": "colors",
                 "type": "color"
             }
         ]
-
     },
     {
         "id": 4,
@@ -58,7 +53,10 @@
             {
                 "label": "data label",
                 "type": "select",
-                "options":["true", "false"]
+                "options": [
+                    "true",
+                    "false"
+                ]
             },
             {
                 "label": "enabledOnSeries",
@@ -67,12 +65,19 @@
             {
                 "label": "text anchor",
                 "type": "select",
-                "options": ["start", "middle", "end"]
+                "options": [
+                    "start",
+                    "middle",
+                    "end"
+                ]
             },
             {
                 "label": "distributed",
                 "type": "select",
-                "options": ["true", "false"]
+                "options": [
+                    "true",
+                    "false"
+                ]
             },
             {
                 "label": "ofsetX",
@@ -93,12 +98,30 @@
             {
                 "label": "font family",
                 "type": "select",
-                "options": ["Helvetica", "Arial", "sans-serif"]
+                "options": [
+                    "Helvetica",
+                    "Arial",
+                    "sans-serif"
+                ]
             },
             {
                 "label": "font weight",
                 "type": "select",
-                "options": ["100", "200", "300", "400", "500", "600", "700", "800", "900", "bold", "bolder", "light", "normal"]
+                "options": [
+                    "100",
+                    "200",
+                    "300",
+                    "400",
+                    "500",
+                    "600",
+                    "700",
+                    "800",
+                    "900",
+                    "bold",
+                    "bolder",
+                    "light",
+                    "normal"
+                ]
             },
             {
                 "label": "colors",
@@ -111,7 +134,10 @@
             {
                 "label": "background",
                 "type": "select",
-                "options": ["true", "false"]
+                "options": [
+                    "true",
+                    "false"
+                ]
             },
             {
                 "label": "fore color",
@@ -160,7 +186,10 @@
             {
                 "label": "enabled",
                 "type": "select",
-                "options": ["true", "false"]
+                "options": [
+                    "true",
+                    "false"
+                ]
             },
             {
                 "label": "top",
@@ -179,6 +208,153 @@
                 "type": "text"
             }
         ]
-
+    },
+    {
+        "id": 5,
+        "label": "fill",
+        "elements": [
+            {
+                "label": "colors",
+                "type": "color"
+            },
+            {
+                "label": "opacity",
+                "type": "range"
+            },
+            {
+                "label": "type",
+                "type": "select",
+                "options": [
+                    "solid",
+                    "gradient",
+                    "pattern",
+                    "image"
+                ]
+            },
+            {
+                "label": "gradient",
+                "heading": "true"
+            },
+            {
+                "label": "shade",
+                "type": "select",
+                "options": [
+                    "light",
+                    "dark"
+                ]
+            },
+            {
+                "label": "type",
+                "type": "select",
+                "options": [
+                    "horizontal",
+                    "vertical",
+                    "diagonal1",
+                    "diagonal2"
+                ]
+            },
+            {
+                "label": "shade intensity",
+                "type": "range"
+            },
+            {
+                "label": "gradient to color",
+                "type": "text"
+            },
+            {
+                "label": "inverse color",
+                "type": "select",
+                "options": [
+                    "true",
+                    "false"
+                ]
+            },
+            {
+                "label": "opacity from",
+                "type": "range"
+            },
+            {
+                "label": "opacity to",
+                "type": "range"
+            },
+            {
+                "label": "stop",
+                "type": "select",
+                "options": [
+                    0,
+                    50,
+                    100
+                ]
+            },
+            {
+                "label": "color stop",
+                "type": "color"
+            },
+            {
+                "label": "image",
+                "heading": "true"
+            },
+            {
+                "label": "src",
+                "type": "text"
+            },
+            {
+                "label": "width",
+                "type": "text"
+            },
+            {
+                "label": "height",
+                "type": "text"
+            },
+            {
+                "label": "pattern",
+                "heading": "true"
+            },
+            {
+                "label": "style",
+                "type": "select",
+                "options": [
+                    "verticalLines",
+                    "horizontalLines",
+                    "slantedLines",
+                    "squares",
+                    "circles"
+                ]
+            },
+            {
+                "label": "width",
+                "type": "text"
+            },
+            {
+                "label": "height",
+                "type": "text"
+            },
+            {
+                "label": "stroke width",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "label": "fore cast data points",
+        "elements": [
+            {
+                "label": "count",
+                "type": "text"
+            },
+            {
+                "label": "fill opacity",
+                "type": "range"
+            },
+            {
+                "label": "stroke width",
+                "type": "text"
+            },
+            {
+                "label": "dash array",
+                "type": "text"
+            }
+        ]
     }
 ]
