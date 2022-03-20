@@ -144,6 +144,11 @@
                             type="color"
                             class="form-control"
                           />
+                          <input
+                            v-if="element.arrayOf == 'text'"
+                            type="text"
+                            class="form-control"
+                          />
                         </div>
                       </div>
                     </div>
@@ -238,6 +243,9 @@ export default {
     addArrayOf(element) {
       if (element.arrayOf == "colors") {
         element.values.push("#c0c0c0");
+      }
+      if (element.arrayOf == "text") {
+        element.values.push("");
       }
     },
   },
