@@ -10,11 +10,13 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.enabled"
         },
         {
             "type": "text",
-            "label": "enabledOnSeries"
+            "label": "enabledOnSeries",
+            "key":"tooltip.enabledOnSeries"
         },
         {
             "type": "select",
@@ -22,7 +24,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.shared"
         },
         {
             "type": "select",
@@ -30,7 +33,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.followCursor"
         },
         {
             "type": "select",
@@ -38,7 +42,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.intersect"
         },
         {
             "type": "select",
@@ -46,7 +51,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.inverseOrder"
         },
         {
             "type": "select",
@@ -54,15 +60,17 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.fillSeriesColor"
         },
         {
             "type": "select",
-            "label": "  theme",
+            "label": "theme",
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.theme"
         },
         {
             "label": "tooltip > style",
@@ -70,11 +78,13 @@
         },
         {
             "type": "text",
-            "label": "fontSize"
+            "label": "fontSize",
+            "key":"tooltip.style.fontSize"
         },
         {
             "type": "text",
-            "label": " fontFamily"
+            "label": "fontFamily",
+            "key":"tooltip.style.fontFamily"
         },
         {
             "label": "tooltip > onDatasetHover",
@@ -86,7 +96,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.onDatasetHover.highlightDataSeries"
         },
         {
             "label": "tooltip > x",
@@ -98,19 +109,22 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.x.show"
         },
         {
             "type": "text",
-            "label": "format"
+            "label": "format",
+            "key":"tooltip.x.format"
         },
         {
             "label": "tooltip > y",
             "heading": true
         },
         {
-            "label": "tooltip > y > title",
-            "heading": true
+            "type": "text",
+            "label": "title",
+            "key":"tooltip.y.title"
         },
         {
             "label": "tooltip > z",
@@ -118,7 +132,8 @@
         },
         {
             "type": "text",
-            "label": "title"
+            "label": "title",
+            "key":"tooltip.z.title"
         },
         {
             "label": "tooltip > marker",
@@ -130,7 +145,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.marker.show"
         },
         {
             "label": "tooltip > items",
@@ -138,7 +154,8 @@
         },
         {
             "type": "text",
-            "label": "display"
+            "label": "display",
+            "key":"tooltip.items.display"
         },
         {
             "label": "tooltip > fixed",
@@ -150,7 +167,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"tooltip.fixed.enabled"
         },
         {
             "type": "select",
@@ -160,15 +178,18 @@
                 "topRight",
                 "bottomLeft",
                 "bottomRight"
-            ]
+            ],
+            "key":"tooltip.fixed.position"
         },
         {
             "type": "text",
-            "label": "offsetX"
+            "label": "offsetX",
+            "key":"tooltip.fixed.offsetX"
         },
         {
             "type": "text",
-            "label": "offsetY"
+            "label": "offsetY",
+            "key":"tooltip.fixed.offsetY"
         }
     ]
 }

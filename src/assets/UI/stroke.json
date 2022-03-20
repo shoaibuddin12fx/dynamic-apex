@@ -10,7 +10,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"stroke.show"
         },
         {
             "type": "select",
@@ -19,23 +20,28 @@
                 "smooth",
                 "straight",
                 "stepline"
-            ]
+            ],
+            "key":"stroke.curve"
         },
         {
             "type": "text",
-            "label": "lineCap"
+            "label": "lineCap",
+            "key":"stroke.lineCap"
         },
         {
             "type": "color",
-            "label": "color"
+            "label": "color",
+            "key":"stroke.colors"
         },
         {
             "type": "text",
-            "label": "width"
+            "label": "width",
+            "key":"stroke.width"
         },
         {
             "type": "text",
-            "label": "dashArray"
+            "label": "dashArray",
+            "key":"stroke.dashArray"
         }
     ]
 }

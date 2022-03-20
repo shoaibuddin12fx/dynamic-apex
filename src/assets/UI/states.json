@@ -18,11 +18,14 @@
                 "none",
                 "lighten",
                 "darken"
-            ]
+            ],
+            "key":"states.normal.filter.type"
         },
         {
             "type": "text",
-            "label": "value"
+            "label": "value",
+            "key":"states.normal.filter.value"
+
         },
         {
             "label": "hover > states",
@@ -39,11 +42,13 @@
                 "none",
                 "lighten",
                 "darken"
-            ]
+            ],
+            "key":"states.hover.filter.type"
         },
         {
             "type": "text",
-            "label": "value"
+            "label": "value",
+            "key":"states.hover.filter.value"
         },
         {
             "label": "active > states",
@@ -55,7 +60,8 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"states.active.allowMultipleDataPointsSelection"
         },
         {
             "label": "filter > active > states",
@@ -68,11 +74,13 @@
                 "none",
                 "lighten",
                 "darken"
-            ]
+            ],
+            "key":"states.active.filter.type"
         },
         {
             "type": "text",
-            "label": "value"
+            "label": "value",
+            "key":"states.active.filter.value"
         }
     ]
 }
