@@ -1,0 +1,48 @@
+[
+{
+    "label": "theme",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "select",
+            "label": "mode",
+            "options": [
+                "light",
+                "dark"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "palette"
+        },
+        {
+            "label": "theme >  monochrome",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "enabled",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "color",
+            "label": "color"
+        },
+        {
+            "type": "select",
+            "label": " shadeTo",
+            "options": [
+                "light",
+                "dark"
+            ]
+        },
+        {
+            "type": "range",
+            "label": "shadeIntensity"
+        }
+    ]
+}
+]

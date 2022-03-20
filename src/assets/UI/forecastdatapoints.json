@@ -1,0 +1,27 @@
+[
+{
+    "label": "fore cast data points",
+    "elements": [
+        {
+            "label": "count",
+            "type": "text",
+            "key":"forecastDataPoints.count"
+        },
+        {
+            "label": "fill opacity",
+            "type": "range",
+            "key":"forecastDataPoints.fillOpacity"
+        },
+        {
+            "label": "stroke width",
+            "type": "text",
+            "key":"forecastDataPoints.strokeWidth"
+        },
+        {
+            "label": "dash array",
+            "type": "text",
+            "key":"forecastDataPoints.dashArray"
+        }
+    ]
+}
+]

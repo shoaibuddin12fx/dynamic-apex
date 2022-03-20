@@ -1,0 +1,17 @@
+[
+{
+    "label": "labels",
+    "elements": [
+        {
+            "label": "label",
+            "type": "select",
+            "options": [
+                "1",
+                "2",
+                "3"
+            ],
+            "key":[]
+        }
+    ]
+}
+]

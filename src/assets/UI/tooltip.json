@@ -1,0 +1,175 @@
+[
+{
+    "id": 20,
+    "label": "tooltip",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "select",
+            "label": "enabled",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "enabledOnSeries"
+        },
+        {
+            "type": "select",
+            "label": "shared",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "select",
+            "label": "followCursor",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "select",
+            "label": "intersect",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "select",
+            "label": "inverseOrder",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "select",
+            "label": " fillSeriesColor",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "select",
+            "label": "  theme",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "label": "tooltip > style",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "fontSize"
+        },
+        {
+            "type": "text",
+            "label": " fontFamily"
+        },
+        {
+            "label": "tooltip > onDatasetHover",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "highlightDataSeries",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "label": "tooltip > x",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "show",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "format"
+        },
+        {
+            "label": "tooltip > y",
+            "heading": true
+        },
+        {
+            "label": "tooltip > y > title",
+            "heading": true
+        },
+        {
+            "label": "tooltip > z",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "title"
+        },
+        {
+            "label": "tooltip > marker",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "show",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "label": "tooltip > items",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "display"
+        },
+        {
+            "label": "tooltip > fixed",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "enabled",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "select",
+            "label": "position",
+            "options": [
+                "topLeft",
+                "topRight",
+                "bottomLeft",
+                "bottomRight"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "offsetX"
+        },
+        {
+            "type": "text",
+            "label": "offsetY"
+        }
+    ]
+}
+]

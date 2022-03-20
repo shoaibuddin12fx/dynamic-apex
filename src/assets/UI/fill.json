@@ -1,0 +1,146 @@
+[
+{
+    "label": "fill",
+    "elements": [
+        {
+            "label": "colors",
+            "type": "color",
+            "key":"fill.colors"
+        },
+        {
+            "label": "opacity",
+            "type": "range",
+            "key":"fill.opacity"
+        },
+        {
+            "label": "type",
+            "type": "select",
+            "options": [
+                "solid",
+                "gradient",
+                "pattern",
+                "image"
+            ],
+            "key":"fill.type"
+        },
+        {
+            "label": "gradient",
+            "heading": "true"
+        },
+        {
+            "label": "shade",
+            "type": "select",
+            "options": [
+                "light",
+                "dark"
+            ],
+            "key":"fill.gradient.shade"
+        },
+        {
+            "label": "type",
+            "type": "select",
+            "options": [
+                "horizontal",
+                "vertical",
+                "diagonal1",
+                "diagonal2"
+            ],
+            "key":"fill.gradient.type"
+        },
+        {
+            "label": "shade intensity",
+            "type": "range",
+            "key":"fill.gradient.shadeIntensity"
+        },
+        {
+            "label": "gradient to color",
+            "type": "text",
+            "key":"fill.gradient.gradientToColors"
+        },
+        {
+            "label": "inverse color",
+            "type": "select",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key":"fill.gradient.inverseColors"
+        },
+        {
+            "label": "opacity from",
+            "type": "range",
+            "key":"fill.gradient.opacityFrom"
+        },
+        {
+            "label": "opacity to",
+            "type": "range",
+            "key":"fill.gradient.opacityTo"
+        },
+        {
+            "label": "stop",
+            "type": "select",
+            "options": [
+                0,
+                50,
+                100
+            ],
+            "key":"fill.gradient.stops"
+        },
+        {
+            "label": "color stop",
+            "type": "color",
+            "key":"fill.gradient.colorStops"
+        },
+        {
+            "label": "image",
+            "heading": "true"
+        },
+        {
+            "label": "src",
+            "type": "text",
+            "key":"fill.image.src"
+        },
+        {
+            "label": "width",
+            "type": "text",
+            "key":"fill.image.width"
+        },
+        {
+            "label": "height",
+            "type": "text",
+            "key":"fill.image.height"
+        },
+        {
+            "label": "pattern",
+            "heading": "true"
+        },
+        {
+            "label": "style",
+            "type": "select",
+            "options": [
+                "verticalLines",
+                "horizontalLines",
+                "slantedLines",
+                "squares",
+                "circles"
+            ],
+            "key":"fill.pattern.style"
+        },
+        {
+            "label": "width",
+            "type": "text",
+            "key":"fill.pattern.width"
+        },
+        {
+            "label": "height",
+            "type": "text",
+            "key":"fill.pattern.height"
+        },
+        {
+            "label": "stroke width",
+            "type": "text",
+            "key":"fill.pattern.strokeWidth"
+        }
+    ]
+}
+]

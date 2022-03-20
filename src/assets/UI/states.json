@@ -1,0 +1,79 @@
+[
+{
+    "label": "states",
+    "inputs": true,
+    "elements": [
+        {
+            "label": "normal > states",
+            "heading": true
+        },
+        {
+            "label": "filter > normal > states",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "type",
+            "options": [
+                "none",
+                "lighten",
+                "darken"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "value"
+        },
+        {
+            "label": "hover > states",
+            "heading": true
+        },
+        {
+            "label": "filter > hover > states",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "type",
+            "options": [
+                "none",
+                "lighten",
+                "darken"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "value"
+        },
+        {
+            "label": "active > states",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "allowMultipleDataPointsSelection",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "label": "filter > active > states",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "type",
+            "options": [
+                "none",
+                "lighten",
+                "darken"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "value"
+        }
+    ]
+}
+]

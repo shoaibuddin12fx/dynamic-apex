@@ -1,0 +1,42 @@
+[
+{
+    "id": 16,
+    "label": "stroke",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "select",
+            "label": "show",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "select",
+            "label": "curve",
+            "options": [
+                "smooth",
+                "straight",
+                "stepline"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "lineCap"
+        },
+        {
+            "type": "color",
+            "label": "color"
+        },
+        {
+            "type": "text",
+            "label": "width"
+        },
+        {
+            "type": "text",
+            "label": "dashArray"
+        }
+    ]
+}
+]

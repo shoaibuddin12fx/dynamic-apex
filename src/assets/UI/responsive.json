@@ -1,0 +1,13 @@
+[
+{
+    "label": "responsive",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "text",
+            "label": "breakpoint",
+            "key":"responsive.breakpoint"
+        }
+    ]
+}
+]

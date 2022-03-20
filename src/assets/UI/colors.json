@@ -1,0 +1,13 @@
+[
+{
+    "label": "Colors",
+    "elements": [
+        {
+            "label": "Add Colors ",
+            "type": "array",
+            "arrayOf": "color",
+            "values": []
+        }
+    ]
+}
+]

@@ -1,0 +1,57 @@
+[
+{
+    "id": 17,
+    "label": "subtitle",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "text",
+            "label": "text"
+        },
+        {
+            "type": "text",
+            "label": "align"
+        },
+        {
+            "type": "text",
+            "label": "margin"
+        },
+        {
+            "type": "text",
+            "label": "offsetX"
+        },
+        {
+            "type": "text",
+            "label": "offsetY"
+        },
+        {
+            "type": "select",
+            "label": "floating",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "label": "style > subtitle",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "fontSize"
+        },
+        {
+            "type": "text",
+            "label": "fontWeight"
+        },
+        {
+            "type": "text",
+            "label": "fontFamily"
+        },
+        {
+            "type": "color",
+            "label": "color"
+        }
+    ]
+}
+]

@@ -1,0 +1,85 @@
+[
+{
+    "label": "markers",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "text",
+            "label": "size",
+            "key":"markers.size"
+        },
+        {
+            "type": "color",
+            "label": "color",
+            "key":"markers.colors"
+        },
+        {
+            "type": "color",
+            "label": "strokeColors",
+            "key":"markers.strokeColors"
+        },
+        {
+            "type": "text",
+            "label": "strokeWidth",
+            "key":"markers.strokeWidth"
+        },
+        {
+            "type": "range",
+            "label": "strokeOpacity",
+            "key":"markers.strokeOpacity"
+        },
+        {
+            "type": "text",
+            "label": "strokeDashArray",
+            "key":"markers.strokeDashArray"
+        },
+        {
+            "type": "range",
+            "label": "fillOpacity",
+            "key":"markers.fillOpacity"
+        },
+        {
+            "type": "select",
+            "label": "shape",
+            "options": [
+                "circle",
+                "square"
+            ],
+            "key":"markers.shape"
+        },
+        {
+            "type": "text",
+            "label": "offsetX",
+            "key":"markers.offsetX"
+        },
+        {
+            "type": "text",
+            "label": "offsetY",
+            "key":"markers.offsetY"
+        },
+        {
+            "type": "select",
+            "label": "showNullDataPoints",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key":"markers.showNullDataPoints" 
+        },
+        {
+            "heading": true,
+            "label": "markers > hover"
+        },
+        {
+            "type": "text",
+            "label": "size",
+            "key":"markers.hover.size" 
+        },
+        {
+            "type": "text",
+            "label": "sizeOffset",
+            "key":"markers.hover.sizeOffset" 
+        }
+    ]
+}
+]

@@ -1,0 +1,62 @@
+[
+{
+    "label": "noData",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "text",
+            "label": "text",
+            "key":"noData.text" 
+        },
+        {
+            "type": "select",
+            "label": "align",
+            "options": [
+                "left",
+                "center",
+                "right"
+            ],
+            "key":"noData.align" 
+        },
+        {
+            "type": "select",
+            "label": "verticalAlign",
+            "options": [
+                "top",
+                "middle",
+                "bottom"
+            ],
+            "key":"noData.verticalAlign" 
+        },
+        {
+            "type": "text",
+            "label": "offsetX",
+            "key":"noData.offsetX" 
+        },
+        {
+            "type": "text",
+            "label": "offsetY",
+            "key":"noData.offsetY" 
+        },
+        {
+            "heading": true,
+            "label": "noData > style"
+        },
+        {
+            "type": "color",
+            "label": "color",
+            "key":"noData.style.color" 
+        },
+        {
+            "type": "text",
+            "label": "fontSize",
+            "key":"noData.style.fontSize" 
+        },
+        {
+            "type": "text",
+            "label": "fontFamily",
+            "key":"noData.style.fontFamily" 
+        }
+    ]
+}
+]

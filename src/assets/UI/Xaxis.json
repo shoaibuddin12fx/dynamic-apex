@@ -1,0 +1,469 @@
+[
+{
+    "label": "xaxis",
+    "inputs": true,
+    "elements": [
+        {
+            "type": "select",
+            "label": "type",
+            "options": [
+                "category",
+                "datetime",
+                "numeric"
+            ],
+            "key": "xaxis.type"
+        },
+        {
+            "type": "select",
+            "label": "categories",
+            "options": [
+                "xaxis",
+                "xaxis",
+                "xaxis"
+            ],
+            "key": "xaxis.categories"
+        },
+        {
+            "type": "text",
+            "label": "tickamount",
+            "key": "xaxis.tickamount"
+        },
+        {
+            "type": "text",
+            "label": "tickplacement",
+            "key": "xaxis.tickplacement"
+        },
+        {
+            "type": "text",
+            "label": "min",
+            "key": "xaxis.min"
+        },
+        {
+            "type": "text",
+            "label": "max",
+            "key": "xaxis.max"
+        },
+        {
+            "type": "text",
+            "label": "range",
+            "key": "xaxis.range"
+        },
+        {
+            "type": "select",
+            "label": "floating",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.floating"
+        },
+        {
+            "type": "text",
+            "label": "decimalinfloat",
+            "key": "xaxis.decimalinfloat"
+        },
+        {
+            "type": "text",
+            "label": "overwritecategories",
+            "key": "xaxis.overwritecategories"
+        },
+        {
+            "type": "select",
+            "label": "position",
+            "options": [
+                "bottom",
+                "top"
+            ],
+            "key": "xaxis.position"
+        },
+        {
+            "label": "labels",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "show",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.labels.show"
+        },
+        {
+            "type": "select",
+            "label": "rotate",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.labels.rotate"
+        },
+        {
+            "type": "select",
+            "label": "rotateAlways",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.labels.rotateAlways"
+        },
+        {
+            "type": "select",
+            "label": "hideOverlapingLabels",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.labels.hideOverlapingLabels"
+        },
+        {
+            "type": "select",
+            "label": "showDuplicates",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.label.showDuplicates"
+        },
+        {
+            "type": "select",
+            "label": "trim",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.labels.trim"
+        },
+        {
+            "type": "text",
+            "label": "minHeight",
+            "key": "xaxis.labels.minHeight"
+        },
+        {
+            "type": "text",
+            "label": "maxHeight",
+            "key": "xaxis.label.maxHeight"
+        },
+        {
+            "label": "style",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "colors",
+            "options": [
+                "red",
+                "blue",
+                "yellow"
+            ],
+            "key": "xaxis.label.style.colors"
+        },
+        {
+            "type": "text",
+            "label": "fontSize",
+            "key": "xaxis.label.style.fontSize"
+        },
+        {
+            "type": "text",
+            "label": "fontFamily",
+            "key": "xaxis.label.style.fontFamily"
+        },
+        {
+            "type": "text",
+            "label": "fontWeight",
+            "key": "xaxis.label.style.fontWeight"
+        },
+        {
+            "type": "text",
+            "label": "cssClass",
+            "key": "xaxis.label.style.cssClass"
+        },
+        {
+            "type": "text",
+            "label": "offsetX",
+            "key": "xaxis.label.style.offsetX"
+        },
+        {
+            "type": "text",
+            "label": "offsetY",
+            "key": "xaxis.label.style.offsetY"
+        },
+        {
+            "type": "text",
+            "label": "format",
+            "key": "xaxis.label.style.format"
+        },
+        {
+            "type": "select",
+            "label": "datetimeUTC",
+            "options": [
+                "true",
+                "false"
+            ],
+            "key": "xaxis.label.style.datetimeUTC"
+        },
+        {
+            "label": "datetimeFormatters",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "year",
+            "key": "xaxis.label.style.datetimeFormatters.show"
+        },
+        {
+            "type": "text",
+            "label": "month",
+            "key": "xaxis.label.style.datetimeFormatters.text"
+        },
+        {
+            "type": "text",
+            "label": "day"
+        },
+        {
+            "type": "text",
+            "label": "hour"
+        },
+        {
+            "label": "axisBorder > xaxis",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "show",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "color",
+            "label": "color"
+        },
+        {
+            "type": "text",
+            "label": "height"
+        },
+        {
+            "type": "text",
+            "label": "width"
+        },
+        {
+            "type": "text",
+            "label": "offsetX"
+        },
+        {
+            "type": "text",
+            "label": "offsetY"
+        },
+        {
+            "label": "axisTicks > xaxis",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "show",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "borderType"
+        },
+        {
+            "type": "color",
+            "label": "color"
+        },
+        {
+            "type": "select",
+            "label": "height",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "offsetX"
+        },
+        {
+            "type": "text",
+            "label": "offsetY"
+        },
+        {
+            "label": "title > xaxis",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "text"
+        },
+        {
+            "type": "text",
+            "label": "offsetX"
+        },
+        {
+            "type": "text",
+            "label": "offsetY"
+        },
+        {
+            "label": "style > title > axixs",
+            "heading": true
+        },
+        {
+            "type": "color",
+            "label": "color"
+        },
+        {
+            "type": "text",
+            "label": "fontSize"
+        },
+        {
+            "type": "text",
+            "label": "fontFamily"
+        },
+        {
+            "type": "text",
+            "label": "fontWeight"
+        },
+        {
+            "type": "text",
+            "label": "cssClass"
+        },
+        {
+            "label": "crosshairs > xaxis",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "show",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "width"
+        },
+        {
+            "type": "text",
+            "label": "position"
+        },
+        {
+            "type": "text",
+            "label": "opacity"
+        },
+        {
+            "label": "stroke > crosshairs > xaxis",
+            "heading": true
+        },
+        {
+            "type": "color",
+            "label": "color"
+        },
+        {
+            "type": "text",
+            "label": "width"
+        },
+        {
+            "type": "text",
+            "label": "dashArray"
+        },
+        {
+            "label": "fill > crosshairs > xaxis",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "type"
+        },
+        {
+            "type": "color",
+            "label": "color"
+        },
+        {
+            "label": "gradient > fill > crosshairs > xaxis",
+            "heading": true
+        },
+        {
+            "type": "color",
+            "label": "colorForm"
+        },
+        {
+            "type": "color",
+            "label": "colorTo"
+        },
+        {
+            "type": "text",
+            "label": "stops"
+        },
+        {
+            "type": "text",
+            "label": "opacityForm"
+        },
+        {
+            "type": "text",
+            "label": "opacityTo"
+        },
+        {
+            "label": "dropShadow > crosshairs > xaxis",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "enabled",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "top"
+        },
+        {
+            "type": "text",
+            "label": "left"
+        },
+        {
+            "type": "text",
+            "label": "blur"
+        },
+        {
+            "type": "text",
+            "label": "opacity"
+        },
+        {
+            "label": "tooltip > xaxis",
+            "heading": true
+        },
+        {
+            "type": "select",
+            "label": "enabled",
+            "options": [
+                "true",
+                "false"
+            ]
+        },
+        {
+            "type": "text",
+            "label": "offsetY"
+        },
+        {
+            "label": "style > tooltip > xaxis",
+            "heading": true
+        },
+        {
+            "type": "text",
+            "label": "fontSize"
+        },
+        {
+            "type": "text",
+            "label": "fontFamily"
+        }
+    ]
+}
+]
