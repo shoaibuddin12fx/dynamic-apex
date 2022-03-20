@@ -9,14 +9,16 @@
             "options": [
                 "light",
                 "dark"
-            ]
+            ],
+            "key":"theme.mode"
         },
         {
             "type": "text",
-            "label": "palette"
+            "label": "palette",
+            "key":"theme.palette"
         },
         {
-            "label": "theme >  monochrome",
+            "label": "theme > monochrome",
             "heading": true
         },
         {
@@ -25,11 +27,13 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key":"theme.monochrome.enabled"
         },
         {
             "type": "color",
-            "label": "color"
+            "label": "color",
+            "key":"theme.monochrome.color"
         },
         {
             "type": "select",
@@ -37,11 +41,13 @@
             "options": [
                 "light",
                 "dark"
-            ]
+            ],
+            "key":"theme.monochrome.shadeTo"
         },
         {
             "type": "range",
-            "label": "shadeIntensity"
+            "label": "shadeIntensity",
+            "key":"theme.monochrome.shadeIntensity"
         }
     ]
 }
