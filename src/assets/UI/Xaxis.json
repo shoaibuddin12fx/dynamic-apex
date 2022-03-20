@@ -57,12 +57,14 @@
         },
         {
             "type": "text",
-            "label": "decimalinfloat",
+            "label": "decimalin float",
             "key": "xaxis.decimalinfloat"
         },
         {
-            "type": "text",
-            "label": "overwritecategories",
+            "type": "array",
+            "arrayOf": "text",
+            "values": [],
+            "label": "overwrite categories",
             "key": "xaxis.overwritecategories"
         },
         {
@@ -88,17 +90,17 @@
             "key": "xaxis.labels.show"
         },
         {
-            "type": "select",
-            "label": "rotate",
-            "options": [
-                "true",
-                "false"
-            ],
+            "type": "range",
+            "selected_value": 0,
+            "min": -360,
+            "max": 360,
+            "step": 45,
+            "label": "rotate",            
             "key": "xaxis.labels.rotate"
         },
         {
             "type": "select",
-            "label": "rotateAlways",
+            "label": "rotate always",
             "options": [
                 "true",
                 "false"
@@ -107,7 +109,7 @@
         },
         {
             "type": "select",
-            "label": "hideOverlapingLabels",
+            "label": "hide Overlaping Labels",
             "options": [
                 "true",
                 "false"
@@ -116,7 +118,7 @@
         },
         {
             "type": "select",
-            "label": "showDuplicates",
+            "label": "show duplicates",
             "options": [
                 "true",
                 "false"
@@ -134,41 +136,86 @@
         },
         {
             "type": "text",
-            "label": "minHeight",
+            "label": "min Height",
             "key": "xaxis.labels.minHeight"
         },
         {
             "type": "text",
             "label": "maxHeight",
             "key": "xaxis.label.maxHeight"
+        },        
+        {
+            "type": "text",
+            "label": "offsetX",
+            "key": "xaxis.label.offsetX"
         },
         {
-            "label": "style",
+            "type": "text",
+            "label": "offsetY",
+            "key": "xaxis.label.offsetY"
+        },
+        {
+            "type": "text",
+            "label": "format",
+            "key": "xaxis.label.format"
+        },
+        {
+            "label": "labels > datetime",
             "heading": true
         },
         {
             "type": "select",
-            "label": "colors",
+            "label": "datetime UTC",
             "options": [
-                "red",
-                "blue",
-                "yellow"
+                "true",
+                "false"
             ],
+            "key": "xaxis.label.datetimeUTC"
+        },
+        {
+            "type": "text",
+            "label": "year",
+            "key": "xaxis.label.datetimeFormatter.year"
+        },
+        {
+            "type": "text",
+            "label": "month",
+            "key": "xaxis.label.datetimeFormatter.month"
+        },
+        {
+            "type": "text",
+            "label": "day",
+            "key": "xaxis.label.datetimeFormatter.day"
+        },
+        {
+            "type": "text",
+            "label": "hour",
+            "key": "xaxis.label.datetimeFormatter.hour"
+        },
+        {
+            "label": "labels > style",
+            "heading": true
+        },
+        {
+            "type": "array",
+            "arrayOf": "color",
+            "values": [],
+            "label": "colors",            
             "key": "xaxis.label.style.colors"
         },
         {
             "type": "text",
-            "label": "fontSize",
+            "label": "font Size",
             "key": "xaxis.label.style.fontSize"
         },
         {
             "type": "text",
-            "label": "fontFamily",
+            "label": "font Family",
             "key": "xaxis.label.style.fontFamily"
         },
         {
             "type": "text",
-            "label": "fontWeight",
+            "label": "font Weight",
             "key": "xaxis.label.style.fontWeight"
         },
         {
@@ -176,54 +223,47 @@
             "label": "cssClass",
             "key": "xaxis.label.style.cssClass"
         },
+        
         {
-            "type": "text",
-            "label": "offsetX",
-            "key": "xaxis.label.style.offsetX"
-        },
-        {
-            "type": "text",
-            "label": "offsetY",
-            "key": "xaxis.label.style.offsetY"
-        },
-        {
-            "type": "text",
-            "label": "format",
-            "key": "xaxis.label.style.format"
+            "label": "axis Border",
+            "heading": true
         },
         {
             "type": "select",
-            "label": "datetimeUTC",
+            "label": "show",
             "options": [
                 "true",
                 "false"
             ],
-            "key": "xaxis.label.style.datetimeUTC"
+            "key": "xaxis.axisBorder.show"
         },
         {
-            "label": "datetimeFormatters",
-            "heading": true
-        },
-        {
-            "type": "text",
-            "label": "year",
-            "key": "xaxis.label.style.datetimeFormatters.show"
+            "type": "color",
+            "label": "color",
+            "key": "xaxis.axisBorder.color"
         },
         {
             "type": "text",
-            "label": "month",
-            "key": "xaxis.label.style.datetimeFormatters.text"
+            "label": "height",
+            "key": "xaxis.axisBorder.height"
         },
         {
             "type": "text",
-            "label": "day"
+            "label": "width",
+            "key": "xaxis.axisBorder.width"
         },
         {
             "type": "text",
-            "label": "hour"
+            "label": "offsetX",
+            "key": "xaxis.axisBorder.offsetX"
         },
         {
-            "label": "axisBorder > xaxis",
+            "type": "text",
+            "label": "offsetY",
+            "key": "xaxis.axisBorder.offsetY"
+        },
+        {
+            "label": "axis Ticks",
             "heading": true
         },
         {
@@ -232,47 +272,22 @@
             "options": [
                 "true",
                 "false"
-            ]
-        },
-        {
-            "type": "color",
-            "label": "color"
-        },
-        {
-            "type": "text",
-            "label": "height"
-        },
-        {
-            "type": "text",
-            "label": "width"
-        },
-        {
-            "type": "text",
-            "label": "offsetX"
-        },
-        {
-            "type": "text",
-            "label": "offsetY"
-        },
-        {
-            "label": "axisTicks > xaxis",
-            "heading": true
+            ],
+            "key": "xaxis.axisTicks.show"
         },
         {
             "type": "select",
-            "label": "show",
+            "label": "border Type",
             "options": [
-                "true",
-                "false"
-            ]
-        },
-        {
-            "type": "text",
-            "label": "borderType"
+                "solid",
+                "dotted"
+            ],
+            "key": "xaxis.axisTicks.borderType"
         },
         {
             "type": "color",
-            "label": "color"
+            "label": "color",
+            "key": "xaxis.axisTicks.color"
         },
         {
             "type": "select",
@@ -280,58 +295,69 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key": "xaxis.axisTicks.height"
         },
         {
             "type": "text",
-            "label": "offsetX"
+            "label": "offsetX",
+            "key": "xaxis.axisTicks.offsetX"
         },
         {
             "type": "text",
-            "label": "offsetY"
+            "label": "offsetY",
+            "key": "xaxis.axisTicks.offsetY"
         },
         {
-            "label": "title > xaxis",
+            "label": "title",
             "heading": true
         },
         {
             "type": "text",
-            "label": "text"
+            "label": "text",
+            "key": "xaxis.title.text"
         },
         {
             "type": "text",
-            "label": "offsetX"
+            "label": "offsetX",
+            "key": "xaxis.title.offsetX"
         },
         {
             "type": "text",
-            "label": "offsetY"
+            "label": "offsetY",
+            "key": "xaxis.title.offsetY"
         },
         {
-            "label": "style > title > axixs",
+            "label": "title > style",
             "heading": true
         },
         {
             "type": "color",
-            "label": "color"
+            "label": "color",
+            "key": "xaxis.title.style.color"
         },
         {
             "type": "text",
-            "label": "fontSize"
+            "label": "font Size",
+            "key": "xaxis.title.style.fontSize"
         },
         {
             "type": "text",
-            "label": "fontFamily"
+            "label": "font Family",
+            "key": "xaxis.title.style.fontFamily"
         },
         {
             "type": "text",
-            "label": "fontWeight"
+            "label": "font Weight",
+            "key": "xaxis.title.style.fontWeight"
         },
         {
             "type": "text",
-            "label": "cssClass"
+            "label": "css Class",
+            "key": "xaxis.title.style.cssClass"
         },
         {
-            "label": "crosshairs > xaxis",
+            "label": "crosshairs",
             "heading": true
         },
         {
@@ -340,74 +366,97 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key": "xaxis.crosshairs.show"
         },
         {
             "type": "text",
-            "label": "width"
+            "label": "width",
+            "key": "xaxis.crosshairs.width"
+        },
+        {
+            "type": "select",
+            "options": [
+                "back",
+                "front"
+            ],
+            "label": "position",
+            "key": "xaxis.crosshairs.position"
         },
         {
             "type": "text",
-            "label": "position"
+            "label": "opacity",
+            "key": "xaxis.crosshairs.opacity"
         },
         {
-            "type": "text",
-            "label": "opacity"
-        },
-        {
-            "label": "stroke > crosshairs > xaxis",
+            "label": "crosshairs > stroke",
             "heading": true
         },
         {
             "type": "color",
-            "label": "color"
+            "label": "color",
+            "key": "xaxis.crosshairs.stroke.color"
         },
         {
             "type": "text",
-            "label": "width"
+            "label": "width",
+            "key": "xaxis.crosshairs.stroke.width"
         },
         {
             "type": "text",
-            "label": "dashArray"
+            "label": "dash Array",
+            "key": "xaxis.crosshairs.stroke.dashArray"
         },
         {
-            "label": "fill > crosshairs > xaxis",
+            "label": "crosshairs > fill",
             "heading": true
         },
         {
-            "type": "text",
-            "label": "type"
+            "type": "select",
+            "options": [
+                "solid",
+                "gradient"
+            ],
+            "label": "type",
+            "key": "xaxis.crosshairs.fill.type"
         },
         {
             "type": "color",
-            "label": "color"
+            "label": "color",
+            "key": "xaxis.crosshairs.fill.color"
         },
         {
-            "label": "gradient > fill > crosshairs > xaxis",
+            "label": "crosshairs > fill > gradient",
             "heading": true
         },
         {
             "type": "color",
-            "label": "colorForm"
+            "label": "color Form",
+            "key": "xaxis.crosshairs.fill.gradient.colorForm"
         },
         {
             "type": "color",
-            "label": "colorTo"
+            "label": "color To",
+            "key": "xaxis.crosshairs.fill.gradient.colorTo"
         },
         {
-            "type": "text",
+            "type": "array",
+            "arrayOf": "text",
+            "values": [],
             "label": "stops"
         },
         {
             "type": "text",
-            "label": "opacityForm"
+            "label": "opacity Form",
+            "key": "xaxis.crosshairs.fill.gradient.opacityForm"
         },
         {
             "type": "text",
-            "label": "opacityTo"
+            "label": "opacity To",
+            "key": "xaxis.crosshairs.fill.gradient.opacityTo"
         },
         {
-            "label": "dropShadow > crosshairs > xaxis",
+            "label": "crosshairs > dropShadow",
             "heading": true
         },
         {
@@ -416,26 +465,31 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key": "xaxis.crosshairs.dropShadow.enabled"
         },
         {
             "type": "text",
-            "label": "top"
+            "label": "top",
+            "key": "xaxis.crosshairs.dropShadow.top"
         },
         {
             "type": "text",
-            "label": "left"
+            "label": "left",
+            "key": "xaxis.crosshairs.dropShadow.left"
         },
         {
             "type": "text",
-            "label": "blur"
+            "label": "blur",
+            "key": "xaxis.crosshairs.dropShadow.blur"
         },
         {
             "type": "text",
-            "label": "opacity"
+            "label": "opacity",
+            "key": "xaxis.crosshairs.dropShadow.opacity"
         },
         {
-            "label": "tooltip > xaxis",
+            "label": "tooltip",
             "heading": true
         },
         {
@@ -444,23 +498,27 @@
             "options": [
                 "true",
                 "false"
-            ]
+            ],
+            "key": "xaxis.tooltip.enabled"
         },
         {
             "type": "text",
-            "label": "offsetY"
+            "label": "offsetY",
+            "key": "xaxis.tooltip.offsetY"
         },
         {
-            "label": "style > tooltip > xaxis",
+            "label": "tooltip > style",
             "heading": true
         },
         {
             "type": "text",
-            "label": "fontSize"
+            "label": "font Size",
+            "key": "xaxis.tooltip.style.fontSize"
         },
         {
             "type": "text",
-            "label": "fontFamily"
+            "label": "font Family",
+            "key": "xaxis.tooltip.style.fontFamily"
         }
     ]
 }
