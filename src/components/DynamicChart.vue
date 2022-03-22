@@ -1,6 +1,7 @@
 <template>
   <div>
     <apexchart
+      ref="realtimeChart"
       width="500"
       type="bar"
       :options="options"
@@ -37,6 +38,7 @@ export default {
           data: [30, 40, 45, 50, 49, 60, 70, 91, 40],
         },
       ],
+      chart: undefined,
     };
   },
   methods: {
@@ -52,6 +54,21 @@ export default {
       _.set(op, value.key, value.selected_value);
       this.options = op;
       console.log("send dynamic options", value);
+    });
+    bus.$on("change chart Type", (data) => {
+      this.chart = data;
+      console.log(this.chart);
+      this.series[0].type = this.chart;
+      console.log(this.series[0]);
+      this.$refs.realtimeChart.updateSeries(
+        [
+          {
+            type: this.series[0].type,
+          },
+        ],
+        false,
+        true
+      );
     });
   },
 };
