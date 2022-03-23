@@ -77,7 +77,8 @@
           role="tabpanel"
         >
           <b-card-body>
-            <form>
+
+            <form >
               <div v-for="element of obj.elements" :key="element.index">
                 <div v-if="element.heading" class="headings">
                   {{ element.label }}
@@ -156,7 +157,7 @@
                 </div>
               </div>
             </form>
-            <b-card-text>{{ text }}</b-card-text>
+            <!-- <b-card-text>{{ text }}</b-card-text> -->
           </b-card-body>
         </b-collapse>
       </b-card>

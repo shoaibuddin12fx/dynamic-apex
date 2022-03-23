@@ -1,13 +1,90 @@
 [
-{
+  {
     "id": 1,
     "label": "annotations",
     "elements": [
-        {
-            "label": "colors",
-            "type": "color",
-            "key": []
-        }
+      {
+        "label": "position",
+        "type": "select",
+        "options": ["front", "back"],
+        "key": "annotations.position"
+      },
+      {
+        "label": "y-axis",
+        "heading": true
+      },
+      {
+        "label": "Add y-axis ",
+        "type": "array",
+        "arrayOf": "objects",
+        "obj": [
+          {
+            "label": "y",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.y"
+          },
+          {
+            "label": "y2",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.y2"
+          },
+          {
+            "label": "Stroke Dash Array",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.strokeDashArray"
+          },
+          {
+            "label": "Border Color",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.borderColor"
+          },
+          {
+            "label": "fill Color",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.fillColor"
+          },
+          {
+            "label": "opacity",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.opacity"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.offsetX"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.offsetY"
+          },
+          {
+            "label": "width",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.width"
+          },
+          {
+            "label": "yAxisIndex",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.yAxisIndex"
+          },
+          {
+            "label": "yAxisIndex",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.yAxisIndex"
+          },
+          {
+            "label": "y-axis > label",
+            "heading": true
+          },
+          {
+            "label": "text",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.text"
+          }
+        ],
+        "values": []
+      }
     ]
-}
+  }
 ]
