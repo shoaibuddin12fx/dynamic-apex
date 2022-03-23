@@ -6,7 +6,8 @@
       {
         "label": "data label",
         "type": "select",
-        "options": ["true", "false"]
+        "options": ["true", "false"],
+        "key": "dataLabels.enable"
       },
       {
         "label": "enabledOnSeries",

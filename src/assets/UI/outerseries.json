@@ -1,0 +1,16 @@
+{
+  "chartTypes": [
+    "line",
+    "area",
+    "bar",
+    "radar",
+    "histogram",
+    "pie",
+    "donut",
+    "radialBar",
+    "scatter",
+    "bubble",
+    "heatmap",
+    "candlestick"
+  ]
+}

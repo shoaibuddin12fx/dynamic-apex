@@ -63,6 +63,7 @@
         </div>
       </div>
     </div> -->
+
     <div class="accordion" role="tablist" v-for="obj of json" :key="obj.id">
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
@@ -273,9 +274,9 @@ export default {
       ...title,
       ...tooltip,
       ...Xaxis,
-      ...Yaxis
+      ...Yaxis,
     ];
-    console.log("json values",this.json);
+    console.log("json values", this.json);
     this.setOptionValues();
   },
 };
