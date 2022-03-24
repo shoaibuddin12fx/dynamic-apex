@@ -78,12 +78,586 @@
             "heading": true
           },
           {
+            "label": "border Color",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.borderColor"
+          },
+          {
+            "label": "border Width",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.borderWidth"
+          },
+          {
+            "label": "border Radius",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.borderRadius"
+          },
+          {
             "label": "text",
             "type": "text",
             "key": "annotations.yaxis.${index}.label.text"
+          },
+          {
+            "label": "text anchor",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.textanchor"
+          },
+          {
+            "label": "position",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.position"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.offsetX"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.offsetY"
+          },
+          {
+            "label": "y-axis > label > style",
+            "heading": true
+          },
+          {
+            "label": "background",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.background"
+          },
+          {
+            "label": "color",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.color"
+          },
+          {
+            "label": "font Size",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.fontSize"
+          },
+          {
+            "label": "font Weight",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.fontWeight"
+          },
+          {
+            "label": "font Family",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.fontFamily"
+          },
+          {
+            "label": "css Class",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.cssClass"
+          },
+          {
+            "label": "y-axis > label > style > padding",
+            "heading": true
+          },
+          {
+            "label": "left",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.left"
+          },
+          {
+            "label": "right",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.right"
+          },
+          {
+            "label": "top",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.top"
+          },
+          {
+            "label": "bottom",
+            "type": "text",
+            "key": "annotations.yaxis.${index}.label.bottom"
           }
         ],
         "values": []
+      },
+      {
+        "label": "x-axis",
+        "heading": true
+      },
+      {
+        "label": "Add x-axis ",
+        "type": "array",
+        "arrayOf": "objects",
+        "obj": [
+          {
+            "label": "x",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.x"
+          },
+          {
+            "label": "x2",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.x2"
+          },
+          {
+            "label": "Stroke Dash Array",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.strokeDashArray"
+          },
+          {
+            "label": "Border Color",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.borderColor"
+          },
+          {
+            "label": "fill Color",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.fillColor"
+          },
+          {
+            "label": "opacity",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.opacity"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.offsetX"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.offsetY"
+          },
+          {
+            "label": "x-axis > label",
+            "heading": true
+          },
+          {
+            "label": "border Color",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.borderColor"
+          },
+          {
+            "label": "border Width",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.borderWidth"
+          },
+          {
+            "label": "border Radius",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.borderRadius"
+          },
+          {
+            "label": "text",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.text"
+          },
+          {
+            "label": "text anchor",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.textanchor"
+          },
+          {
+            "label": "position",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.position"
+          },
+          {
+            "label": "orientation",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.orientation"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.offsetX"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.offsetY"
+          },
+          {
+            "label": "x-axis > label > style",
+            "heading": true
+          },
+          {
+            "label": "background",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.background"
+          },
+          {
+            "label": "color",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.color"
+          },
+          {
+            "label": "font Size",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.fontSize"
+          },
+          {
+            "label": "font Weight",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.fontWeight"
+          },
+          {
+            "label": "font Family",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.fontFamily"
+          },
+          {
+            "label": "css Class",
+            "type": "text",
+            "key": "annotations.xaxis.${index}.label.cssClass"
+          }
+        ],
+        "values": []
+      },
+      {
+        "label": "points",
+        "heading": true
+      },
+      {
+        "label": "Add points ",
+        "type": "array",
+        "arrayOf": "objects",
+        "obj": [
+          {
+            "label": "x",
+            "type": "text",
+            "key": "annotations.points.${index}.x"
+          },
+          {
+            "label": "y",
+            "type": "text",
+            "key": "annotations.points.${index}.y"
+          },
+          {
+            "label": "yAxisIndex",
+            "type": "text",
+            "key": "annotations.points.${index}.yAxisIndex"
+          },
+          {
+            "label": "seriesIndex",
+            "type": "text",
+            "key": "annotations.points.${index}.seriesIndex"
+          },
+          {
+            "label": "points > marker",
+            "heading": true
+          },
+          {
+            "label": "size",
+            "type": "text",
+            "key": "annotations.points.${index}.size"
+          },
+          {
+            "label": "stroke Color",
+            "type": "text",
+            "key": "annotations.points.${index}.strokeColor"
+          },
+          {
+            "label": "stroke Width",
+            "type": "text",
+            "key": "annotations.points.${index}.strokeWidth"
+          },
+          {
+            "label": "shape",
+            "type": "text",
+            "key": "annotations.points.${index}.shape"
+          },
+          {
+            "label": "radius",
+            "type": "text",
+            "key": "annotations.points.${index}.radius"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "annotations.points.${index}.label.offsetX"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "annotations.points.${index}.label.offsetY"
+          },
+          {
+            "label": "css Class",
+            "type": "text",
+            "key": "annotations.points.${index}.label.cssClass"
+          },
+          {
+            "label": "points > label",
+            "heading": true
+          },
+          {
+            "label": "border Color",
+            "type": "text",
+            "key": "annotations.points.${index}.label.borderColor"
+          },
+          {
+            "label": "border Width",
+            "type": "text",
+            "key": "annotations.points.${index}.label.borderWidth"
+          },
+          {
+            "label": "border Radius",
+            "type": "text",
+            "key": "annotations.points.${index}.label.borderRadius"
+          },
+          {
+            "label": "text",
+            "type": "text",
+            "key": "annotations.points.${index}.label.text"
+          },
+          {
+            "label": "text anchor",
+            "type": "text",
+            "key": "annotations.points.${index}.label.textanchor"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "annotations.points.${index}.label.offsetX"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "annotations.points.${index}.label.offsetY"
+          },
+          {
+            "label": "points > label > style",
+            "heading": true
+          },
+          {
+            "label": "background",
+            "type": "text",
+            "key": "annotations.points.${index}.label.background"
+          },
+          {
+            "label": "color",
+            "type": "text",
+            "key": "annotations.points.${index}.label.color"
+          },
+          {
+            "label": "font Size",
+            "type": "text",
+            "key": "annotations.points.${index}.label.fontSize"
+          },
+          {
+            "label": "font Weight",
+            "type": "text",
+            "key": "annotations.points.${index}.label.fontWeight"
+          },
+          {
+            "label": "font Family",
+            "type": "text",
+            "key": "annotations.points.${index}.label.fontFamily"
+          },
+          {
+            "label": "css Class",
+            "type": "text",
+            "key": "annotations.points.${index}.label.cssClass"
+          },
+          {
+            "label": "points > label > style > padding",
+            "heading": true
+          },
+          {
+            "label": "left",
+            "type": "text",
+            "key": "annotations.points.${index}.label.left"
+          },
+          {
+            "label": "right",
+            "type": "text",
+            "key": "annotations.points.${index}.label.right"
+          },
+          {
+            "label": "top",
+            "type": "text",
+            "key": "annotations.points.${index}.label.top"
+          },
+          {
+            "label": "bottom",
+            "type": "text",
+            "key": "annotations.points.${index}.label.bottom"
+          }
+        ],
+        "values": []
+      },
+      {
+        "label": "points > image",
+        "heading": true
+      },
+      {
+        "label": "Add image ",
+        "type": "array",
+        "arrayOf": "objects",
+        "obj": [
+          {
+            "label": "path",
+            "type": "text",
+            "key": "annotations.image.${index}.path"
+          },
+          {
+            "label": "Width",
+            "type": "text",
+            "key": "annotations.image.${index}.width"
+          },
+          {
+            "label": "height",
+            "type": "text",
+            "key": "annotations.image.${index}.height"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "annotations.image.${index}.offsetX"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "annotations.image.${index}.offsetY"
+          }
+        ]
+      },
+      {
+        "label": "texts",
+        "heading": true
+      },
+      {
+        "label": "Add texts ",
+        "type": "array",
+        "arrayOf": "objects",
+        "obj": [
+          {
+            "label": "X",
+            "type": "text",
+            "key": "annotations.texts.${index}.X"
+          },
+          {
+            "label": "Y",
+            "type": "text",
+            "key": "annotations.texts.${index}.y"
+          },
+          {
+            "label": "text",
+            "type": "text",
+            "key": "annotations.texts.${index}.text"
+          },
+          {
+            "label": "text Anchor",
+            "type": "text",
+            "key": "annotations.texts.${index}.textAnchor"
+          },
+          {
+            "label": "font Color",
+            "type": "text",
+            "key": "annotations.texts.${index}.fontColor"
+          },
+          {
+            "label": "font Size",
+            "type": "text",
+            "key": "annotations.texts.${index}.fontSize"
+          },
+          {
+            "label": "font Family",
+            "type": "text",
+            "key": "annotations.texts.${index}.fontFamily"
+          },
+          {
+            "label": "font Weight",
+            "type": "text",
+            "key": "annotations.texts.${index}.fontWeight"
+          },
+          {
+            "label": "append To",
+            "type": "text",
+            "key": "annotations.texts.${index}.appendTo"
+          },
+          {
+            "label": "background Color",
+            "type": "text",
+            "key": "annotations.texts.${index}.backgroundColor"
+          },
+          {
+            "label": "border Color",
+            "type": "text",
+            "key": "annotations.texts.${index}.borderColor"
+          },
+          {
+            "label": "border Radius",
+            "type": "text",
+            "key": "annotations.texts.${index}.borderRadius"
+          },
+          {
+            "label": "border Width",
+            "type": "text",
+            "key": "annotations.texts.${index}.borderWidth"
+          },
+          {
+            "label": "padding Left",
+            "type": "text",
+            "key": "annotations.texts.${index}.paddingLeft"
+          },
+          {
+            "label": "padding Right",
+            "type": "text",
+            "key": "annotations.texts.${index}.paddingRight"
+          },
+          {
+            "label": "padding Top",
+            "type": "text",
+            "key": "annotations.texts.${index}.paddingTop"
+          },
+          {
+            "label": "padding Bottom",
+            "type": "text",
+            "key": "annotations.texts.${index}.paddingBottom"
+          }
+        ]
+      },
+      {
+        "label": "images",
+        "heading": true
+      },
+      {
+        "label": "Add images ",
+        "type": "array",
+        "arrayOf": "objects",
+        "obj": [
+          {
+            "label": "path",
+            "type": "text",
+            "key": "annotations.images.${index}.path"
+          },
+          {
+            "label": "x",
+            "type": "text",
+            "key": "annotations.images.${index}.x"
+          },
+          {
+            "label": "y",
+            "type": "text",
+            "key": "annotations.images.${index}.y"
+          },
+          {
+            "label": "width",
+            "type": "text",
+            "key": "annotations.images.${index}.width"
+          },
+          {
+            "label": "height",
+            "type": "text",
+            "key": "annotations.images.${index}.height"
+          },
+          {
+            "label": "append To",
+            "type": "text",
+            "key": "annotations.images.${index}.appendTo"
+          }
+        ]
       }
     ]
   }
