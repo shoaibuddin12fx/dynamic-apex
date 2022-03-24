@@ -51,8 +51,10 @@ export default {
     bus.$on("send dynamic options", (data) => {
       const value = { ...data };
       var op = { ...this.options };
+      console.log("recieving values", value);
       _.set(op, value.key, value.selected_value);
       this.options = op;
+      console.log("options", this.options);
       console.log("send dynamic options", value);
     });
     bus.$on("change chart Type", (data) => {
