@@ -74,7 +74,7 @@
       {
         "label": "colors",
         "type": "color",
-        "key": "dataLabels.style.colors"
+        "key": "dataLabels.style.color"
       },
       {
         "label": "background",

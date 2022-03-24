@@ -134,6 +134,21 @@ export default {
         true
       );
     });
+    bus.$on("send uploaded json", (data) => {
+      console.log("previous series data", this.series[0].data);
+      console.log("data", data);
+      this.series[0].data = data.data;
+            this.$refs.realtimeChart.updateSeries(
+        [
+          {
+            data: this.series[0].data,
+          },
+        ],
+        false,
+        true
+      );
+      console.log("new series data", this.series[0].data);
+    })
   },
 };
 </script>

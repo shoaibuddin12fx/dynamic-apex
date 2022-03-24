@@ -1,19 +1,20 @@
 [
-{
+  {
     "id": 14,
     "label": "series",
-    "inputs": true,
-    "elements": [
-        {
-            "type": "text",
-            "label": "name",
-            "key":"series.name"
-        },
-        {
-            "type": "text",
-            "label": "data",
-            "key":"series.data"
-        }
+    "type": "array",
+    "arrayOf": "objects",
+    "obj": [
+      {
+        "type": "text",
+        "label": "name",
+        "key": "series.${index}.name"
+      },
+      {
+        "type": "text",
+        "label": "data",
+        "key": "series.${index}.data"
+      }
     ]
-}
+  }
 ]
