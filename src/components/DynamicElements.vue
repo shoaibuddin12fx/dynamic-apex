@@ -133,14 +133,14 @@
                       </div>
 
                       <div
-                        class="form-group row"
+                        class="form-group row my-3"
                         v-for="(v, index) of element.values"
-                        :key="v"
+                        :key="index"
                       >
-                        <label class="col-sm-2 col-form-label"
+                        <label class="col-sm-1 col-form-label btn btn-info index-highlight"
                           >{{ index }}
                         </label>
-                        <div class="col-sm-8">
+                        <div class="col-sm-11">
                           <input
                             v-if="element.arrayOf == 'color'"
                             type="color"
@@ -151,6 +151,30 @@
                             type="text"
                             class="form-control"
                           />
+
+                          <div v-if="element.arrayOf == 'objects'">
+                            <div class="form-group row" v-for="(vv, index) of v" :key="index">
+
+                              <div v-if="vv.heading" class="form-label headings">
+                                {{ vv.label }}
+                              </div>
+
+                              <label v-if="!vv.heading" class="col-sm-6 col-form-label"
+                                >{{ vv.label }}</label>
+                                <div class="col-sm-6">
+                                  <input
+                                    v-if="vv.type == 'text'"
+                                    v-on:change="passChildOptions($event, vv, index)"
+                                    type="text"
+                                    class="form-control"
+                                  />
+                                </div>
+                              
+                            </div>
+                            {{v}}                            
+                          </div>
+                          
+
                         </div>
                       </div>
                     </div>
@@ -228,14 +252,24 @@ export default {
     };
   },
   methods: {
-    passOptions($event, element) {
-      console.log(element, $event.target.value);
+    passOptions($event, element, index = null) {
+      console.log(index, element, $event.target.value);
 
       var obj = { ...element };
       obj["selected_value"] = $event.target.value;
       //   console.log(this.options.chart);
       bus.$emit("send dynamic options", obj);
     },
+
+    passChildOptions($event, element, index = null) {
+      console.log(index, element, $event.target.value);
+
+      // var obj = { ...element };
+      // obj["selected_value"] = $event.target.value;
+      // //   console.log(this.options.chart);
+      // bus.$emit("send dynamic options", obj);
+    },
+
     setOptionValues() {
       this.options = {
         chart: this.json.filter((value) => value.id == 2),
@@ -249,6 +283,10 @@ export default {
       if (element.arrayOf == "text") {
         element.values.push("");
       }
+      if(element.arrayOf == "objects"){
+        element.values.push(element.obj);
+      }
+      
     },
   },
   mounted() {
@@ -298,12 +336,20 @@ export default {
 }
 
 .add-button {
-  background: transparent;
+  background: purple;
   border: 1px solid lightgray;
   padding: 3px 15px;
   font-size: 12px;
   border-radius: 10px;
-  width: 65px;
+  width: 75px;
   cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.index-highlight{
+  /* background: green; */
+  padding: 5px 0;
+
 }
 </style>

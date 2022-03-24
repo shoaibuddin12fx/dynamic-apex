@@ -1,14 +1,14 @@
 [
-{
+  {
     "id": 3,
     "label": "Colors",
     "elements": [
-        {
-            "label": "Add Colors ",
-            "type": "array",
-            "arrayOf": "color",
-            "values": []
-        }
+      {
+        "label": "Add Colors ",
+        "type": "array",
+        "arrayOf": "colors",
+        "values": []
+      }
     ]
-}
+  }
 ]
