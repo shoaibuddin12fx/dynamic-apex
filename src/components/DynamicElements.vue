@@ -264,10 +264,11 @@ export default {
     passChildOptions($event, element, index = null) {
       console.log(index, element, $event.target.value);
 
-      // var obj = { ...element };
-      // obj["selected_value"] = $event.target.value;
-      // //   console.log(this.options.chart);
-      // bus.$emit("send dynamic options", obj);
+      var obj = { ...element };
+      obj["selected_value"] = $event.target.value;
+      obj["index"] = index;
+      //   console.log(this.options.chart);
+      bus.$emit("send dynamic options", obj);
     },
 
     setOptionValues() {
