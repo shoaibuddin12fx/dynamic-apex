@@ -1,48 +1,42 @@
 [
-{
+  {
     "id": 16,
     "label": "stroke",
     "inputs": true,
     "elements": [
-        {
-            "type": "select",
-            "label": "show",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"stroke.show"
-        },
-        {
-            "type": "select",
-            "label": "curve",
-            "options": [
-                "smooth",
-                "straight",
-                "stepline"
-            ],
-            "key":"stroke.curve"
-        },
-        {
-            "type": "text",
-            "label": "lineCap",
-            "key":"stroke.lineCap"
-        },
-        {
-            "type": "color",
-            "label": "color",
-            "key":"stroke.colors"
-        },
-        {
-            "type": "text",
-            "label": "width",
-            "key":"stroke.width"
-        },
-        {
-            "type": "text",
-            "label": "dashArray",
-            "key":"stroke.dashArray"
-        }
+      {
+        "type": "select",
+        "label": "show",
+        "options": ["true", "false"],
+        "key": "stroke.show"
+      },
+      {
+        "type": "select",
+        "label": "curve",
+        "options": ["smooth", "straight", "stepline"],
+        "key": "stroke.curve"
+      },
+      {
+        "type": "select",
+        "label": "lineCap",
+        "options": ["Butt", "Square", "Round"],
+        "key": "stroke.lineCap"
+      },
+      {
+        "type": "color",
+        "label": "color",
+        "key": "stroke.colors"
+      },
+      {
+        "type": "text",
+        "label": "width",
+        "key": "stroke.width"
+      },
+      {
+        "type": "text",
+        "label": "dashArray",
+        "key": "stroke.dashArray"
+      }
     ]
-}
+  }
 ]

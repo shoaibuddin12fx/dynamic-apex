@@ -4,9 +4,9 @@
     "label": "Colors",
     "elements": [
       {
-        "label": "Add Colors ",
+        "label": "Add Colors",
         "type": "array",
-        "arrayOf": "color",
+        "arrayOf": "colors",
         "values": []
       }
     ]

@@ -1,18 +1,14 @@
 [
-{
+  {
     "id": 8,
     "label": "labels",
     "elements": [
-        {
-            "label": "label",
-            "type": "select",
-            "options": [
-                "1",
-                "2",
-                "3"
-            ],
-            "key":[]
-        }
+      {
+        "label": "label",
+        "type": "select",
+        "options": ["Apples", "Oranges", "Berries", "Grapes"],
+        "key": []
+      }
     ]
-}
+  }
 ]
