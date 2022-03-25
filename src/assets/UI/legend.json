@@ -1,242 +1,192 @@
 [
-{
+  {
     "id": 9,
     "label": "legend",
     "elements": [
-        {
-            "label": "show legend",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.show"
-        },
-        {
-            "label": "show for single series",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.showForSingleSeries"
-        },
-        {
-            "label": "show for null series",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.showForNullSeries"
-        },
-        {
-            "label": "show for zero series",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.showForZeroSeries"
-        },
-        {
-            "label": "position",
-            "type": "select",
-            "options": [
-                "top",
-                "right",
-                "bottom",
-                "left"
-            ],
-            "key":"legend.position"
-        },
-        {
-            "label": "horizontal align",
-            "type": "select",
-            "options": [
-                "left",
-                "center",
-                "right"
-            ],
-            "key":"legend.horizontalAlign"
-        },
-        {
-            "label": "floating",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.floating"
-        },
-        {
-            "label": "font size",
-            "type": "text",
-            "key":"legend.fontSize"
-        },
-        {
-            "label": "font family",
-            "type": "select",
-            "options": [
-                "arial",
-                "serif",
-                "sans-serif",
-                "Helvetica"
-            ],
-            "key":"legend.fontFamily"
-        },
-        {
-            "label": "font weight",
-            "type": "text",
-            "key":"legend.fontWeight"
-        },
-        {
-            "label": "formatter",
-            "type": "text",
-            "key":"legend.formatter"
-        },
-        {
-            "label": "inverse order",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.inverseOrder"
-        },
-        {
-            "label": "width",
-            "type": "text",
-            "key":"legend.width"
-        },
-        {
-            "label": "height",
-            "type": "text",
-            "key":"legend.height"
-        },
-        {
-            "label": "tool tip hover formatter",
-            "type": "text",
-            "key":"legend.tooltipHoverFormatter"
-        },
-        {
-            "label": "custom legend items",
-            "type": "select",
-            "options": [
-                "click",
-                "mouse hover"
-            ],
-            "key":"legend.customLegendItems"
-        },
-        {
-            "label": "ofsetX",
-            "type": "text",
-            "key":"legend.offsetX"
-        },
-        {
-            "label": "ofsetY",
-            "type": "text",
-            "key":"legend.offsetY"
-        },
-        {
-            "label": "labels",
-            "heading": "true"
-        },
-        {
-            "label": "colors",
-            "type": "color",
-            "key":"legend.labels.colors"
-        },
-        {
-            "label": "use series color",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.labels.useSeriesColors"
-        },
-        {
-            "label": "markers",
-            "heading": "true"
-        },
-        {
-            "label": "width",
-            "type": "text",
-            "key":"legend.markers.width"
-        },
-        {
-            "label": "height",
-            "type": "text",
-            "key":"legend.markers.height"
-        },
-        {
-            "label": "stroke width",
-            "type": "text",
-            "key":"legend.markers.strokeWidth"
-        },
-        {
-            "label": "stroke color",
-            "type": "color",
-            "key":"legend.markers.strokeColor"
-        },
-        {
-            "label": "fill color",
-            "type": "color",
-            "key":"legend.markers.fillColors"
-        },
-        {
-            "label": "radius",
-            "type": "range",
-            "key":"legend.markers.radius"
-        },
-        {
-            "label": "ofsetX",
-            "type": "text",
-            "key":"legend.markers.offsetX"
-        },
-        {
-            "label": "ofsetY",
-            "type": "text",
-            "key":"legend.markers.offsetY"
-        },
-        {
-            "label": "item margin",
-            "heading": "true",
-            "key":"legend.markers.itemMargin"
-        },
-        {
-            "label": "horizontal",
-            "type": "text",
-            "key":"legend.markers.horizontal"
-        },
-        {
-            "label": "vertical",
-            "type": "text",
-            "key":"legend.markers.vertical"
-        },
-        {
-            "label": "on item click",
-            "heading": "true"
-        },
-        {
-            "label": "toggle series data",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.onItemClick.toggleDataSeries"
-        },
-        {
-            "label": "on item hover",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"legend.onItemClick.highlightDataSeries"
-        }
+      {
+        "label": "show legend",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.show"
+      },
+      {
+        "label": "show for single series",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.showForSingleSeries"
+      },
+      {
+        "label": "show for null series",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.showForNullSeries"
+      },
+      {
+        "label": "show for zero series",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.showForZeroSeries"
+      },
+      {
+        "label": "position",
+        "type": "select",
+        "options": ["top", "right", "bottom", "left"],
+        "key": "legend.position"
+      },
+      {
+        "label": "horizontal align",
+        "type": "select",
+        "options": ["left", "center", "right"],
+        "key": "legend.horizontalAlign"
+      },
+      {
+        "label": "floating",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.floating"
+      },
+      {
+        "label": "font size",
+        "type": "text",
+        "key": "legend.fontSize"
+      },
+      {
+        "label": "font family",
+        "type": "select",
+        "options": ["arial", "serif", "sans-serif", "Helvetica"],
+        "key": "legend.fontFamily"
+      },
+      {
+        "label": "font weight",
+        "type": "text",
+        "key": "legend.fontWeight"
+      },
+      {
+        "label": "inverse order",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.inverseOrder"
+      },
+      {
+        "label": "width",
+        "type": "text",
+        "key": "legend.width"
+      },
+      {
+        "label": "height",
+        "type": "text",
+        "key": "legend.height"
+      },
+      {
+        "label": "custom legend items",
+        "type": "select",
+        "options": ["click", "mouse hover"],
+        "key": "legend.customLegendItems"
+      },
+      {
+        "label": "ofsetX",
+        "type": "text",
+        "key": "legend.offsetX"
+      },
+      {
+        "label": "ofsetY",
+        "type": "text",
+        "key": "legend.offsetY"
+      },
+      {
+        "label": "labels",
+        "heading": "true"
+      },
+      {
+        "label": "colors",
+        "type": "color",
+        "key": "legend.labels.colors"
+      },
+      {
+        "label": "use series color",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.labels.useSeriesColors"
+      },
+      {
+        "label": "markers",
+        "heading": "true"
+      },
+      {
+        "label": "width",
+        "type": "text",
+        "key": "legend.markers.width"
+      },
+      {
+        "label": "height",
+        "type": "text",
+        "key": "legend.markers.height"
+      },
+      {
+        "label": "stroke width",
+        "type": "text",
+        "key": "legend.markers.strokeWidth"
+      },
+      {
+        "label": "stroke color",
+        "type": "color",
+        "key": "legend.markers.strokeColor"
+      },
+      {
+        "label": "fill color",
+        "type": "color",
+        "key": "legend.markers.fillColors"
+      },
+      {
+        "label": "radius",
+        "type": "range",
+        "key": "legend.markers.radius"
+      },
+      {
+        "label": "ofsetX",
+        "type": "text",
+        "key": "legend.markers.offsetX"
+      },
+      {
+        "label": "ofsetY",
+        "type": "text",
+        "key": "legend.markers.offsetY"
+      },
+      {
+        "label": "item margin",
+        "heading": "true",
+        "key": "legend.markers.itemMargin"
+      },
+      {
+        "label": "horizontal",
+        "type": "text",
+        "key": "legend.markers.horizontal"
+      },
+      {
+        "label": "vertical",
+        "type": "text",
+        "key": "legend.markers.vertical"
+      },
+      {
+        "label": "on item click",
+        "heading": "true"
+      },
+      {
+        "label": "toggle series data",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.onItemClick.toggleDataSeries"
+      },
+      {
+        "label": "on item hover",
+        "heading": "true"
+      },
+      {
+        "label": "Highlight Data Series",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "legend.onItemClick.highlightDataSeries"
+      }
     ]
-}
+  }
 ]

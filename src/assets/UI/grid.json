@@ -1,114 +1,102 @@
 [
-{
+  {
     "id": 7,
     "label": "grid",
     "elements": [
-        {
-            "label": "show grid",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"grid.show"
-        },
-        {
-            "label": "border color",
-            "type": "text",
-            "key":"grid.borderColor"
-        },
-        {
-            "label": "stroke dash array",
-            "type": "text",
-            "key":"grid.strokeDashArray"
-        },
-        {
-            "label": "position",
-            "type": "select",
-            "options": [
-                "back",
-                "front"
-            ],
-            "key":"grid.position"
-        },
-        {
-            "label": "x axis",
-            "heading": "true"
-        },
-        {
-            "label": "lines show",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"grid.xaxis.lines.show"
-        },
-        {
-            "label": "y axis",
-            "heading": "true"
-        },
-        {
-            "label": "lines show",
-            "type": "select",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"grid.yaxis.lines.show"
-        },
-        {
-            "label": "row",
-            "heading": "true"
-        },
-        {
-            "label": "colors",
-            "type": "color",
-            "key":"grid.row.colors"
-        },
-        {
-            "label": "opacity",
-            "type": "range",
-            "key":"grid.row.opacity"
-        },
-        {
-            "label": "column",
-            "heading": "true"
-        },
-        {
-            "label": "colors",
-            "type": "color",
-            "key":"grid.column.colors"
-        },
-        {
-            "label": "opacity",
-            "type": "range",
-            "key":"grid.column.opacity"
-        },
-        {
-            "label": "padding",
-            "heading": "true"
-        },
-        {
-            "label": "top",
-            "type": "text",
-            "key":"grid.padding.top"
-        },
-        {
-            "label": "right",
-            "type": "text",
-            "key":"grid.padding.right"
-        },
-        {
-            "label": "bottom",
-            "type": "text",
-            "key":"grid.padding.bottom"
-        },
-        {
-            "label": "left",
-            "type": "text",
-            "key":"grid.padding.left"
-        }
+      {
+        "label": "show grid",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "grid.show"
+      },
+      {
+        "label": "border color",
+        "type": "color",
+        "key": "grid.borderColor"
+      },
+      {
+        "label": "stroke dash array",
+        "type": "text",
+        "key": "grid.strokeDashArray"
+      },
+      {
+        "label": "position",
+        "type": "select",
+        "options": ["back", "front"],
+        "key": "grid.position"
+      },
+      {
+        "label": "x axis",
+        "heading": "true"
+      },
+      {
+        "label": "lines show",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "grid.xaxis.lines.show"
+      },
+      {
+        "label": "y axis",
+        "heading": "true"
+      },
+      {
+        "label": "lines show",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "grid.yaxis.lines.show"
+      },
+      {
+        "label": "row",
+        "heading": "true"
+      },
+      {
+        "label": "colors",
+        "type": "color",
+        "key": "grid.row.colors"
+      },
+      {
+        "label": "opacity",
+        "type": "range",
+        "key": "grid.row.opacity"
+      },
+      {
+        "label": "column",
+        "heading": "true"
+      },
+      {
+        "label": "colors",
+        "type": "color",
+        "key": "grid.column.colors"
+      },
+      {
+        "label": "opacity",
+        "type": "range",
+        "key": "grid.column.opacity"
+      },
+      {
+        "label": "padding",
+        "heading": "true"
+      },
+      {
+        "label": "top",
+        "type": "text",
+        "key": "grid.padding.top"
+      },
+      {
+        "label": "right",
+        "type": "text",
+        "key": "grid.padding.right"
+      },
+      {
+        "label": "bottom",
+        "type": "text",
+        "key": "grid.padding.bottom"
+      },
+      {
+        "label": "left",
+        "type": "text",
+        "key": "grid.padding.left"
+      }
     ]
-}
+  }
 ]

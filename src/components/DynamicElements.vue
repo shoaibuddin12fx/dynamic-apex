@@ -1,68 +1,5 @@
 <template>
   <div>
-    <!-- <div class="accordion" id="accordionExample">
-      <div class="card" v-for="obj of json" :key="obj.id">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link" type="button">
-              {{ obj.label }}
-            </button>
-          </h2>
-        </div>
-        <div
-          id="collapseOne"
-          class="collapse show"
-          aria-labelledby="headingOne"
-          data-parent="#accordionExample"
-        >
-          <div class="card-body">
-            <form>
-              <div v-for="element of obj.elements" :key="element.index">
-                <div v-if="element.heading" class="headings">
-                  {{ element.label }}
-                </div>
-
-                <div v-if="!element.heading" class="element">
-                  <div class="form-group row">
-                    <label class="col-sm-6 col-form-label">{{
-                      element.label
-                    }}</label>
-                    <div class="col-sm-6">
-                      <select
-                        class="form-control"
-                        id="positon"
-                        v-if="element.type == 'select'"
-                        v-on:change="passOptions($event, element )"
-                      >
-                        <option v-for="opt of element.options" :key="opt.index">
-                          {{ opt }}
-                        </option>
-                      </select>
-                      <input
-                       v-on:change="passOptions($event, element)"
-                        v-if="element.type == 'color'" 
-                        type="color"
-                        class="form-control"
-                      />
-                      <input
-                        v-if="element.type == 'text'"
-                        type="text"
-                        class="form-control"
-                      />
-                      <input
-                        v-if="element.type == 'range'"
-                        type="range"
-                        class="form-control"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="accordion" role="tablist">
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
@@ -77,11 +14,7 @@
           role="tabpanel"
         >
           <b-card-body>
-
-            
             <DynamicCSVImport />
-            
-            
           </b-card-body>
         </b-collapse>
       </b-card>
@@ -101,8 +34,7 @@
           role="tabpanel"
         >
           <b-card-body>
-
-            <form >
+            <form>
               <div v-for="element of obj.elements" :key="element.index">
                 <div v-if="element.heading" class="headings">
                   {{ element.label }}
@@ -160,7 +92,12 @@
                         v-for="(v, index) of element.values"
                         :key="index"
                       >
-                        <label class="col-sm-1 col-form-label btn btn-info index-highlight"
+                        <label
+                          class="
+                            col-sm-1 col-form-label
+                            btn btn-info
+                            index-highlight
+                          "
                           >{{ index }}
                         </label>
                         <div class="col-sm-11">
@@ -176,28 +113,35 @@
                           />
 
                           <div v-if="element.arrayOf == 'objects'">
-                            <div class="form-group row" v-for="(vv, index) of v" :key="index">
-
-                              <div v-if="vv.heading" class="form-label headings">
+                            <div
+                              class="form-group row"
+                              v-for="(vv, index) of v"
+                              :key="index"
+                            >
+                              <div
+                                v-if="vv.heading"
+                                class="form-label headings"
+                              >
                                 {{ vv.label }}
                               </div>
 
-                              <label v-if="!vv.heading" class="col-sm-6 col-form-label"
-                                >{{ vv.label }}</label>
-                                <div class="col-sm-6">
-                                  <input
-                                    v-if="vv.type == 'text'"
-                                    v-on:change="passChildOptions($event, vv, index)"
-                                    type="text"
-                                    class="form-control"
-                                  />
-                                </div>
-                              
+                              <label
+                                v-if="!vv.heading"
+                                class="col-sm-6 col-form-label"
+                                >{{ vv.label }}</label
+                              >
+                              <div class="col-sm-6">
+                                <input
+                                  v-if="vv.type == 'text'"
+                                  v-on:change="
+                                    passChildOptions($event, vv, index)
+                                  "
+                                  type="text"
+                                  class="form-control"
+                                />
+                              </div>
                             </div>
-                            {{v}}                            
                           </div>
-                          
-
                         </div>
                       </div>
                     </div>
@@ -205,36 +149,9 @@
                 </div>
               </div>
             </form>
-            <!-- <b-card-text>{{ text }}</b-card-text> -->
           </b-card-body>
         </b-collapse>
       </b-card>
-
-      <!-- <b-card no-body class="mb-1">
-        <b-card-header header-tag="header" class="p-1" role="tab">
-          <b-button block v-b-toggle.accordion-2 variant="info"
-            >Accordion 2</b-button
-          >
-        </b-card-header>
-        <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
-          <b-card-body>
-            <b-card-text>{{ text }}</b-card-text>
-          </b-card-body>
-        </b-collapse>
-      </b-card> -->
-
-      <!-- <b-card no-body class="mb-1">
-        <b-card-header header-tag="header" class="p-1" role="tab">
-          <b-button block v-b-toggle.accordion-3 variant="info"
-            >Accordion 3</b-button
-          >
-        </b-card-header>
-        <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-          <b-card-body>
-            <b-card-text>{{ text }}</b-card-text>
-          </b-card-body>
-        </b-collapse>
-      </b-card> -->
     </div>
   </div>
 </template>
@@ -265,11 +182,11 @@ const Xaxis = require("./../assets/UI/Xaxis.json");
 const Yaxis = require("./../assets/UI/Yaxis.json");
 
 import { bus } from "../main";
-import DynamicCSVImport from "./DynamicCSVImport.vue" 
+import DynamicCSVImport from "./DynamicCSVImport.vue";
 export default {
   name: "DynamicElements",
   components: {
-    DynamicCSVImport
+    DynamicCSVImport,
   },
   data() {
     return {
@@ -285,6 +202,7 @@ export default {
       obj["selected_value"] = $event.target.value;
       //   console.log(this.options.chart);
       bus.$emit("send dynamic options", obj);
+      console.log(obj);
     },
 
     passChildOptions($event, element, index = null) {
@@ -310,10 +228,10 @@ export default {
       if (element.arrayOf == "text") {
         element.values.push("");
       }
-      if(element.arrayOf == "objects"){
+      if (element.arrayOf == "objects") {
+        console.log("pushing", element);
         element.values.push(element.obj);
       }
-      
     },
   },
   mounted() {
@@ -374,9 +292,8 @@ export default {
   color: white;
 }
 
-.index-highlight{
+.index-highlight {
   /* background: green; */
   padding: 5px 0;
-
 }
 </style>

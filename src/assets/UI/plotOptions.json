@@ -68,6 +68,7 @@
         "label": "Add ranges ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "type": "text",
@@ -238,6 +239,7 @@
         "label": "Add ranges ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "type": "text",
@@ -327,6 +329,7 @@
         "label": "Add ranges ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "type": "text",
@@ -789,6 +792,10 @@
         "type": "text",
         "label": "margin",
         "key": "plotOptions.radialBar.track.margin"
+      },
+      {
+        "label": "dropShadow > track > radialBar > plotOptions",
+        "heading": true
       },
       {
         "type": "select",

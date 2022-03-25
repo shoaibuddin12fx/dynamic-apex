@@ -1,5 +1,9 @@
 <template>
   <div>
+    <form id="myForm">
+      <input type="file" id="csvFile" accept=".csv" />
+      <button v-on:click="import_csv()">Submit</button>
+    </form>
     <apexchart
       ref="realtimeChart"
       width="500"
@@ -112,7 +116,6 @@ export default {
         console.log("send dynamic options", value);
       } else {
         // console.log("Index "+value.index);
-
         _.set(op, value.key, value.selected_value);
         this.options = op;
         console.log("send dynamic options", value);

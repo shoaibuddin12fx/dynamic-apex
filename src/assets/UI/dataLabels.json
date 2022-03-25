@@ -27,12 +27,12 @@
         "key": "dataLabels.distributed"
       },
       {
-        "label": "ofsetX",
+        "label": "offsetX",
         "type": "text",
         "key": "dataLabels.offsetX"
       },
       {
-        "label": "ofsetY",
+        "label": "offsetY",
         "type": "text",
         "key": "dataLabels.offsetY"
       },
@@ -74,7 +74,7 @@
       {
         "label": "colors",
         "type": "color",
-        "key": "dataLabels.style.color"
+        "key": "dataLabels.style.colors"
       },
       {
         "label": "background",
@@ -118,6 +118,41 @@
       },
       {
         "label": "drop shadow",
+        "heading": "true"
+      },
+      {
+        "label": "enabled",
+        "type": "select",
+        "options": ["true", "false"],
+        "key": "dataLabels.dropShadow.enabled"
+      },
+      {
+        "label": "top",
+        "type": "text",
+        "key": "dataLabels.dropShadow.top"
+      },
+      {
+        "label": "left",
+        "type": "text",
+        "key": "dataLabels.dropShadow.left"
+      },
+      {
+        "label": "blur",
+        "type": "text",
+        "key": "dataLabels.dropShadow.blur"
+      },
+      {
+        "label": "color",
+        "type": "text",
+        "key": "dataLabels.dropShadow.color"
+      },
+      {
+        "label": "opacity",
+        "type": "text",
+        "key": "dataLabels.dropShadow.opacity"
+      },
+      {
+        "label": "drop shadow > Datalabels",
         "heading": "true"
       },
       {
