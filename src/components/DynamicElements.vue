@@ -63,6 +63,29 @@
         </div>
       </div>
     </div> -->
+    <div class="accordion" role="tablist">
+      <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-button block v-b-toggle="'accordion-l1'" variant="info">
+            Data Upload
+          </b-button>
+        </b-card-header>
+        <b-collapse
+          :id="'accordion-l1'"
+          visible
+          accordion="my-accordion"
+          role="tabpanel"
+        >
+          <b-card-body>
+
+            
+            <DynamicCSVImport />
+            
+            
+          </b-card-body>
+        </b-collapse>
+      </b-card>
+    </div>
 
     <div class="accordion" role="tablist" v-for="obj of json" :key="obj.id">
       <b-card no-body class="mb-1">
@@ -242,9 +265,12 @@ const Xaxis = require("./../assets/UI/Xaxis.json");
 const Yaxis = require("./../assets/UI/Yaxis.json");
 
 import { bus } from "../main";
-
+import DynamicCSVImport from "./DynamicCSVImport.vue" 
 export default {
   name: "DynamicElements",
+  components: {
+    DynamicCSVImport
+  },
   data() {
     return {
       json: json,
