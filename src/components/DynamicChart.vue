@@ -105,13 +105,13 @@ export default {
     bus.$on("send dynamic options", (data) => {
       const value = { ...data };
       var op = { ...this.options };
-      console.log(value);
+      console.log("dynamic chart options",value);
       if (value.index != null) {
         console.log(value.index);
         value.key = value.key.replace(".${index}", "[" + value.index + "]");
         _.set(op, value.key, value.selected_value);
         this.options = op;
-        console.log("send dynamic options", value);
+        console.log("send dynamic options", this.options);
       } else {
         // console.log("Index "+value.index);
         _.set(op, value.key, value.selected_value);

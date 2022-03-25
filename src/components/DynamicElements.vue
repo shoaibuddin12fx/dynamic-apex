@@ -184,8 +184,8 @@
                           <div v-if="element.arrayOf == 'objects'">
                             <div
                               class="form-group row"
-                              v-for="(vv, index) of v"
-                              :key="index"
+                              v-for="(vv, index_le1) of v"
+                              :key="index_le1"
                             >
                               <div
                                 v-if="vv.heading"
@@ -306,12 +306,12 @@ export default {
       console.log(obj);
     },
 
-    passChildOptions($event, element, index = null) {
+    passChildOptions($event, element, index ) {
       console.log(index, element, $event.target.value);
 
       var obj = { ...element };
-      obj["selected_value"] = $event.target.value;
       obj["index"] = index;
+      obj["selected_value"] = $event.target.value;
       //   console.log(this.options.chart);
       bus.$emit("send dynamic options", obj);
     },
@@ -324,8 +324,8 @@ export default {
     },
     addArrayOf(element) {
       if (element.arrayOf == "colors") {
-        element.values.push({key: this.countColor, color: "#c0c0c0"});
-        this.countColor++;
+        element.values.push(element.obj);
+        console.log("pushing", element);
       }
       if (element.arrayOf == "text") {
         element.values.push("");
@@ -335,11 +335,11 @@ export default {
         element.values.push(element.obj);
       }
     },
-    setColor(colorArray){
-      console.log("newColort",this.newColor)
-      console.log("colorArray", colorArray)
-      bus.$emit("send color options", colorArray);
-    }
+    // setColor(colorArray){
+    //   console.log("newColort",this.newColor)
+    //   console.log("colorArray", colorArray)
+    //   bus.$emit("send color options", colorArray);
+    // }
   },
   mounted() {
     this.json = [
