@@ -6,6 +6,7 @@
       type="bar"
       :options="options"
       :series="series"
+      :theme="theme"
     ></apexchart>
   </div>
 </template>
@@ -38,6 +39,7 @@ export default {
           data: [30, 40, 45, 50, 49, 60, 70, 91, 40],
         },
       ],
+      theme: null,
       chart: undefined,
     };
   },
