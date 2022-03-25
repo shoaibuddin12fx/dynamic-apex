@@ -83,16 +83,17 @@ export default {
         let x_axis = [];
         let y_axis = [];
         entries.forEach((x) => {
-          console.log(x[1]);
-          if (x[1]["y-axis"]) {
-            x_axis.push(x[1]["x-axis"]);
-            y_axis.push(x[1]["y-axis"]);
+          // console.log(Object.entries(x[1])[0][1]);
+          if (Object.entries(x[1])[1][1]) {
+            x_axis.push(Object.entries(x[1])[0][1]);
+            y_axis.push(Object.entries(x[1])[1][1]);
           }
         });
         let obj = {
           x_axis,
           y_axis
         }
+        console.log(obj);
         bus.$emit("update chart from csv", obj);
       };
       reader.readAsText(file);

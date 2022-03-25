@@ -1,9 +1,5 @@
 <template>
   <div>
-    <form id="myForm">
-      <input type="file" id="csvFile" accept=".csv" />
-      <button v-on:click="import_csv()">Submit</button>
-    </form>
     <apexchart
       ref="realtimeChart"
       width="500"
@@ -48,47 +44,6 @@ export default {
     };
   },
   methods: {
-    import_csv() {
-      const myForm = document.getElementById("myForm");
-      const csvFile = document.getElementById("csvFile");
-
-      myForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const input = csvFile.files[0];
-        const reader = new FileReader();
-
-        reader.onload = function (e) {
-          const str = e.target.result;
-          const headers = str.slice(0, str.indexOf("\n")).split(",");
-          const rows = str.slice(str.indexOf("\n") + 1).split("\n");
-          const arr = rows.map(function (row) {
-            const values = row.split(",");
-            const el = headers.reduce(function (object, header, index) {
-              object[header] = values[index];
-              return object;
-            }, {});
-            return el;
-          });
-          var heading = [];
-          var entries = Object.entries(arr[0]);
-          entries.forEach((x) => {
-            heading.push(x[0]);
-          });
-          var data = [];
-          var all = {};
-          arr.forEach((x) => {
-            all = {
-              x: x.category,
-              y: x.series_1,
-            };
-            data.push(all);
-          });
-          bus.$emit("update series", data);
-        };
-
-        reader.readAsText(input);
-      });
-    },
     completed() {
       console.log(this.series[0].data);
       this.series[0].data.push(Number(this.newValue));
@@ -105,17 +60,18 @@ export default {
       ]);
     });
     bus.$on("update chart from csv", (data) => {
+      const value = { ...data };
       this.$refs.realtimeChart.updateOptions({
         chart: {
           id: "vuechart-example",
         },
         xaxis: {
-          categories: data.x_axis,
+          categories: value.x_axis,
         },
       });
       this.$refs.realtimeChart.updateSeries([
         {
-          data: data.y_axis,
+          data: value.y_axis,
         },
       ]);
     });
