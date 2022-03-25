@@ -36,11 +36,11 @@
           <b-card-body>
             <form>
               <div v-for="element of obj.elements" :key="element.index">
-                <div v-if="element.heading" class="headings">
+                <div v-if="element.heading && element.show !== 0" class="headings">
                   {{ element.label }}
                 </div>
 
-                <div v-if="!element.heading" class="element">
+                <div v-if="!element.heading && element.show !== 0" class="element">
                   <div class="form-group row">
                     <label class="col-sm-6 col-form-label"
                       >{{ element.label }}
@@ -203,8 +203,8 @@ export default {
   },
   methods: {
     passOptions($event, element, index = null) {
-      console.log(index, element, $event.target.value);
-
+      console.log("pass option",index, element, $event.target.value);
+      console.log("json",fill);
       var obj = { ...element };
       obj["selected_value"] = $event.target.value;
       //   console.log(this.options.chart);

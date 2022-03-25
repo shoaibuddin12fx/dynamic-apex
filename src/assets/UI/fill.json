@@ -25,10 +25,12 @@
             "key":"fill.type"
         },
         {
+            "show": 0,
             "label": "gradient",
             "heading": "true"
         },
         {
+            "show": 0,
             "label": "shade",
             "type": "select",
             "options": [
@@ -38,6 +40,7 @@
             "key":"fill.gradient.shade"
         },
         {
+            "show": 0,
             "label": "type",
             "type": "select",
             "options": [
@@ -49,16 +52,19 @@
             "key":"fill.gradient.type"
         },
         {
+            "show": 0,
             "label": "shade intensity",
             "type": "range",
             "key":"fill.gradient.shadeIntensity"
         },
         {
+            "show": 0,
             "label": "gradient to color",
             "type": "text",
             "key":"fill.gradient.gradientToColors"
         },
         {
+            "show": 0,
             "label": "inverse color",
             "type": "select",
             "options": [
@@ -68,16 +74,19 @@
             "key":"fill.gradient.inverseColors"
         },
         {
+            "show": 0,
             "label": "opacity from",
             "type": "range",
             "key":"fill.gradient.opacityFrom"
         },
         {
+            "show": 0,
             "label": "opacity to",
             "type": "range",
             "key":"fill.gradient.opacityTo"
         },
         {
+            "show": 0,
             "label": "stop",
             "type": "select",
             "options": [
@@ -88,34 +97,41 @@
             "key":"fill.gradient.stops"
         },
         {
+            "show": 0,
             "label": "color stop",
             "type": "color",
             "key":"fill.gradient.colorStops"
         },
         {
+            "show":0,
             "label": "image",
             "heading": "true"
         },
         {
+            "show": 0,
             "label": "src",
             "type": "text",
             "key":"fill.image.src"
         },
         {
+            "show": 0,
             "label": "width",
             "type": "text",
             "key":"fill.image.width"
         },
         {
+            "show": 0,
             "label": "height",
             "type": "text",
             "key":"fill.image.height"
         },
         {
+            "show": 0,
             "label": "pattern",
             "heading": "true"
         },
         {
+            "show": 0,
             "label": "style",
             "type": "select",
             "options": [
@@ -128,16 +144,19 @@
             "key":"fill.pattern.style"
         },
         {
+            "show": 0,
             "label": "width",
             "type": "text",
             "key":"fill.pattern.width"
         },
         {
+            "show": 0,
             "label": "height",
             "type": "text",
             "key":"fill.pattern.height"
         },
         {
+            "show": 0,
             "label": "stroke width",
             "type": "text",
             "key":"fill.pattern.strokeWidth"
