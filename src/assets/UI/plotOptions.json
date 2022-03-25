@@ -68,6 +68,7 @@
         "label": "Add ranges ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "type": "text",
@@ -238,6 +239,7 @@
         "label": "Add ranges ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "type": "text",

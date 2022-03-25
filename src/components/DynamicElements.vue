@@ -63,6 +63,29 @@
         </div>
       </div>
     </div> -->
+    <div class="accordion" role="tablist">
+      <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-button block v-b-toggle="'accordion-l1'" variant="info">
+            Data Upload
+          </b-button>
+        </b-card-header>
+        <b-collapse
+          :id="'accordion-l1'"
+          visible
+          accordion="my-accordion"
+          role="tabpanel"
+        >
+          <b-card-body>
+
+            
+            <DynamicCSVImport />
+            
+            
+          </b-card-body>
+        </b-collapse>
+      </b-card>
+    </div>
 
     <div class="accordion" role="tablist" v-for="obj of json" :key="obj.id">
       <b-card no-body class="mb-1">
@@ -78,8 +101,7 @@
           role="tabpanel"
         >
           <b-card-body>
-
-            <form >
+            <form>
               <div v-for="element of obj.elements" :key="element.index">
                 <div v-if="element.heading" class="headings">
                   {{ element.label }}
@@ -137,7 +159,12 @@
                         v-for="(v, index) of element.values"
                         :key="index"
                       >
-                        <label class="col-sm-1 col-form-label btn btn-info index-highlight"
+                        <label
+                          class="
+                            col-sm-1 col-form-label
+                            btn btn-info
+                            index-highlight
+                          "
                           >{{ index }}
                         </label>
                         <div class="col-sm-11">
@@ -155,9 +182,15 @@
                           />
 
                           <div v-if="element.arrayOf == 'objects'">
-                            <div class="form-group row" v-for="(vv, index) of v" :key="index">
-
-                              <div v-if="vv.heading" class="form-label headings">
+                            <div
+                              class="form-group row"
+                              v-for="(vv, index) of v"
+                              :key="index"
+                            >
+                              <div
+                                v-if="vv.heading"
+                                class="form-label headings"
+                              >
                                 {{ vv.label }}
                               </div>
 
@@ -181,8 +214,6 @@
                             </div>
                                                       
                           </div>
-                          
-
                         </div>
                       </div>
                     </div>
@@ -250,9 +281,12 @@ const Xaxis = require("./../assets/UI/Xaxis.json");
 const Yaxis = require("./../assets/UI/Yaxis.json");
 
 import { bus } from "../main";
-
+import DynamicCSVImport from "./DynamicCSVImport.vue" 
 export default {
   name: "DynamicElements",
+  components: {
+    DynamicCSVImport
+  },
   data() {
     return {
       json: json,
@@ -269,15 +303,17 @@ export default {
       obj["selected_value"] = $event.target.value;
       //   console.log(this.options.chart);
       bus.$emit("send dynamic options", obj);
+      console.log(obj);
     },
 
     passChildOptions($event, element, index = null) {
       console.log(index, element, $event.target.value);
 
-      // var obj = { ...element };
-      // obj["selected_value"] = $event.target.value;
-      // //   console.log(this.options.chart);
-      // bus.$emit("send dynamic options", obj);
+      var obj = { ...element };
+      obj["selected_value"] = $event.target.value;
+      obj["index"] = index;
+      //   console.log(this.options.chart);
+      bus.$emit("send dynamic options", obj);
     },
 
     setOptionValues() {
@@ -294,10 +330,10 @@ export default {
       if (element.arrayOf == "text") {
         element.values.push("");
       }
-      if(element.arrayOf == "objects"){
+      if (element.arrayOf == "objects") {
+        console.log("pushing", element);
         element.values.push(element.obj);
       }
-      
     },
     setColor(colorArray){
       console.log("newColort",this.newColor)
@@ -363,9 +399,8 @@ export default {
   color: white;
 }
 
-.index-highlight{
+.index-highlight {
   /* background: green; */
   padding: 5px 0;
-
 }
 </style>

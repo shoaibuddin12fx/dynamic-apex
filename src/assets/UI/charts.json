@@ -285,7 +285,7 @@
       },
       {
         "label": "Set Stroke Color",
-        "type": "text",
+        "type": "color",
         "key": "chart.selection.stroke.color"
       },
       {
@@ -362,12 +362,6 @@
         "key": "chart.toolbar.show"
       },
       {
-        "label": "auto selected",
-        "type": "select",
-        "options": ["zoom", "selection", "pan"],
-        "key": "chart.toolbar.autoSelected"
-      },
-      {
         "label": "offsetX",
         "type": "text",
         "key": "chart.toolbar.offsetX"
@@ -437,6 +431,11 @@
         "key": "chart.export.csv.filename"
       },
       {
+        "label": "columnDelimiter",
+        "type": "text",
+        "key": "chart.export.csv.columnDelimiter"
+      },
+      {
         "label": "haeder catagory",
         "type": "text",
         "key": "chart.export.csv.headerCategory"
@@ -463,6 +462,12 @@
         "label": "file name",
         "type": "text",
         "key": "chart.toolbar.png.filename"
+      },
+      {
+        "label": "auto Selected",
+        "type": "select",
+        "options": ["zoom", "selection", "pan"],
+        "key": "toolbar.autoSelected.enabled"
       }
     ]
   }

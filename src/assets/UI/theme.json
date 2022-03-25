@@ -1,55 +1,46 @@
 [
-{
+  {
     "id": 18,
     "label": "theme",
     "inputs": true,
     "elements": [
-        {
-            "type": "select",
-            "label": "mode",
-            "options": [
-                "light",
-                "dark"
-            ],
-            "key":"theme.mode"
-        },
-        {
-            "type": "text",
-            "label": "palette",
-            "key":"theme.palette"
-        },
-        {
-            "label": "theme > monochrome",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "enabled",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"theme.monochrome.enabled"
-        },
-        {
-            "type": "color",
-            "label": "color",
-            "key":"theme.monochrome.color"
-        },
-        {
-            "type": "select",
-            "label": " shadeTo",
-            "options": [
-                "light",
-                "dark"
-            ],
-            "key":"theme.monochrome.shadeTo"
-        },
-        {
-            "type": "range",
-            "label": "shadeIntensity",
-            "key":"theme.monochrome.shadeIntensity"
-        }
+      {
+        "type": "select",
+        "label": "mode",
+        "options": ["light", "dark"],
+        "key": "theme.mode"
+      },
+      {
+        "type": "text",
+        "label": "palette",
+        "key": "theme.palette"
+      },
+      {
+        "label": "theme > monochrome",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "enabled",
+        "options": ["true", "false"],
+        "key": "theme.monochrome.enabled"
+      },
+      {
+        "type": "color",
+        "label": "color",
+        "key": "theme.monochrome.color"
+      },
+      {
+        "type": "select",
+        "label": " shadeTo",
+        "options": ["light", "dark"],
+        "key": "theme.monochrome.shadeTo"
+      },
+      {
+        "type": "range",
+        "label": "shadeIntensity",
+        "key": "theme.monochrome.shadeIntensity"
+      }
     ]
-}
+  }
 ]

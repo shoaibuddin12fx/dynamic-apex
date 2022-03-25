@@ -1,67 +1,71 @@
 [
-{
+  {
     "id": 19,
     "label": "title",
     "inputs": true,
     "elements": [
-        {
-            "type": "text",
-            "label": "text",
-            "key":"title.text"
-        },
-        {
-            "type": "text",
-            "label": "align",
-            "key":"title.align"
-        },
-        {
-            "type": "text",
-            "label": "margin",
-            "key":"title.margin"
-        },
-        {
-            "type": "text",
-            "label": "offsetX",
-            "key":"title.offsetX"
-        },
-        {
-            "type": "text",
-            "label": "offsetY",
-            "key":"title.offsetY"
-        },
-        {
-            "type": "select",
-            "label": "floating",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"title.floating"
-        },
-        {
-            "label": "title > style",
-            "heading": true
-        },
-        {
-            "type": "text",
-            "label": "fontSize",
-            "key":"title.style.fontSize"
-        },
-        {
-            "type": "text",
-            "label": "fontWeight",
-            "key":"title.style.fontWeight"
-        },
-        {
-            "type": "text",
-            "label": "fontFamily",
-            "key":"title.style.fontFamily"
-        },
-        {
-            "type": "color",
-            "label": "color",
-            "key":"title.style.color"
-        }
+      {
+        "type": "text",
+        "label": "text",
+        "key": "title.text"
+      },
+      {
+        "type": "select",
+        "label": "Align",
+        "options": ["Top", "Bottom", "Left", "Right"],
+        "key": "title.align"
+      },
+      {
+        "type": "text",
+        "label": "margin",
+        "key": "title.margin"
+      },
+      {
+        "type": "text",
+        "label": "offsetX",
+        "key": "title.offsetX"
+      },
+      {
+        "type": "text",
+        "label": "offsetY",
+        "key": "title.offsetY"
+      },
+      {
+        "type": "select",
+        "label": "floating",
+        "options": ["true", "false"],
+        "key": "title.floating"
+      },
+      {
+        "label": "title > style",
+        "heading": true
+      },
+      {
+        "type": "text",
+        "label": "fontSize",
+        "key": "title.style.fontSize"
+      },
+      {
+        "type": "select",
+        "label": "FontWeight",
+        "options": ["200", "400", "600", "800", "Lighter", "Bold", "Bolder"],
+        "key": "title.align"
+      },
+      {
+        "type": "text",
+        "label": "fontWeight",
+        "key": "title.style.fontWeight"
+      },
+      {
+        "type": "text",
+        "label": "fontFamily",
+        "key": "title.style.fontFamily"
+      },
+      {
+        "type": "color",
+        "label": "color",
+        "key": "title.style.color"
+      }
     ]
-}
+  }
 ]

@@ -17,6 +17,7 @@
         "label": "Add y-axis ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "label": "y",
@@ -175,8 +176,7 @@
             "type": "text",
             "key": "annotations.yaxis.${index}.label.bottom"
           }
-        ],
-        "values": []
+        ]
       },
       {
         "label": "x-axis",
@@ -494,6 +494,7 @@
         "label": "Add image ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "label": "path",
@@ -530,6 +531,7 @@
         "label": "Add texts ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "label": "X",
@@ -626,6 +628,7 @@
         "label": "Add images ",
         "type": "array",
         "arrayOf": "objects",
+        "values": [],
         "obj": [
           {
             "label": "path",
