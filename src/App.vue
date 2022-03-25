@@ -5,7 +5,7 @@
         {{ type }}
       </option>
     </select>
-    <button class="link-primary" @click="downloadSampleCSV">
+    <!-- <button class="link-primary" @click="downloadSampleCSV">
       <i class="icon-download"></i> Download json file
     </button>
     <label class="input-container"
@@ -19,7 +19,7 @@
         @change="onFileSelected"
         accept=".json"
       />
-    </label>
+    </label> -->
     <MainView />
   </div>
 </template>

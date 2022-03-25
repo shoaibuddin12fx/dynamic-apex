@@ -98,6 +98,21 @@ export default {
         },
       ]);
     });
+    bus.$on("update chart from csv", (data) => {
+      this.$refs.realtimeChart.updateOptions({
+        chart: {
+          id: "vuechart-example",
+        },
+        xaxis: {
+          categories: data.x_axis,
+        },
+      });
+      this.$refs.realtimeChart.updateSeries([
+        {
+          data: data.y_axis,
+        },
+      ]);
+    });
     bus.$on("send dynamic options", (data) => {
       const value = { ...data };
       var op = { ...this.options };

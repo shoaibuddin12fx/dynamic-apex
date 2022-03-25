@@ -19,7 +19,7 @@
             <div class="col-8">
               <select class="form-control" id="positon" v-model="chart_type">
                 <option value="numeric">Numeric</option>
-                <option value="labels">labels</option>
+                <option value="labels">Labels</option>
               </select>
             </div>
           </div>
@@ -51,6 +51,8 @@
 </template>
 
 <script>
+import { bus } from "../main";
+
 export default {
   name: "DynamicCSVImport",
   data() {
@@ -62,15 +64,36 @@ export default {
   },
   mounted() {},
   methods: {
-    uploadFile() {
-      var file = this.$refs.file.files[0];
+    uploadFile(event) {
+      var file = event.target.files[0];
       const reader = new FileReader();
       reader.onload = function (e) {
         const str = e.target.result;
-        console.log(str);
-
-        // call v-on for event handlers
-        //     //
+        const headers = str.slice(0, str.indexOf("\n")).split(",");
+        const rows = str.slice(str.indexOf("\n") + 1).split("\n");
+        const arr = rows.map(function (row) {
+          const values = row.split(",");
+          const el = headers.reduce(function (object, header, index) {
+            object[header] = values[index];
+            return object;
+          }, {});
+          return el;
+        });
+        var entries = Object.entries(arr);
+        let x_axis = [];
+        let y_axis = [];
+        entries.forEach((x) => {
+          console.log(x[1]);
+          if (x[1]["y-axis"]) {
+            x_axis.push(x[1]["x-axis"]);
+            y_axis.push(x[1]["y-axis"]);
+          }
+        });
+        let obj = {
+          x_axis,
+          y_axis
+        }
+        bus.$emit("update chart from csv", obj);
       };
       reader.readAsText(file);
     },
