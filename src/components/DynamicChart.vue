@@ -10,6 +10,7 @@
       type="bar"
       :options="options"
       :series="series"
+      :theme="theme"
     ></apexchart>
   </div>
 </template>
@@ -42,6 +43,7 @@ export default {
           data: [30, 40, 45, 50, 49, 60, 70, 91, 40],
         },
       ],
+      theme: null,
       chart: undefined,
     };
   },
@@ -99,6 +101,21 @@ export default {
       this.$refs.realtimeChart.updateSeries([
         {
           data: value,
+        },
+      ]);
+    });
+    bus.$on("update chart from csv", (data) => {
+      this.$refs.realtimeChart.updateOptions({
+        chart: {
+          id: "vuechart-example",
+        },
+        xaxis: {
+          categories: data.x_axis,
+        },
+      });
+      this.$refs.realtimeChart.updateSeries([
+        {
+          data: data.y_axis,
         },
       ]);
     });
