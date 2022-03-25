@@ -6,7 +6,14 @@
       {
         "label": "Add Colors ",
         "type": "array",
-        "arrayOf": "colors",
+        "arrayOf": "objects",
+        "obj": [
+          {
+            "label": "color",
+            "type": "color",
+            "key": "colors.${index}"
+          }
+        ],
         "values": []
       }
     ]

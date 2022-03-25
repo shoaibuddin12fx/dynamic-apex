@@ -76,7 +76,7 @@ export default {
       console.log("previous series data", this.series[0].data);
       console.log("data", data);
       this.series[0].data = data.data;
-            this.$refs.realtimeChart.updateSeries(
+      this.$refs.realtimeChart.updateSeries(
         [
           {
             data: this.series[0].data,
@@ -86,7 +86,19 @@ export default {
         true
       );
       console.log("new series data", this.series[0].data);
-    })
+    });
+    bus.$on("send color options", (data) => {
+      console.log("new color data", data);
+      this.$refs.realtimeChart.updateSeries(
+        [
+          {
+            data: this.series[0].data,
+          },
+        ],
+        false,
+        true
+      );
+    });
   },
 };
 </script>

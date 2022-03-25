@@ -142,9 +142,11 @@
                         </label>
                         <div class="col-sm-11">
                           <input
-                            v-if="element.arrayOf == 'color'"
+                            v-if="element.arrayOf == 'colors'"
                             type="color"
                             class="form-control"
+                            v-model="element.values[index].color"
+                            v-on:change="setColor(element.values)"
                           />
                           <input
                             v-if="element.arrayOf == 'text'"
@@ -168,10 +170,16 @@
                                     type="text"
                                     class="form-control"
                                   />
+                                  <input
+                                    v-if="vv.type == 'color'"
+                                    v-on:change="passChildOptions($event, vv, index)"
+                                    type="color"
+                                    class="form-control"
+                                  />
                                 </div>
                               
                             </div>
-                            {{v}}                            
+                                                      
                           </div>
                           
 
@@ -249,6 +257,8 @@ export default {
     return {
       json: json,
       options: {},
+      countColor: 0,
+      newColor: '',
     };
   },
   methods: {
@@ -278,7 +288,8 @@ export default {
     },
     addArrayOf(element) {
       if (element.arrayOf == "colors") {
-        element.values.push("#c0c0c0");
+        element.values.push({key: this.countColor, color: "#c0c0c0"});
+        this.countColor++;
       }
       if (element.arrayOf == "text") {
         element.values.push("");
@@ -288,6 +299,11 @@ export default {
       }
       
     },
+    setColor(colorArray){
+      console.log("newColort",this.newColor)
+      console.log("colorArray", colorArray)
+      bus.$emit("send color options", colorArray);
+    }
   },
   mounted() {
     this.json = [
