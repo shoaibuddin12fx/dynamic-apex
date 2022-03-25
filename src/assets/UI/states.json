@@ -1,88 +1,72 @@
 [
-{
+  {
     "id": 15,
     "label": "states",
     "inputs": true,
     "elements": [
-        {
-            "label": "normal > states",
-            "heading": true
-        },
-        {
-            "label": "filter > normal > states",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "type",
-            "options": [
-                "none",
-                "lighten",
-                "darken"
-            ],
-            "key":"states.normal.filter.type"
-        },
-        {
-            "type": "text",
-            "label": "value",
-            "key":"states.normal.filter.value"
-
-        },
-        {
-            "label": "hover > states",
-            "heading": true
-        },
-        {
-            "label": "filter > hover > states",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "type",
-            "options": [
-                "none",
-                "lighten",
-                "darken"
-            ],
-            "key":"states.hover.filter.type"
-        },
-        {
-            "type": "text",
-            "label": "value",
-            "key":"states.hover.filter.value"
-        },
-        {
-            "label": "active > states",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "allowMultipleDataPointsSelection",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"states.active.allowMultipleDataPointsSelection"
-        },
-        {
-            "label": "filter > active > states",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "type",
-            "options": [
-                "none",
-                "lighten",
-                "darken"
-            ],
-            "key":"states.active.filter.type"
-        },
-        {
-            "type": "text",
-            "label": "value",
-            "key":"states.active.filter.value"
-        }
+      {
+        "label": "normal > states",
+        "heading": true
+      },
+      {
+        "label": "filter > states > normal",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "type",
+        "options": ["none", "lighten", "darken"],
+        "key": "states.normal.filter.type"
+      },
+      {
+        "type": "text",
+        "label": "value",
+        "key": "states.normal.filter.value"
+      },
+      {
+        "label": "hover > states",
+        "heading": true
+      },
+      {
+        "label": "filter > hover > states",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "type",
+        "options": ["none", "lighten", "darken"],
+        "key": "states.hover.filter.type"
+      },
+      {
+        "type": "text",
+        "label": "value",
+        "key": "states.hover.filter.value"
+      },
+      {
+        "label": "active > states",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "allowMultipleDataPointsSelection",
+        "options": ["true", "false"],
+        "key": "states.active.allowMultipleDataPointsSelection"
+      },
+      {
+        "label": "filter > active > states",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "type",
+        "options": ["none", "lighten", "darken"],
+        "key": "states.active.filter.type"
+      },
+      {
+        "type": "text",
+        "label": "value",
+        "key": "states.active.filter.value"
+      }
     ]
-}
+  }
 ]

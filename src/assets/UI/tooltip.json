@@ -1,196 +1,149 @@
 [
-{
+  {
     "id": 20,
     "label": "tooltip",
     "inputs": true,
     "elements": [
-        {
-            "type": "select",
-            "label": "enabled",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.enabled"
-        },
-        {
-            "type": "text",
-            "label": "enabledOnSeries",
-            "key":"tooltip.enabledOnSeries"
-        },
-        {
-            "type": "select",
-            "label": "shared",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.shared"
-        },
-        {
-            "type": "select",
-            "label": "followCursor",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.followCursor"
-        },
-        {
-            "type": "select",
-            "label": "intersect",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.intersect"
-        },
-        {
-            "type": "select",
-            "label": "inverseOrder",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.inverseOrder"
-        },
-        {
-            "type": "select",
-            "label": " fillSeriesColor",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.fillSeriesColor"
-        },
-        {
-            "type": "select",
-            "label": "theme",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.theme"
-        },
-        {
-            "label": "tooltip > style",
-            "heading": true
-        },
-        {
-            "type": "text",
-            "label": "fontSize",
-            "key":"tooltip.style.fontSize"
-        },
-        {
-            "type": "text",
-            "label": "fontFamily",
-            "key":"tooltip.style.fontFamily"
-        },
-        {
-            "label": "tooltip > onDatasetHover",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "highlightDataSeries",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.onDatasetHover.highlightDataSeries"
-        },
-        {
-            "label": "tooltip > x",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "show",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.x.show"
-        },
-        {
-            "type": "text",
-            "label": "format",
-            "key":"tooltip.x.format"
-        },
-        {
-            "label": "tooltip > y",
-            "heading": true
-        },
-        {
-            "type": "text",
-            "label": "title",
-            "key":"tooltip.y.title"
-        },
-        {
-            "label": "tooltip > z",
-            "heading": true
-        },
-        {
-            "type": "text",
-            "label": "title",
-            "key":"tooltip.z.title"
-        },
-        {
-            "label": "tooltip > marker",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "show",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.marker.show"
-        },
-        {
-            "label": "tooltip > items",
-            "heading": true
-        },
-        {
-            "type": "text",
-            "label": "display",
-            "key":"tooltip.items.display"
-        },
-        {
-            "label": "tooltip > fixed",
-            "heading": true
-        },
-        {
-            "type": "select",
-            "label": "enabled",
-            "options": [
-                "true",
-                "false"
-            ],
-            "key":"tooltip.fixed.enabled"
-        },
-        {
-            "type": "select",
-            "label": "position",
-            "options": [
-                "topLeft",
-                "topRight",
-                "bottomLeft",
-                "bottomRight"
-            ],
-            "key":"tooltip.fixed.position"
-        },
-        {
-            "type": "text",
-            "label": "offsetX",
-            "key":"tooltip.fixed.offsetX"
-        },
-        {
-            "type": "text",
-            "label": "offsetY",
-            "key":"tooltip.fixed.offsetY"
-        }
+      {
+        "type": "select",
+        "label": "enabled",
+        "options": ["true", "false"],
+        "key": "tooltip.enabled"
+      },
+      {
+        "type": "text",
+        "label": "Enabled On Series",
+        "key": "tooltip.enabledOnSeries"
+      },
+      {
+        "type": "select",
+        "label": "shared",
+        "options": ["true", "false"],
+        "key": "tooltip.shared"
+      },
+      {
+        "type": "select",
+        "label": "followCursor",
+        "options": ["true", "false"],
+        "key": "tooltip.followCursor"
+      },
+      {
+        "type": "select",
+        "label": "intersect",
+        "options": ["true", "false"],
+        "key": "tooltip.intersect"
+      },
+      {
+        "type": "select",
+        "label": "inverseOrder",
+        "options": ["true", "false"],
+        "key": "tooltip.inverseOrder"
+      },
+      {
+        "type": "select",
+        "label": " Fill Series Color",
+        "options": ["true", "false"],
+        "key": "tooltip.fillSeriesColor"
+      },
+      {
+        "type": "select",
+        "label": "theme",
+        "options": ["true", "false"],
+        "key": "tooltip.theme"
+      },
+      {
+        "label": "tooltip > style",
+        "heading": true
+      },
+      {
+        "type": "text",
+        "label": "fontSize",
+        "key": "tooltip.style.fontSize"
+      },
+      {
+        "type": "text",
+        "label": "fontFamily",
+        "key": "tooltip.style.fontFamily"
+      },
+      {
+        "label": "tooltip > onData Set Hover",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "Highlight Data Series",
+        "options": ["true", "false"],
+        "key": "tooltip.onDatasetHover.highlightDataSeries"
+      },
+      {
+        "label": "tooltip > x",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "show",
+        "options": ["true", "false"],
+        "key": "tooltip.x.show"
+      },
+      {
+        "type": "text",
+        "label": "format",
+        "key": "tooltip.x.format"
+      },
+      {
+        "label": "tooltip > z",
+        "heading": true
+      },
+      {
+        "type": "text",
+        "label": "title",
+        "key": "tooltip.z.title"
+      },
+      {
+        "label": "tooltip > marker",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "show",
+        "options": ["true", "false"],
+        "key": "tooltip.marker.show"
+      },
+      {
+        "label": "tooltip > items",
+        "heading": true
+      },
+      {
+        "type": "text",
+        "label": "display",
+        "key": "tooltip.items.display"
+      },
+      {
+        "label": "tooltip > fixed",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "enabled",
+        "options": ["true", "false"],
+        "key": "tooltip.fixed.enabled"
+      },
+      {
+        "type": "select",
+        "label": "position",
+        "options": ["topLeft", "topRight", "bottomLeft", "bottomRight"],
+        "key": "tooltip.fixed.position"
+      },
+      {
+        "type": "text",
+        "label": "offsetX",
+        "key": "tooltip.fixed.offsetX"
+      },
+      {
+        "type": "text",
+        "label": "offsetY",
+        "key": "tooltip.fixed.offsetY"
+      }
     ]
-}
+  }
 ]
