@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    <select class="form-control" v-on:change="changeChartType($event)">
-      <option v-for="type of chartType.chartTypes" :key="type.index">
-        {{ type }}
-      </option>
-    </select>
     <!-- <button class="link-primary" @click="downloadSampleCSV">
       <i class="icon-download"></i> Download json file
     </button>
@@ -26,7 +21,6 @@
 
 <script>
 import MainView from "./components/MainView.vue";
-const chartType = require("././assets/UI/outerseries.json");
 // const charts = require("././assets/UI/charts.json");
 import { bus } from "./main";
 export default {
@@ -36,7 +30,6 @@ export default {
   },
   data() {
     return {
-      chartType: chartType,
       csvFile: "",
       import_file: "",
       series: [
@@ -48,9 +41,6 @@ export default {
   },
 
   methods: {
-    changeChartType($event) {
-      bus.$emit("change chart Type", $event.target.value);
-    },
     downloadSampleCSV() {
       let csv = `[\n { \n "data" : \n [ \n`;
       this.series[0].data.forEach((row, index) => {

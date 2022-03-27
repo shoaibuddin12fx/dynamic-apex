@@ -3,6 +3,43 @@
     <div class="accordion" role="tablist">
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-button block v-b-toggle="'accordion-l2'" variant="info">
+            Chart Type
+          </b-button>
+        </b-card-header>
+        <b-collapse
+          :id="'accordion-l2'"
+          visible
+          accordion="my-accordion"
+          role="tabpanel"
+        >
+          <b-card-body>
+            <div class="outer form">
+              <div class="row">
+                <label class="col-12 col-form-label">Chart Type </label>
+                <div class="col-8">
+                  <select
+                    class="form-control"
+                    v-on:change="changeChartType($event)"
+                  >
+                    <option
+                      v-for="type of chartType.chartTypes"
+                      :key="type.index"
+                    >
+                      {{ type }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </b-card-body>
+        </b-collapse>
+      </b-card>
+    </div>
+
+    <div class="accordion" role="tablist">
+      <b-card no-body class="mb-1">
+        <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle="'accordion-l1'" variant="info">
             Data Upload
           </b-button>
@@ -36,11 +73,17 @@
           <b-card-body>
             <form>
               <div v-for="element of obj.elements" :key="element.index">
-                <div v-if="element.heading && element.show !== 0" class="headings">
+                <div
+                  v-if="element.heading && element.show !== 0"
+                  class="headings"
+                >
                   {{ element.label }}
                 </div>
 
-                <div v-if="!element.heading && element.show !== 0" class="element">
+                <div
+                  v-if="!element.heading && element.show !== 0"
+                  class="element"
+                >
                   <div class="form-group row">
                     <label class="col-sm-6 col-form-label"
                       >{{ element.label }}
@@ -127,25 +170,30 @@
                                 {{ vv.label }}
                               </div>
 
-                              <label v-if="!vv.heading" class="col-sm-6 col-form-label"
-                                >{{ vv.label }}</label>
-                                <div class="col-sm-6">
-                                  <input
-                                    v-if="vv.type == 'text'"
-                                    v-on:change="passChildOptions($event, vv, index)"
-                                    type="text"
-                                    class="form-control"
-                                  />
-                                  <input
-                                    v-if="vv.type == 'color'"
-                                    v-on:change="passChildOptions($event, vv, index)"
-                                    type="color"
-                                    class="form-control"
-                                  />
-                                </div>
-                              
+                              <label
+                                v-if="!vv.heading"
+                                class="col-sm-6 col-form-label"
+                                >{{ vv.label }}</label
+                              >
+                              <div class="col-sm-6">
+                                <input
+                                  v-if="vv.type == 'text'"
+                                  v-on:change="
+                                    passChildOptions($event, vv, index)
+                                  "
+                                  type="text"
+                                  class="form-control"
+                                />
+                                <input
+                                  v-if="vv.type == 'color'"
+                                  v-on:change="
+                                    passChildOptions($event, vv, index)
+                                  "
+                                  type="color"
+                                  class="form-control"
+                                />
+                              </div>
                             </div>
-                                                      
                           </div>
                         </div>
                       </div>
@@ -185,6 +233,7 @@ const title = require("./../assets/UI/title.json");
 const tooltip = require("./../assets/UI/tooltip.json");
 const Xaxis = require("./../assets/UI/Xaxis.json");
 const Yaxis = require("./../assets/UI/Yaxis.json");
+const chartType = require("./../assets/UI/outerseries.json");
 
 import { bus } from "../main";
 import DynamicCSVImport from "./DynamicCSVImport.vue";
@@ -198,13 +247,50 @@ export default {
       json: json,
       options: {},
       countColor: 0,
-      newColor: '',
+      newColor: "",
+      chartType: chartType,
     };
   },
   methods: {
+    changeChartType($event) {
+      let data = {
+        series: [
+          {
+            type: $event.target.value,
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+          },
+        ],
+        chart: {
+          type: $event.target.value,
+        },
+        xaxis: {
+          categories: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+          ],
+        },
+      };
+      if ($event.target.value == "line") {
+        data["stroke"] = {
+          curve: "straight",
+          width: [10, 10],
+        };
+      }
+      bus.$emit("change chart Type", {
+        chart: $event.target.value,
+        options: data,
+      });
+    },
     passOptions($event, element, index = null) {
-      console.log("pass option",index, element, $event.target.value);
-      console.log("json",fill);
+      console.log("pass option", index, element, $event.target.value);
+      console.log("json", fill);
       var obj = { ...element };
       obj["selected_value"] = $event.target.value;
       //   console.log(this.options.chart);
@@ -212,7 +298,7 @@ export default {
       console.log(obj);
     },
 
-    passChildOptions($event, element, index ) {
+    passChildOptions($event, element, index) {
       console.log(index, element, $event.target.value);
 
       var obj = { ...element };

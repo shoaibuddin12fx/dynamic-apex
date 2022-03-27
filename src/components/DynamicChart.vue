@@ -78,7 +78,7 @@ export default {
     bus.$on("send dynamic options", (data) => {
       const value = { ...data };
       var op = { ...this.options };
-      console.log("dynamic chart options",value);
+      console.log("dynamic chart options", value);
       if (value.index != null) {
         console.log(value.index);
         value.key = value.key.replace(".${index}", "[" + value.index + "]");
@@ -93,19 +93,12 @@ export default {
       }
     });
     bus.$on("change chart Type", (data) => {
-      this.chart = data;
+      this.chart = data.chart;
       console.log(this.chart);
       this.series[0].type = this.chart;
-      console.log(this.series[0]);
-      this.$refs.realtimeChart.updateSeries(
-        [
-          {
-            type: this.series[0].type,
-          },
-        ],
-        false,
-        true
-      );
+      // const chart_data = data.data;
+
+      this.$refs.realtimeChart.updateOptions(data.options);
     });
     bus.$on("send uploaded json", (data) => {
       console.log("previous series data", this.series[0].data);
