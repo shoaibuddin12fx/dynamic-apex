@@ -3,11 +3,10 @@
     <apexchart
       ref="realtimeChart"
       width="500"
-      type="bar"
       :options="options"
       :series="series"
-      :theme="theme"
     ></apexchart>
+    <!--  -->
   </div>
 </template>
 
@@ -24,6 +23,7 @@ export default {
   data: function () {
     return {
       newValue: "",
+      type: "line",
       options: {
         chart: {
           id: "vuechart-example",
@@ -34,13 +34,13 @@ export default {
       },
       series: [
         {
-          type: "column",
+          // type: "column",
           name: "series-1",
           data: [30, 40, 45, 50, 49, 60, 70, 91, 40],
         },
       ],
       theme: null,
-      chart: undefined,
+      chart: "line",
     };
   },
   methods: {
@@ -51,6 +51,7 @@ export default {
   },
   mounted() {
     bus.$on("update series", (data) => {
+      console.log("update series called");
       const value = data;
       console.log(value);
       this.$refs.realtimeChart.updateSeries([
@@ -60,6 +61,7 @@ export default {
       ]);
     });
     bus.$on("update chart from csv", (data) => {
+      console.log("update chart from csv");
       const value = { ...data };
       this.$refs.realtimeChart.updateOptions({
         chart: {
@@ -76,6 +78,7 @@ export default {
       ]);
     });
     bus.$on("send dynamic options", (data) => {
+      console.log("send dynamic options called");
       const value = { ...data };
       var op = { ...this.options };
       console.log("dynamic chart options", value);
@@ -93,27 +96,40 @@ export default {
       }
     });
     bus.$on("change chart Type", (data) => {
-      this.chart = data.chart;
+      console.log("change chart Type called");
+      var opt = { ...data };
+      // this.chart = opt.chart;
+      this.type = opt.chart.type;
       console.log(this.chart);
-      this.series[0].type = this.chart;
-      // const chart_data = data.data;
 
-      this.$refs.realtimeChart.updateOptions(data.options);
+      if (opt.series) {
+        this.series = opt.series;
+      }
+
+      // this.series = data.series;
+      // const chart_data = data.data;
+      console.log(opt.options);
+      this.$refs.realtimeChart.updateOptions(opt.options);
+      window.dispatchEvent(new Event("resize"));
     });
     bus.$on("send uploaded json", (data) => {
-      console.log("previous series data", this.series[0].data);
+      console.log("send uploaded json called");
+      // console.log("previous series data", this.series[0].data);
       console.log("data", data);
-      this.series[0].data = data.data;
-      this.$refs.realtimeChart.updateSeries(
-        [
-          {
-            data: this.series[0].data,
-          },
-        ],
-        false,
-        true
-      );
-      console.log("new series data", this.series[0].data);
+
+      if (this.series && this.series[0]) {
+        this.series[0].data = data.data;
+        this.$refs.realtimeChart.updateSeries(
+          [
+            {
+              data: this.series[0].data,
+            },
+          ],
+          false,
+          true
+        );
+        console.log("new series data", this.series[0].data);
+      }
     });
   },
 };

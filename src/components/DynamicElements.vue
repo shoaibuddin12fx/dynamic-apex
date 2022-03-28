@@ -253,39 +253,72 @@ export default {
   },
   methods: {
     changeChartType($event) {
-      let data = {
-        series: [
-          {
-            type: $event.target.value,
-            data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-          },
-        ],
-        chart: {
-          type: $event.target.value,
-        },
-        xaxis: {
-          categories: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
+      var options = {};
+      var value = $event.target.value;
+
+      if (value == "line" || value == "bar" || value == "area") {
+        options = {
+          series: [
+            {
+              type: value,
+              data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+            },
           ],
-        },
-      };
-      if ($event.target.value == "line") {
-        data["stroke"] = {
-          curve: "straight",
+          chart: {
+            type: value,
+          },
+          xaxis: {
+            categories: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+            ],
+          },
+        };
+      }
+
+      if (value == "line" || value == "bar" || value == "area") {
+        options["stroke"] = {
+          curve: "smooth",
           width: [10, 10],
         };
       }
+
+      if (value == "radar") {
+        options = {
+          series: [
+            {
+              name: "Radar Series 1",
+              data: [45, 52, 38, 24, 33, 10],
+            },
+            {
+              name: "Radar Series 2",
+              data: [26, 21, 20, 6, 8, 15],
+            },
+          ],
+          labels: ["April", "May", "June", "July", "August", "September"],
+          xaxis: {
+            labels: {
+              formatter: function (value) {
+                return value;
+              },
+            },
+          },
+          chart: {
+            type: "radar",
+          },
+        };
+      }
+
       bus.$emit("change chart Type", {
-        chart: $event.target.value,
-        options: data,
+        chart: value,
+        options: options,
       });
     },
     passOptions($event, element, index = null) {
@@ -359,7 +392,7 @@ export default {
       ...Yaxis,
     ];
     console.log("json values", this.json);
-    this.setOptionValues();
+    // this.setOptionValues();
   },
 };
 </script>
