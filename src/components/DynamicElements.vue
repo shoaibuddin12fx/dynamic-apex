@@ -379,15 +379,10 @@ export default {
     changeChartType($event) {
       var options = {};
       var value = $event.target.value;
+      var series = [];
 
       if (value == "line" || value == "bar" || value == "area") {
         options = {
-          series: [
-            {
-              type: value,
-              data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-            },
-          ],
           chart: {
             type: value,
           },
@@ -405,44 +400,42 @@ export default {
             ],
           },
         };
-      }
-
-      if (value == "line" || value == "bar" || value == "area") {
-        options["stroke"] = {
-          curve: "smooth",
-          width: [10, 10],
-        };
+        series = [
+            {
+              type: value,
+              data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+            },
+          ];
       }
 
       if (value == "radar") {
+
         options = {
-          series: [
-            {
-              name: "Radar Series 1",
-              data: [45, 52, 38, 24, 33, 10],
-            },
-            {
-              name: "Radar Series 2",
-              data: [26, 21, 20, 6, 8, 15],
-            },
-          ],
-          labels: ["April", "May", "June", "July", "August", "September"],
+          // labels: ["April", "May", "June", "July", "August", "September"],
           xaxis: {
-            labels: {
-              formatter: function (value) {
-                return value;
-              },
-            },
+            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",],
           },
           chart: {
             type: "radar",
           },
         };
+
+        series = [
+            {
+              name: "Radar Series 1",
+              data: [51, 49, 62, 69, 45, 52, 38, 24, 33],
+            },
+            {
+              name: "Radar Series 2",
+              data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+            },
+          ];
       }
 
       bus.$emit("change chart Type", {
         chart: value,
         options: options,
+        series: series
       });
     },
     passOptions($event, element, index = null) {
