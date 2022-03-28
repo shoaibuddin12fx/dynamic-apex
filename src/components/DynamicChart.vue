@@ -98,10 +98,13 @@ export default {
     });
     bus.$on("change chart Type", (data) => {
       console.log("change chart Type called");
+      this.$refs.realtimeChart.updateSeries([]);
+      this.$refs.realtimeChart.updateOptions({});
+      
       var opt = { ...data };
       // this.chart = opt.chart;
-      this.type = opt.chart.type;
-      console.log(this.chart);
+      this.type = opt.chart;
+      console.log(opt.options.xaxis.categories);
 
       if (opt.series) {
         this.series = opt.series;
@@ -109,6 +112,8 @@ export default {
 
       // this.series = data.series;
       // const chart_data = data.data;
+      console.log(opt.series);
+      this.$refs.realtimeChart.updateSeries(opt.series);
       console.log(opt.options);
       this.$refs.realtimeChart.updateOptions(opt.options);
       window.dispatchEvent(new Event("resize"));
