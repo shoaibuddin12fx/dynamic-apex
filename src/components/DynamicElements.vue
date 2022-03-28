@@ -392,8 +392,8 @@ export default {
       ...Yaxis,
     ];
     console.log("json values", this.json);
-    // this.setOptionValues();
-    this.changeChartType("line");
+    this.setOptionValues();
+    // this.changeChartType({value : "line"});
   },
 };
 </script>
