@@ -104,7 +104,6 @@ export default {
       var opt = { ...data };
       // this.chart = opt.chart;
       this.type = opt.chart;
-      console.log(opt.options.xaxis.categories);
 
       if (opt.series) {
         this.series = opt.series;
