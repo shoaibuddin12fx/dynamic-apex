@@ -81,6 +81,130 @@
                 </div>
 
                 <div
+                  v-if="element.show !== 0 && element.childs && element.shown !== 0"
+                  class="element"
+                >
+                  <div
+                    v-for="element of element.childs"
+                    :key="element.index"
+                    class="form-group row"
+                  >
+                    <label class="col-sm-6 col-form-label"
+                      >{{ element.label }}
+                      <span v-if="element.type == 'range'"
+                        >({{ element.selected_value }})</span
+                      ></label
+                    >
+                    <div class="col-sm-6" v-if="element.type != 'array'">
+                      <select
+                        class="form-control"
+                        id="positon"
+                        v-if="element.type == 'select'"
+                        v-on:change="passOptions($event, element)"
+                      >
+                        <option v-for="opt of element.options" :key="opt.index">
+                          {{ opt }}
+                        </option>
+                      </select>
+                      <input
+                        v-on:change="passOptions($event, element)"
+                        v-if="element.type == 'color'"
+                        type="color"
+                        class="form-control"
+                      />
+                      <input
+                        v-if="element.type == 'text'"
+                        v-on:change="passOptions($event, element)"
+                        type="text"
+                        class="form-control"
+                      />
+                      <input
+                        v-on:change="passOptions($event, element)"
+                        v-model="element.selected_value"
+                        :min="element.min"
+                        :max="element.max"
+                        :step="element.step"
+                        v-if="element.type == 'range'"
+                        type="range"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="col-sm-12" v-if="element.type == 'array'">
+                      <div class="add-button" @click="addArrayOf(element)">
+                        Add +
+                      </div>
+
+                      <div
+                        class="form-group row my-3"
+                        v-for="(v, index) of element.values"
+                        :key="index"
+                      >
+                        <label
+                          class="
+                            col-sm-1 col-form-label
+                            btn btn-info
+                            index-highlight
+                          "
+                          >{{ index }}
+                        </label>
+                        <div class="col-sm-11">
+                          <input
+                            v-if="element.arrayOf == 'colors'"
+                            type="color"
+                            class="form-control"
+                            v-model="element.values[index].color"
+                            v-on:change="setColor(element.values)"
+                          />
+                          <input
+                            v-if="element.arrayOf == 'text'"
+                            type="text"
+                            class="form-control"
+                          />
+
+                          <div v-if="element.arrayOf == 'objects'">
+                            <div
+                              class="form-group row"
+                              v-for="(vv, index_le1) of v"
+                              :key="index_le1"
+                            >
+                              <div
+                                v-if="vv.heading"
+                                class="form-label headings"
+                              >
+                                {{ vv.label }}
+                              </div>
+
+                              <label
+                                v-if="!vv.heading"
+                                class="col-sm-6 col-form-label"
+                                >{{ vv.label }}</label
+                              >
+                              <div class="col-sm-6">
+                                <input
+                                  v-if="vv.type == 'text'"
+                                  v-on:change="
+                                    passChildOptions($event, vv, index)
+                                  "
+                                  type="text"
+                                  class="form-control"
+                                />
+                                <input
+                                  v-if="vv.type == 'color'"
+                                  v-on:change="
+                                    passChildOptions($event, vv, index)
+                                  "
+                                  type="color"
+                                  class="form-control"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
                   v-if="!element.heading && element.show !== 0"
                   class="element"
                 >
@@ -505,12 +629,41 @@ export default {
     },
     passOptions($event, element, index = null) {
       console.log("pass option", index, element, $event.target.value);
+      if(element.shown == 0){
+        element.shown = 1
+      }else{
+         element.shown = 0
+      }
       console.log("json", fill);
       var obj = { ...element };
       obj["selected_value"] = $event.target.value;
       //   console.log(this.options.chart);
       bus.$emit("send dynamic options", obj);
       console.log(obj);
+      // if(element.key.includes("animations")){
+
+      // }
+      // if ($event.target.value === "gradient") {
+      //   console.log("gradient", fill[0].elements[3].show);
+      //    fill[0].elements[5].show = 0;
+      //    fill[0].elements[4].show = 0;
+      //    fill[0].elements[3].show = 1;
+      // } else if ($event.target.value === "pattern") {
+      //   console.log("pattern", fill[0].elements[5].show);
+      //   fill[0].elements[4].show = 0;
+      //   fill[0].elements[3].show = 0;
+      //   fill[0].elements[5].show = 1;
+      // } else if($event.target.value === "image"){
+      //   fill[0].elements[3].show = 0;
+      //   fill[0].elements[5].show = 0;
+      //   fill[0].elements[4].show = 1;
+      //   console.log("images");
+      // }else if($event.target.value === "solid"){
+      //   fill[0].elements[4].show = 0;
+      //   fill[0].elements[5].show = 0;
+      //   fill[0].elements[3].show = 0;
+      //   console.log("solid");
+      // }
     },
 
     passChildOptions($event, element, index) {
@@ -574,8 +727,8 @@ export default {
       ...Yaxis,
     ];
     console.log("json values", this.json);
-    // this.setOptionValues();
-    this.changeChartType("line");
+    this.setOptionValues();
+    // this.changeChartType("line");
   },
 };
 </script>
