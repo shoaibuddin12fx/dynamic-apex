@@ -81,7 +81,8 @@ export default {
     bus.$on("send dynamic options", (data) => {
       console.log("send dynamic options called");
       const value = { ...data };
-      var op = { ...this.options };
+      var op = { ...data };
+      console.log("here op",op);
       console.log("dynamic chart options", value);
       if (value.index != null) {
         console.log(value.index);
@@ -110,7 +111,7 @@ export default {
       // this.series = data.series;
       // const chart_data = data.data;
       console.log(opt.options);
-      this.$refs.realtimeChart.updateOptions(opt.options);
+       this.$refs.realtimeChart.updateOptions(opt.options);
       window.dispatchEvent(new Event("resize"));
     });
     bus.$on("send uploaded json", (data) => {
