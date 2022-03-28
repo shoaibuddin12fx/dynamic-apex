@@ -426,7 +426,7 @@ export default {
             ],
           },
           chart: {
-            type: "radar",
+            type: value,
           },
         };
 
@@ -440,6 +440,195 @@ export default {
             data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
           },
         ];
+      }
+
+      if(value == "donut" || value == "pie"){
+        options = {
+          chart: {
+            type: value
+          },
+          labels: ['Apple', 'Mango', 'Orange', 'Watermelon'],
+          dataLabels: {
+            enabled: true,
+          }
+        };
+      series = [50, 25, 10, 15];
+      }
+
+      if(value == 'candlestick'){
+        options = {
+          chart: {
+            type: "candlestick"
+          }
+        };
+
+        series = [{
+          data: [{
+            x: "January",
+            y: [51.98, 56.29, 51.59, 53.85]
+          },
+          {
+            x: "February",
+            y: [53.66, 54.99, 51.35, 52.95]
+          },
+          {
+            x: "March",
+            y: [52.76, 57.35, 52.15, 57.03]
+          },
+          {
+            x: "April",
+            y: [51.98, 56.29, 51.59, 53.85]
+          },
+          {
+            x: "May",
+            y: [53.66, 54.99, 51.35, 52.95]
+          },
+          {
+            x: "June",
+            y: [52.76, 57.35, 52.15, 57.03]
+          },
+          {
+            x: "July",
+            y: [51.98, 56.29, 51.59, 53.85]
+          },
+          {
+            x: "September",
+            y: [53.66, 54.99, 51.35, 52.95]
+          },
+          {
+            x: "October",
+            y: [52.76, 57.35, 52.15, 57.03]
+          },
+          {
+            x: "November",
+            y: [51.98, 56.29, 51.59, 53.85]
+          },
+          {
+            x: "December",
+            y: [53.66, 54.99, 51.35, 52.95]
+          }]
+        }];
+      }
+
+      if(value == "radialBar"){
+        options = {
+          chart: {
+              height: 350,
+              type: 'radialBar',
+          },
+          labels: ['Progress1', 'Progress2'],
+        };
+        
+        series = [70, 20];
+      }
+
+      if(value == "heatmap"){
+        options = {
+          chart: {
+            type: "heatmap"
+          }
+        };
+
+        series = [
+          {
+          name: "Series 1",
+          data: [{
+            x: 'W1',
+            y: 22
+          }, {
+            x: 'W2',
+            y: 29
+          }, {
+            x: 'W3',
+            y: 13
+          }, {
+            x: 'W4',
+            y: 32
+          }]
+        },
+        {
+        name: "Series 2",
+        data: [{
+          x: 'W1',
+          y: 43
+        }, {
+          x: 'W2',
+          y: 43
+        }, {
+          x: 'W3',
+          y: 43
+        }, {
+          x: 'W4',
+          y: 43
+        }]
+        }
+        ]
+      }
+
+      if(value == "boxPlot"){
+        options = {
+          chart: {
+            type: value
+          }
+        };
+        series = [{
+          data: [{
+            x: "category 1",
+            y: [40, 51.98, 56.29, 59.59, 63.85]
+          },
+          {
+            x: "category 2",
+            y: [43.66, 44.99, 51.35, 52.95, 59.42]
+          },
+          {
+            x: "category n",
+            y: [52.76, 57.35, 59.15, 63.03, 67.98]
+          }]
+        }];
+      }
+
+      if(value == "treemap"){
+        options = {
+          chart: {
+            height: 350,
+            type: value
+          },
+        };
+
+        series = [
+          {
+            data: [
+              {
+                x: "New Delhi",
+                y: 218,
+              },
+              {
+                x: "Kolkata",
+                y: 149,
+              },
+              {
+                x: "Mumbai",
+                y: 184,
+              },
+              {
+                x: "Ahmedabad",
+                y: 55,
+              },
+              {
+                x: "Bangaluru",
+                y: 84,
+              },
+              {
+                x: "Pune",
+                y: 31,
+              },
+              {
+                x: "Chennai",
+                y: 70,
+              }
+            ],
+          },
+        ]
       }
 
       bus.$emit("change chart Type", {
