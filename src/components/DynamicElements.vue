@@ -79,9 +79,10 @@
                 >
                   {{ element.label }}
                 </div>
-
                 <div
-                  v-if="element.show !== 0 && element.childs && element.shown !== 0"
+                  v-if="
+                    element.show !== 0 && element.childs && element.shown !== 0
+                  "
                   class="element"
                 >
                   <div
@@ -401,19 +402,28 @@ export default {
           },
         };
         series = [
-            {
-              type: value,
-              data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-            },
-          ];
+          {
+            type: value,
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+          },
+        ];
       }
 
       if (value == "radar") {
-
         options = {
           // labels: ["April", "May", "June", "July", "August", "September"],
           xaxis: {
-            categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",],
+            categories: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+            ],
           },
           chart: {
             type: "radar",
@@ -421,29 +431,29 @@ export default {
         };
 
         series = [
-            {
-              name: "Radar Series 1",
-              data: [51, 49, 62, 69, 45, 52, 38, 24, 33],
-            },
-            {
-              name: "Radar Series 2",
-              data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
-            },
-          ];
+          {
+            name: "Radar Series 1",
+            data: [51, 49, 62, 69, 45, 52, 38, 24, 33],
+          },
+          {
+            name: "Radar Series 2",
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+          },
+        ];
       }
 
       bus.$emit("change chart Type", {
         chart: value,
         options: options,
-        series: series
+        series: series,
       });
     },
     passOptions($event, element, index = null) {
       console.log("pass option", index, element, $event.target.value);
-      if(element.shown == 0){
-        element.shown = 1
-      }else{
-         element.shown = 0
+      if (element.shown == 0) {
+        element.shown = 1;
+      } else {
+        element.shown = 0;
       }
       console.log("json", fill);
       var obj = { ...element };
