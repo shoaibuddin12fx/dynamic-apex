@@ -393,6 +393,7 @@ export default {
     ];
     console.log("json values", this.json);
     // this.setOptionValues();
+    this.changeChartType("line");
   },
 };
 </script>

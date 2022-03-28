@@ -3,6 +3,7 @@
     <apexchart
       ref="realtimeChart"
       width="500"
+      type="line"
       :options="options"
       :series="series"
     ></apexchart>
@@ -27,6 +28,7 @@ export default {
       options: {
         chart: {
           id: "vuechart-example",
+          type: this.type,
         },
         xaxis: {
           categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
@@ -39,7 +41,6 @@ export default {
           data: [30, 40, 45, 50, 49, 60, 70, 91, 40],
         },
       ],
-      theme: null,
       chart: "line",
     };
   },
