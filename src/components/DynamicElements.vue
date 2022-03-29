@@ -81,16 +81,10 @@
                 </div>
 
                 <div
-                  v-if="
-                    element.show !== 0 && element.childs && element.shown !== 0
-                  "
+                  v-if="!element.heading && element.show !== 0"
                   class="element"
                 >
-                  <div
-                    v-for="element of element.childs"
-                    :key="element.index"
-                    class="form-group row"
-                  >
+                  <div class="form-group row">
                     <label class="col-sm-6 col-form-label"
                       >{{ element.label }}
                       <span v-if="element.type == 'range'"
@@ -207,10 +201,16 @@
                   </div>
                 </div>
                 <div
-                  v-if="!element.heading && element.show !== 0"
+                  v-if="
+                    element.show !== 0 && element.childs && element.shown !== 0
+                  "
                   class="element"
                 >
-                  <div class="form-group row">
+                  <div
+                    v-for="element of element.childs"
+                    :key="element.index"
+                    class="form-group row"
+                  >
                     <label class="col-sm-6 col-form-label"
                       >{{ element.label }}
                       <span v-if="element.type == 'range'"
@@ -459,7 +459,7 @@ export default {
       console.log("json", fill);
       var obj = { ...element };
       obj["selected_value"] = $event.target.value;
-        console.log(this.options.chart);
+      console.log(this.options.chart);
       bus.$emit("send dynamic options", obj);
       console.log(obj);
       // if(element.key.includes("animations")){
