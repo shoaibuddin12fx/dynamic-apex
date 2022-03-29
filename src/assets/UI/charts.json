@@ -508,10 +508,6 @@
         "key": "chart.toolbar.tools.reset"
       },
       {
-        "label": "toolbar > export",
-        "heading": true
-      },
-      {
         "label": "tolbar > export > csv",
         "heading": true
       },
