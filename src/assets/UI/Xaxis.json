@@ -73,101 +73,104 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "xaxis.labels.show"
-      },
-      {
-        "type": "range",
-        "selected_value": 0,
-        "min": -360,
-        "max": 360,
-        "step": 45,
-        "label": "rotate",
-        "key": "xaxis.labels.rotate"
-      },
-      {
-        "type": "select",
-        "label": "rotate always",
-        "options": ["true", "false"],
-        "key": "xaxis.labels.rotateAlways"
-      },
-      {
-        "type": "select",
-        "label": "hide Overlaping Labels",
-        "options": ["true", "false"],
-        "key": "xaxis.labels.hideOverlapingLabels"
-      },
-      {
-        "type": "select",
-        "label": "show duplicates",
-        "options": ["true", "false"],
-        "key": "xaxis.label.showDuplicates"
-      },
-      {
-        "type": "select",
-        "label": "trim",
-        "options": ["true", "false"],
-        "key": "xaxis.labels.trim"
-      },
-      {
-        "type": "text",
-        "label": "min Height",
-        "key": "xaxis.labels.minHeight"
-      },
-      {
-        "type": "text",
-        "label": "maxHeight",
-        "key": "xaxis.label.maxHeight"
-      },
-      {
-        "type": "text",
-        "label": "offsetX",
-        "key": "xaxis.label.offsetX"
-      },
-      {
-        "type": "text",
-        "label": "offsetY",
-        "key": "xaxis.label.offsetY"
-      },
-      {
-        "type": "text",
-        "label": "format",
-        "key": "xaxis.label.format"
-      },
-      {
-        "type": "text",
-        "label": "formatter",
-        "key": "xaxis.label.formatter"
-      },
-      {
-        "type": "select",
-        "label": "datetime UTC",
-        "options": ["true", "false"],
-        "key": "xaxis.label.datetimeUTC"
-      },
-      {
-        "label": "labels > Datetime Formatter",
-        "heading": true
-      },
-      {
-        "type": "text",
-        "label": "year",
-        "key": "xaxis.label.datetimeFormatter.year"
-      },
-      {
-        "type": "text",
-        "label": "month",
-        "key": "xaxis.label.datetimeFormatter.month"
-      },
-      {
-        "type": "text",
-        "label": "day",
-        "key": "xaxis.label.datetimeFormatter.day"
-      },
-      {
-        "type": "text",
-        "label": "hour",
-        "key": "xaxis.label.datetimeFormatter.hour"
+        "options": ["false", "true"],
+        "key": "xaxis.labels.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "range",
+            "selected_value": 0,
+            "min": -360,
+            "max": 360,
+            "step": 45,
+            "label": "rotate",
+            "key": "xaxis.labels.rotate"
+          },
+          {
+            "type": "select",
+            "label": "rotate always",
+            "options": ["true", "false"],
+            "key": "xaxis.labels.rotateAlways"
+          },
+          {
+            "type": "select",
+            "label": "hide Overlaping Labels",
+            "options": ["true", "false"],
+            "key": "xaxis.labels.hideOverlapingLabels"
+          },
+          {
+            "type": "select",
+            "label": "show duplicates",
+            "options": ["true", "false"],
+            "key": "xaxis.label.showDuplicates"
+          },
+          {
+            "type": "select",
+            "label": "trim",
+            "options": ["true", "false"],
+            "key": "xaxis.labels.trim"
+          },
+          {
+            "type": "text",
+            "label": "min Height",
+            "key": "xaxis.labels.minHeight"
+          },
+          {
+            "type": "text",
+            "label": "maxHeight",
+            "key": "xaxis.label.maxHeight"
+          },
+          {
+            "type": "text",
+            "label": "offsetX",
+            "key": "xaxis.label.offsetX"
+          },
+          {
+            "type": "text",
+            "label": "offsetY",
+            "key": "xaxis.label.offsetY"
+          },
+          {
+            "type": "text",
+            "label": "format",
+            "key": "xaxis.label.format"
+          },
+          {
+            "type": "text",
+            "label": "formatter",
+            "key": "xaxis.label.formatter"
+          },
+          {
+            "type": "select",
+            "label": "datetime UTC",
+            "options": ["true", "false"],
+            "key": "xaxis.label.datetimeUTC"
+          },
+          {
+            "label": "labels > Datetime Formatter",
+            "heading": true
+          },
+          {
+            "type": "text",
+            "label": "year",
+            "key": "xaxis.label.datetimeFormatter.year"
+          },
+          {
+            "type": "text",
+            "label": "month",
+            "key": "xaxis.label.datetimeFormatter.month"
+          },
+          {
+            "type": "text",
+            "label": "day",
+            "key": "xaxis.label.datetimeFormatter.day"
+          },
+          {
+            "type": "text",
+            "label": "hour",
+            "key": "xaxis.label.datetimeFormatter.hour"
+          }
+        ]
       },
       {
         "label": "labels > style",
@@ -208,33 +211,36 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "xaxis.axisBorder.show"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "xaxis.axisBorder.color"
-      },
-      {
-        "type": "text",
-        "label": "height",
-        "key": "xaxis.axisBorder.height"
-      },
-      {
-        "type": "text",
-        "label": "width",
-        "key": "xaxis.axisBorder.width"
-      },
-      {
-        "type": "text",
-        "label": "offsetX",
-        "key": "xaxis.axisBorder.offsetX"
-      },
-      {
-        "type": "text",
-        "label": "offsetY",
-        "key": "xaxis.axisBorder.offsetY"
+        "options": ["false", "true"],
+        "key": "xaxis.axisBorder.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "color",
+            "label": "color",
+            "key": "xaxis.axisBorder.color"
+          },
+          {
+            "type": "text",
+            "label": "height",
+            "key": "xaxis.axisBorder.height"
+          },
+          {
+            "type": "text",
+            "label": "width",
+            "key": "xaxis.axisBorder.width"
+          },
+          {
+            "type": "text",
+            "label": "offsetX",
+            "key": "xaxis.axisBorder.offsetX"
+          },
+          {
+            "type": "text",
+            "label": "offsetY",
+            "key": "xaxis.axisBorder.offsetY"
+          }
+        ]
       },
       {
         "label": "axis Ticks",
@@ -243,34 +249,37 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "xaxis.axisTicks.show"
-      },
-      {
-        "type": "select",
-        "label": "border Type",
-        "options": ["solid", "dotted"],
-        "key": "xaxis.axisTicks.borderType"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "xaxis.axisTicks.color"
-      },
-      {
-        "type": "text",
-        "label": "height",
-        "key": "xaxis.axisTicks.height"
-      },
-      {
-        "type": "text",
-        "label": "offsetX",
-        "key": "xaxis.axisTicks.offsetX"
-      },
-      {
-        "type": "text",
-        "label": "offsetY",
-        "key": "xaxis.axisTicks.offsetY"
+        "options": ["false", "true"],
+        "key": "xaxis.axisTicks.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "select",
+            "label": "border Type",
+            "options": ["solid", "dotted"],
+            "key": "xaxis.axisTicks.borderType"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "xaxis.axisTicks.color"
+          },
+          {
+            "type": "text",
+            "label": "height",
+            "key": "xaxis.axisTicks.height"
+          },
+          {
+            "type": "text",
+            "label": "offsetX",
+            "key": "xaxis.axisTicks.offsetX"
+          },
+          {
+            "type": "text",
+            "label": "offsetY",
+            "key": "xaxis.axisTicks.offsetY"
+          }
+        ]
       },
       {
         "label": "title",
@@ -327,24 +336,27 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "xaxis.crosshairs.show"
-      },
-      {
-        "type": "text",
-        "label": "width",
-        "key": "xaxis.crosshairs.width"
-      },
-      {
-        "type": "select",
-        "options": ["back", "front"],
-        "label": "position",
-        "key": "xaxis.crosshairs.position"
-      },
-      {
-        "type": "text",
-        "label": "opacity",
-        "key": "xaxis.crosshairs.opacity"
+        "options": ["false", "true"],
+        "key": "xaxis.crosshairs.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "width",
+            "key": "xaxis.crosshairs.width"
+          },
+          {
+            "type": "select",
+            "options": ["back", "front"],
+            "label": "position",
+            "key": "xaxis.crosshairs.position"
+          },
+          {
+            "type": "text",
+            "label": "opacity",
+            "key": "xaxis.crosshairs.opacity"
+          }
+        ]
       },
       {
         "label": "crosshairs > stroke",
@@ -417,28 +429,31 @@
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "xaxis.crosshairs.dropShadow.enabled"
-      },
-      {
-        "type": "text",
-        "label": "top",
-        "key": "xaxis.crosshairs.dropShadow.top"
-      },
-      {
-        "type": "text",
-        "label": "left",
-        "key": "xaxis.crosshairs.dropShadow.left"
-      },
-      {
-        "type": "text",
-        "label": "blur",
-        "key": "xaxis.crosshairs.dropShadow.blur"
-      },
-      {
-        "type": "text",
-        "label": "opacity",
-        "key": "xaxis.crosshairs.dropShadow.opacity"
+        "options": ["false", "true"],
+        "key": "xaxis.crosshairs.dropShadow.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "top",
+            "key": "xaxis.crosshairs.dropShadow.top"
+          },
+          {
+            "type": "text",
+            "label": "left",
+            "key": "xaxis.crosshairs.dropShadow.left"
+          },
+          {
+            "type": "text",
+            "label": "blur",
+            "key": "xaxis.crosshairs.dropShadow.blur"
+          },
+          {
+            "type": "text",
+            "label": "opacity",
+            "key": "xaxis.crosshairs.dropShadow.opacity"
+          }
+        ]
       },
       {
         "label": "tooltip",
@@ -447,18 +462,21 @@
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "xaxis.tooltip.enabled"
-      },
-      {
-        "type": "text",
-        "label": "Formatter",
-        "key": "xaxis.tooltip.Formatter"
-      },
-      {
-        "type": "text",
-        "label": "offsetY",
-        "key": "xaxis.tooltip.offsetY"
+        "options": ["false", "true"],
+        "key": "xaxis.tooltip.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "Formatter",
+            "key": "xaxis.tooltip.Formatter"
+          },
+          {
+            "type": "text",
+            "label": "offsetY",
+            "key": "xaxis.tooltip.offsetY"
+          }
+        ]
       },
       {
         "label": "tooltip > style",
