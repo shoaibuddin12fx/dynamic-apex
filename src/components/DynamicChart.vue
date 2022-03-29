@@ -64,19 +64,36 @@ export default {
     bus.$on("update chart from csv", (data) => {
       console.log("update chart from csv");
       const value = { ...data };
-      this.$refs.realtimeChart.updateOptions({
-        chart: {
-          id: "vuechart-example",
-        },
-        xaxis: {
-          categories: value.x_axis,
-        },
-      });
-      this.$refs.realtimeChart.updateSeries([
-        {
-          data: value.y_axis,
-        },
-      ]);
+      if(value.data_type == "single_value"){
+        this.$refs.realtimeChart.updateOptions({
+          chart: {
+            id: "vuechart-example",
+          },
+          xaxis: {
+            categories: value.x_axis,
+          },
+        });
+        this.$refs.realtimeChart.updateSeries([
+          {
+            data: value.y_axis,
+          },
+        ]);
+      }
+      if(value.data_type == "paired_value"){
+        this.$refs.realtimeChart.updateOptions({
+          chart: {
+            id: "vuechart-example",
+          },
+          xaxis: {
+            categories: value.x_axis,
+          },
+        });
+        this.$refs.realtimeChart.updateSeries([
+          {
+            data: value.y_axis,
+          },
+        ]);
+      }
     });
     bus.$on("send dynamic options", (data) => {
       console.log("send dynamic options called");
