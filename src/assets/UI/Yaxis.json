@@ -7,80 +7,83 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "yaxis.show"
-      },
-      {
-        "type": "select",
-        "label": "showAlways",
-        "options": ["true", "false"],
-        "key": "yaxis.showAlways"
-      },
-      {
-        "type": "select",
-        "label": "showForNullSeries",
-        "options": ["true", "false"],
-        "key": "yaxis.showForNullSeries"
-      },
-      {
-        "type": "text",
-        "label": "seriesName",
-        "key": "yaxis.seriesName"
-      },
-      {
-        "type": "select",
-        "label": "opposite",
-        "options": ["true", "false"],
-        "key": "yaxis.opposite"
-      },
-      {
-        "type": "select",
-        "label": "reversed",
-        "options": ["true", "false"],
-        "key": "yaxis.reversed"
-      },
-      {
-        "type": "select",
-        "label": "logarithmic",
-        "options": ["true", "false"],
-        "key": "yaxis.logarithmic"
-      },
-      {
-        "type": "text",
-        "label": "logBase",
-        "key": "yaxis.logBase"
-      },
-      {
-        "type": "text",
-        "label": "tickAmount",
-        "key": "yaxis.tickAmount"
-      },
-      {
-        "type": "text",
-        "label": "min",
-        "key": "yaxis.min"
-      },
-      {
-        "type": "text",
-        "label": "max",
-        "key": "yaxis.max"
-      },
-      {
-        "type": "select",
-        "label": "forceNiceScale",
-        "options": ["true", "false"],
-        "key": "yaxis.forceNiceScale"
-      },
-      {
-        "type": "select",
-        "label": "floating",
-        "options": ["true", "false"],
-        "key": "yaxis.floating"
-      },
-      {
-        "type": "text",
-        "label": "decimals In Float",
-        "key": "yaxis.decimalsInFloat"
+        "options": ["false", "true"],
+        "key": "yaxis.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "seriesName",
+            "key": "yaxis.seriesName"
+          },
+          {
+            "type": "select",
+            "label": "opposite",
+            "options": ["false", "true"],
+            "key": "yaxis.opposite"
+          },
+          {
+            "type": "select",
+            "label": "reversed",
+            "options": ["false", "true"],
+            "key": "yaxis.reversed"
+          },
+          {
+            "type": "select",
+            "label": "logarithmic",
+            "options": ["false", "true"],
+            "key": "yaxis.logarithmic"
+          },
+          {
+            "type": "text",
+            "label": "logBase",
+            "key": "yaxis.logBase"
+          },
+          {
+            "type": "text",
+            "label": "tickAmount",
+            "key": "yaxis.tickAmount"
+          },
+          {
+            "type": "text",
+            "label": "min",
+            "key": "yaxis.min"
+          },
+          {
+            "type": "text",
+            "label": "max",
+            "key": "yaxis.max"
+          },
+          {
+            "type": "select",
+            "label": "forceNiceScale",
+            "options": ["false", "true"],
+            "key": "yaxis.forceNiceScale"
+          },
+          {
+            "type": "select",
+            "label": "floating",
+            "options": ["false", "true"],
+            "key": "yaxis.floating"
+          },
+          {
+            "type": "text",
+            "label": "decimals In Float",
+            "key": "yaxis.decimalsInFloat"
+          },
+          {
+            "type": "select",
+            "label": "showAlways",
+            "options": ["false", "true"],
+            "key": "yaxis.showAlways"
+          },
+          {
+            "type": "select",
+            "label": "showForNullSeries",
+            "options": ["false", "true"],
+            "key": "yaxis.showForNullSeries"
+          }
+        ]
       },
       {
         "label": "labels",
@@ -89,24 +92,27 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "yaxis.labels.show"
-      },
-      {
-        "type": "select",
-        "label": "align",
-        "options": ["left", "center", "right"],
-        "key": "yaxis.labels.align"
-      },
-      {
-        "type": "text",
-        "label": "minWidth",
-        "key": "yaxis.labels.minWidth"
-      },
-      {
-        "type": "text",
-        "label": "maxWidth",
-        "key": "yaxis.labels.maxWidth"
+        "options": ["false", "true"],
+        "key": "yaxis.labels.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "select",
+            "label": "align",
+            "options": ["left", "center", "right"],
+            "key": "yaxis.labels.align"
+          },
+          {
+            "type": "text",
+            "label": "minWidth",
+            "key": "yaxis.labels.minWidth"
+          },
+          {
+            "type": "text",
+            "label": "maxWidth",
+            "key": "yaxis.labels.maxWidth"
+          }
+        ]
       },
       {
         "label": "style",
@@ -160,23 +166,26 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "yaxis.labels.axisBorder.show"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "yaxis.labels.axisBorder.color"
-      },
-      {
-        "type": "text",
-        "label": "offsetX",
-        "key": "yaxis.labels.axisBorder.offsetX"
-      },
-      {
-        "type": "text",
-        "label": "offsetY",
-        "key": "yaxis.labels.axisBorder.offsetY"
+        "options": ["false", "true"],
+        "key": "yaxis.labels.axisBorder.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "color",
+            "label": "color",
+            "key": "yaxis.labels.axisBorder.color"
+          },
+          {
+            "type": "text",
+            "label": "offsetX",
+            "key": "yaxis.labels.axisBorder.offsetX"
+          },
+          {
+            "type": "text",
+            "label": "offsetY",
+            "key": "yaxis.labels.axisBorder.offsetY"
+          }
+        ]
       },
       {
         "label": "axisTicks",
@@ -185,34 +194,37 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "yaxis.labels.axisTicks.show"
-      },
-      {
-        "type": "select",
-        "label": "borderType",
-        "options": ["solid", "dotted"],
-        "key": "yaxis.labels.axisTicks.borderType"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "yaxis.labels.axisTicks.color"
-      },
-      {
-        "type": "text",
-        "label": "width",
-        "key": "yaxis.labels.axisTicks.text"
-      },
-      {
-        "type": "text",
-        "label": "offsetX",
-        "key": "yaxis.labels.axisTicks.text"
-      },
-      {
-        "type": "text",
-        "label": "offsetY",
-        "key": "yaxis.labels.axisTicks.offsetY"
+        "options": ["false", "true"],
+        "key": "yaxis.labels.axisTicks.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "select",
+            "label": "borderType",
+            "options": ["solid", "dotted"],
+            "key": "yaxis.labels.axisTicks.borderType"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "yaxis.labels.axisTicks.color"
+          },
+          {
+            "type": "text",
+            "label": "width",
+            "key": "yaxis.labels.axisTicks.text"
+          },
+          {
+            "type": "text",
+            "label": "offsetX",
+            "key": "yaxis.labels.axisTicks.text"
+          },
+          {
+            "type": "text",
+            "label": "offsetY",
+            "key": "yaxis.labels.axisTicks.offsetY"
+          }
+        ]
       },
       {
         "label": "title",
@@ -225,7 +237,7 @@
       },
       {
         "type": "text",
-        "label": " rotate",
+        "label": "rotate",
         "key": "yaxis.labels.title.rotate"
       },
       {
@@ -274,14 +286,17 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "yaxis.labels.crosshairs.show"
-      },
-      {
-        "type": "select",
-        "label": " position",
-        "options": ["front", "back"],
-        "key": "yaxis.labels.position"
+        "options": ["false", "true"],
+        "key": "yaxis.labels.crosshairs.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "select",
+            "label": " position",
+            "options": ["front", "back"],
+            "key": "yaxis.labels.position"
+          }
+        ]
       },
       {
         "label": "stroke",
@@ -309,13 +324,16 @@
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "yaxis.labels.tooltip.align"
-      },
-      {
-        "type": "text",
-        "label": "offsetX",
-        "key": "yaxis.labels.tooltip.offsetX"
+        "options": ["false", "true"],
+        "key": "yaxis.labels.tooltip.align",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "offsetX",
+            "key": "yaxis.labels.tooltip.offsetX"
+          }
+        ]
       }
     ]
   }
