@@ -4,12 +4,11 @@
     "area",
     "bar",
     "radar",
-    "histogram",
+    "boxPlot",
     "pie",
     "donut",
     "radialBar",
-    "scatter",
-    "bubble",
+    "treemap",
     "heatmap",
     "candlestick"
   ]

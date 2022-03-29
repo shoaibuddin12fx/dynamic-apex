@@ -5,7 +5,7 @@
     "inputs": true,
     "elements": [
       {
-        "label": "area > plotOptions",
+        "label": "area",
         "heading": true
       },
       {
@@ -14,54 +14,65 @@
         "key": "plotOptions.area.fillTo"
       },
       {
-        "label": "bar > plotOptions",
+        "label": "bar",
         "heading": true
       },
       {
         "type": "select",
         "label": "horizontal",
-        "options": ["true", "false"],
-        "key": "plotOptions.bar.horizontal"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.bar.horizontal",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "range",
+            "label": "border Radius",
+            "key": "plotOptions.bar.borderRadius"
+          },
+          {
+            "type": "text",
+            "label": "column Width",
+            "key": "plotOptions.bar.columnWidth"
+          },
+          {
+            "type": "text",
+            "label": "bar Height",
+            "key": "plotOptions.bar.barHeight"
+          },
+          {
+            "type": "select",
+            "label": "distributed",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.bar.distributed"
+          },
+          {
+            "type": "select",
+            "label": "range Bar Overlap",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.bar.rangeBarOverlap"
+          },
+          {
+            "type": "select",
+            "label": "range Bar Group Rows",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.bar.rangeBarGroupRows"
+          }
+        ]
       },
       {
-        "type": "range",
-        "label": "border Radius",
-        "key": "plotOptions.bar.borderRadius"
-      },
-      {
-        "type": "text",
-        "label": "column Width",
-        "key": "plotOptions.bar.columnWidth"
-      },
-      {
-        "type": "text",
-        "label": "bar Height",
-        "key": "plotOptions.bar.barHeight"
-      },
-      {
-        "type": "select",
-        "label": "distributed",
-        "options": ["true", "false"],
-        "key": "plotOptions.bar.distributed"
-      },
-      {
-        "type": "select",
-        "label": "range Bar Overlap",
-        "options": ["true", "false"],
-        "key": "plotOptions.bar.rangeBarOverlap"
-      },
-      {
-        "type": "select",
-        "label": "range Bar Group Rows",
-        "options": ["true", "false"],
-        "key": "plotOptions.bar.rangeBarGroupRows"
-      },
-      {
-        "label": "colors > bar > plotOptions",
-        "heading": true
-      },
-      {
-        "label": "ranges > colors > bar > plotOptions",
+        "label": "bar > colors",
         "heading": true
       },
       {
@@ -103,19 +114,26 @@
         "key": "plotOptions.bar.colors.backgroundBarRadius"
       },
       {
-        "label": "dataLabels > bar > plotOptions",
+        "label": "bar > dataLabels",
         "heading": true
       },
       {
         "type": "select",
         "label": "position",
-        "options": ["top", "center", "bottom"],
+        "options": [
+          "top",
+          "center",
+          "bottom"
+        ],
         "key": "plotOptions.bar.dataLabels.position"
       },
       {
         "type": "select",
         "label": "orientation",
-        "options": ["horizontal", "vertical"],
+        "options": [
+          "horizontal",
+          "vertical"
+        ],
         "key": "plotOptions.bar.dataLabels.maxItems"
       },
       {
@@ -126,11 +144,14 @@
       {
         "type": "select",
         "label": "hide Over Flowing Labels",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "plotOptions.bar.dataLabels.orientation"
       },
       {
-        "label": "bubble > plotOptions",
+        "label": "bubble",
         "heading": true
       },
       {
@@ -144,11 +165,7 @@
         "key": "plotOptions.bubble.maxBubbleRadius"
       },
       {
-        "label": "candlestick > plotOptions",
-        "heading": true
-      },
-      {
-        "label": "color > candlestick > plotOptions",
+        "label": "candlestick > colors",
         "heading": true
       },
       {
@@ -162,21 +179,20 @@
         "key": "plotOptions.candlestick.colors.downward"
       },
       {
-        "label": "wick > candlestick > plotOptions",
+        "label": "candlestick > wick",
         "heading": true
       },
       {
         "type": "select",
         "label": "use Fill Color",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "plotOptions.candlestick.wick.useFillColor"
       },
       {
-        "label": "boxPlot > plotOptions",
-        "heading": true
-      },
-      {
-        "label": "colors > boxPlot > plotOptions",
+        "label": "boxPlot > colors",
         "heading": true
       },
       {
@@ -190,7 +206,7 @@
         "key": "plotOptions.boxPlot.colors.lower"
       },
       {
-        "label": "heatmap > plotOptions",
+        "label": "heatmap",
         "heading": true
       },
       {
@@ -200,39 +216,50 @@
       },
       {
         "type": "select",
-        "label": "enable Shades",
-        "options": ["true", "false"],
-        "key": "plotOptions.heatmap.enableShades"
+        "label": "Shades",
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.heatmap.enableShades",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "shade Intensity",
+            "key": "plotOptions.heatmap.shadeIntensity"
+          },
+          {
+            "type": "select",
+            "label": "reverse Negative Shade",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.heatmap.reverseNegativeShade"
+          },
+          {
+            "type": "select",
+            "label": "distributed",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.heatmap.distributed"
+          },
+          {
+            "type": "select",
+            "label": "use Fill Color As Stroke",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.heatmap.useFillColorAsStroke"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "shade Intensity",
-        "key": "plotOptions.heatmap.shadeIntensity"
-      },
-      {
-        "type": "select",
-        "label": "reverse Negative Shade",
-        "options": ["true", "false"],
-        "key": "plotOptions.heatmap.reverseNegativeShade"
-      },
-      {
-        "type": "select",
-        "label": "distributed",
-        "options": ["true", "false"],
-        "key": "plotOptions.heatmap.distributed"
-      },
-      {
-        "type": "select",
-        "label": "use Fill Color As Stroke",
-        "options": ["true", "false"],
-        "key": "plotOptions.heatmap.useFillColorAsStroke"
-      },
-      {
-        "label": "colorScale > heatmap > plotOptions",
-        "heading": true
-      },
-      {
-        "label": "ranges > colorScale > heatmap > plotOptions",
+        "label": "heatmap > colorScale > ranges",
         "heading": true
       },
       {
@@ -271,58 +298,75 @@
       {
         "type": "select",
         "label": "inverse",
-        "options": ["true", "false"],
-        "key": "plotOptions.heatmap.inverse"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.heatmap.inverse",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "min",
+            "key": "plotOptions.heatmap.min"
+          },
+          {
+            "type": "text",
+            "label": "max",
+            "key": "plotOptions.heatmap.max"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "min",
-        "key": "plotOptions.heatmap.min"
-      },
-      {
-        "type": "text",
-        "label": "max",
-        "key": "plotOptions.heatmap.max"
-      },
-      {
-        "label": "treemap > plotOptions",
+        "label": "treemap",
         "heading": true
       },
       {
         "type": "select",
-        "label": "enable Shades",
-        "options": ["true", "false"],
-        "key": "plotOptions.treemap.enableShades"
+        "label": "Shades",
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.treemap.enableShades",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "shade Intensity",
+            "key": "plotOptions.treemap.shadeIntensity"
+          },
+          {
+            "type": "select",
+            "label": "reverse Negative Shade",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.treemap.reverseNegativeShade"
+          },
+          {
+            "type": "select",
+            "label": "distributed",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.treemap.distributed"
+          },
+          {
+            "type": "select",
+            "label": "use Fill Color As Stroke",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.treemap.useFillColorAsStroke"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "shade Intensity",
-        "key": "plotOptions.treemap.shadeIntensity"
-      },
-      {
-        "type": "select",
-        "label": "reverse Negative Shade",
-        "options": ["true", "false"],
-        "key": "plotOptions.treemap.reverseNegativeShade"
-      },
-      {
-        "type": "select",
-        "label": "distributed",
-        "options": ["true", "false"],
-        "key": "plotOptions.treemap.distributed"
-      },
-      {
-        "type": "select",
-        "label": "use Fill Color As Stroke",
-        "options": ["true", "false"],
-        "key": "plotOptions.treemap.useFillColorAsStroke"
-      },
-      {
-        "label": "colorScale > treemap > plotOptions",
-        "heading": true
-      },
-      {
-        "label": "ranges > colorScale > treemap > plotOptions",
+        "label": "treemap > colorScale > ranges",
         "heading": true
       },
       {
@@ -361,21 +405,27 @@
       {
         "type": "select",
         "label": "inverse",
-        "options": ["true", "false"],
-        "key": "plotOptions.treemap.inverse"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.treemap.inverse",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "min",
+            "key": "plotOptions.treemap.min"
+          },
+          {
+            "type": "text",
+            "label": "max",
+            "key": "plotOptions.treemap.max"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "min",
-        "key": "plotOptions.treemap.min"
-      },
-      {
-        "type": "text",
-        "label": "max",
-        "key": "plotOptions.treemap.max"
-      },
-      {
-        "label": "pie > plotOptions",
+        "label": "pie",
         "heading": true
       },
       {
@@ -391,7 +441,10 @@
       {
         "type": "select",
         "label": "expand onClick",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "plotOptions.pie.expandOnClick"
       },
       {
@@ -410,7 +463,7 @@
         "key": "plotOptions.pie.customScale"
       },
       {
-        "label": "dataLabels > pie > plotOptions",
+        "label": "pie > dataLabels",
         "heading": true
       },
       {
@@ -424,7 +477,7 @@
         "key": "plotOptions.pie.dataLabels.minAngleToShowLabel"
       },
       {
-        "label": "donut > pie > plotOptions",
+        "label": "pie > donut",
         "heading": true
       },
       {
@@ -438,132 +491,152 @@
         "key": "plotOptions.donut.background"
       },
       {
-        "label": "labels > donut > pie > plotOptions",
+        "label": "pie > donut > labels",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "plotOptions.donut.labels.show"
       },
       {
-        "label": "name > labels > donut > pie > plotOptions",
+        "label": "pie > donut > labels > name",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "plotOptions.donut.labels.name.show"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.donut.labels.name.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "font Size",
+            "key": "plotOptions.donut.labels.name.fontSize"
+          },
+          {
+            "type": "text",
+            "label": "font Family",
+            "key": "plotOptions.donut.labels.name.fontFamily"
+          },
+          {
+            "type": "text",
+            "label": "font Weight",
+            "key": "plotOptions.donut.labels.name.fontWeight"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "plotOptions.donut.labels.name.color"
+          },
+          {
+            "type": "text",
+            "label": "offset-Y",
+            "key": "plotOptions.donut.labels.name.offsetY"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "font Size",
-        "key": "plotOptions.donut.labels.name.fontSize"
-      },
-      {
-        "type": "text",
-        "label": "font Family",
-        "key": "plotOptions.donut.labels.name.fontFamily"
-      },
-      {
-        "type": "text",
-        "label": "font Weight",
-        "key": "plotOptions.donut.labels.name.fontWeight"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "plotOptions.donut.labels.name.color"
-      },
-      {
-        "type": "text",
-        "label": "offset-Y",
-        "key": "plotOptions.donut.labels.name.offsetY"
-      },
-      {
-        "label": "value > labels > donut > pie > plotOptions",
+        "label": "pie > donut > labels > value",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "plotOptions.donut.labels.value.show"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.donut.labels.value.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "font Size",
+            "key": "plotOptions.donut.labels.value.fontSize"
+          },
+          {
+            "type": "text",
+            "label": "font Family",
+            "key": "plotOptions.donut.labels.value.fontFamily"
+          },
+          {
+            "type": "text",
+            "label": "font Weight",
+            "key": "plotOptions.donut.labels.value.fontWeight"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "plotOptions.donut.labels.value.color"
+          },
+          {
+            "type": "text",
+            "label": "offset-Y",
+            "key": "plotOptions.donut.labels.value.offsetY"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "font Size",
-        "key": "plotOptions.donut.labels.value.fontSize"
-      },
-      {
-        "type": "text",
-        "label": "font Family",
-        "key": "plotOptions.donut.labels.value.fontFamily"
-      },
-      {
-        "type": "text",
-        "label": "font Weight",
-        "key": "plotOptions.donut.labels.value.fontWeight"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "plotOptions.donut.labels.value.color"
-      },
-      {
-        "type": "text",
-        "label": "offset-Y",
-        "key": "plotOptions.donut.labels.value.offsetY"
-      },
-      {
-        "label": "total > labels > donut > pie > plotOptions",
+        "label": "pie > donut > labels > total",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "plotOptions.donut.labels.total.show"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.donut.labels.total.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "select",
+            "label": "show Always",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "plotOptions.donut.labels.total.showAlways"
+          },
+          {
+            "type": "text",
+            "label": "label",
+            "key": "plotOptions.donut.labels.total.label"
+          },
+          {
+            "type": "text",
+            "label": "font Size",
+            "key": "plotOptions.donut.labels.total.fontSize"
+          },
+          {
+            "type": "text",
+            "label": "font Family",
+            "key": "plotOptions.donut.labels.total.fontFamily"
+          },
+          {
+            "type": "text",
+            "label": "font Weight",
+            "key": "plotOptions.donut.labels.total.fontWeight"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "plotOptions.donut.labels.total.color"
+          }
+        ]
       },
       {
-        "type": "select",
-        "label": "show Always",
-        "options": ["true", "false"],
-        "key": "plotOptions.donut.labels.total.showAlways"
-      },
-      {
-        "type": "text",
-        "label": "label",
-        "key": "plotOptions.donut.labels.total.label"
-      },
-      {
-        "type": "text",
-        "label": "font Size",
-        "key": "plotOptions.donut.labels.total.fontSize"
-      },
-      {
-        "type": "text",
-        "label": "font Family",
-        "key": "plotOptions.donut.labels.total.fontFamily"
-      },
-      {
-        "type": "text",
-        "label": "font Weight",
-        "key": "plotOptions.donut.labels.total.fontWeight"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "plotOptions.donut.labels.total.color"
-      },
-      {
-        "label": "polarArea > plotOptions",
-        "heading": true
-      },
-      {
-        "label": "rings > polarArea > plotOptions",
+        "label": "polarArea > rings",
         "heading": true
       },
       {
@@ -577,7 +650,7 @@
         "key": "plotOptions.polarArea.rings.strokeColor"
       },
       {
-        "label": "spokes > polarArea > plotOptions",
+        "label": "polarArea > spokes",
         "heading": true
       },
       {
@@ -591,7 +664,7 @@
         "key": "plotOptions.polarArea.spokes.connectorColors"
       },
       {
-        "label": "radar > plotOptions",
+        "label": "radar",
         "heading": true
       },
       {
@@ -610,7 +683,7 @@
         "key": "plotOptions.polarArea.radar.offsetY"
       },
       {
-        "label": "polygons > radar > plotOptions",
+        "label": "radar > polygons",
         "heading": true
       },
       {
@@ -629,7 +702,7 @@
         "key": "plotOptions.polarArea.polygons.connectorColors"
       },
       {
-        "label": "fills > polygons > radar > plotOptions",
+        "label": "radar > polygons > fills",
         "heading": true
       },
       {
@@ -638,37 +711,43 @@
         "key": "plotOptions.polarArea.polygons.fills.colors"
       },
       {
-        "label": "radialBar > plotOptions",
+        "label": "radialBar",
         "heading": true
       },
       {
         "type": "select",
         "label": "inverse Order",
-        "options": ["true", "false"],
-        "key": "plotOptions.radialBar.inverseOrder"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.radialBar.inverseOrder",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "start Angle",
+            "key": "plotOptions.radialBar.startAngle"
+          },
+          {
+            "type": "text",
+            "label": "end Angle",
+            "key": "plotOptions.radialBar.endAngle"
+          },
+          {
+            "type": "text",
+            "label": "offset-X",
+            "key": "plotOptions.radialBar.offsetX"
+          },
+          {
+            "type": "text",
+            "label": "offset-Y",
+            "key": "plotOptions.radialBar.offsetY"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "start Angle",
-        "key": "plotOptions.radialBar.startAngle"
-      },
-      {
-        "type": "text",
-        "label": "end Angle",
-        "key": "plotOptions.radialBar.endAngle"
-      },
-      {
-        "type": "text",
-        "label": "offset-X",
-        "key": "plotOptions.radialBar.offsetX"
-      },
-      {
-        "type": "text",
-        "label": "offset-Y",
-        "key": "plotOptions.radialBar.offsetY"
-      },
-      {
-        "label": "hollow > radialBar > plotOptions",
+        "label": "radialBar > hollow",
         "heading": true
       },
       {
@@ -714,53 +793,68 @@
       {
         "type": "select",
         "label": "image Clipped",
-        "options": ["true", "false"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "plotOptions.radialBar.hollow.imageClipped"
       },
       {
         "type": "select",
         "label": "position",
-        "options": ["front", "back"],
+        "options": [
+          "front",
+          "back"
+        ],
         "key": "plotOptions.radialBar.hollow.position"
       },
       {
-        "label": "dropShadow > hollow > radialBar > plotOptions",
+        "label": "radialBar > hollow > dropShadow",
         "heading": true
       },
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "plotOptions.radialBar.hollow.dropShadow.enabled"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.radialBar.hollow.dropShadow.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "top",
+            "key": "plotOptions.radialBar.hollow.dropShadow.top"
+          },
+          {
+            "type": "text",
+            "label": "left",
+            "key": "plotOptions.radialBar.hollow.dropShadow.left"
+          },
+          {
+            "type": "text",
+            "label": "blur",
+            "key": "plotOptions.radialBar.hollow.dropShadow.blur"
+          },
+          {
+            "type": "text",
+            "label": "opacity",
+            "key": "plotOptions.radialBar.hollow.dropShadow.opacity"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "top",
-        "key": "plotOptions.radialBar.hollow.dropShadow.top"
-      },
-      {
-        "type": "text",
-        "label": "left",
-        "key": "plotOptions.radialBar.hollow.dropShadow.left"
-      },
-      {
-        "type": "text",
-        "label": "blur",
-        "key": "plotOptions.radialBar.hollow.dropShadow.blur"
-      },
-      {
-        "type": "text",
-        "label": "opacity",
-        "key": "plotOptions.radialBar.hollow.dropShadow.opacity"
-      },
-      {
-        "label": "track > radialBar > plotOptions",
+        "label": "radialBar > track",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["front", "back"],
+        "options": [
+          "front",
+          "back"
+        ],
         "key": "plotOptions.radialBar.track.show"
       },
       {
@@ -794,149 +888,176 @@
         "key": "plotOptions.radialBar.track.margin"
       },
       {
-        "label": "dropShadow > track > radialBar > plotOptions",
+        "label": "radialBar > track > dropShadow",
         "heading": true
       },
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "plotOptions.radialBar.track.dropShadow.enabled"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.radialBar.track.dropShadow.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "top",
+            "key": "plotOptions.radialBar.track.dropShadow.top"
+          },
+          {
+            "type": "text",
+            "label": "left",
+            "key": "plotOptions.radialBar.track.dropShadow.left"
+          },
+          {
+            "type": "text",
+            "label": "blur",
+            "key": "plotOptions.radialBar.track.dropShadow.blur"
+          },
+          {
+            "type": "text",
+            "label": "opacity",
+            "key": "plotOptions.radialBar.track.dropShadow.opacity"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "top",
-        "key": "plotOptions.radialBar.track.dropShadow.top"
-      },
-      {
-        "type": "text",
-        "label": "left",
-        "key": "plotOptions.radialBar.track.dropShadow.left"
-      },
-      {
-        "type": "text",
-        "label": "blur",
-        "key": "plotOptions.radialBar.track.dropShadow.blur"
-      },
-      {
-        "type": "text",
-        "label": "opacity",
-        "key": "plotOptions.radialBar.track.dropShadow.opacity"
-      },
-      {
-        "label": "dataLabels > radialBar > plotOptions",
+        "label": "radialBar > dataLabels",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "plotOptions.radialBar.dataLabels.show"
       },
       {
-        "label": "name > dataLabels > radialBar > plotOptions",
+        "label": "radialBar > dataLabels > name",
+        "heading": true
+      },
+      {
+        "type": "select",
+        "label": "style",
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.radialBar.dataLabels.name.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "font Size",
+            "key": "plotOptions.radialBar.dataLabels.name.fontSize"
+          },
+          {
+            "type": "text",
+            "label": "font Family",
+            "key": "plotOptions.radialBar.dataLabels.name.fontFamily"
+          },
+          {
+            "type": "text",
+            "label": "font Weight",
+            "key": "plotOptions.radialBar.dataLabels.name.fontWeight"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "plotOptions.radialBar.dataLabels.name.color"
+          },
+          {
+            "type": "text",
+            "label": "offset-Y",
+            "key": "plotOptions.radialBar.dataLabels.name.offsetY"
+          }
+        ]
+      },
+      {
+        "label": "radialBar > dataLabels > value",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "plotOptions.radialBar.dataLabels.name.show"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.radialBar.dataLabels.value.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "font Size",
+            "key": "plotOptions.radialBar.dataLabels.value.fontSize"
+          },
+          {
+            "type": "text",
+            "label": "font family",
+            "key": "plotOptions.radialBar.dataLabels.value.fontFamily"
+          },
+          {
+            "type": "text",
+            "label": "font Weight",
+            "key": "plotOptions.radialBar.dataLabels.value.fontWeight"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "plotOptions.radialBar.dataLabels.value.color"
+          },
+          {
+            "type": "text",
+            "label": "offset-Y",
+            "key": "plotOptions.radialBar.dataLabels.value.offsetY"
+          }
+        ]
       },
       {
-        "type": "text",
-        "label": "font Size",
-        "key": "plotOptions.radialBar.dataLabels.name.fontSize"
-      },
-      {
-        "type": "text",
-        "label": "font Family",
-        "key": "plotOptions.radialBar.dataLabels.name.fontFamily"
-      },
-      {
-        "type": "text",
-        "label": "font Weight",
-        "key": "plotOptions.radialBar.dataLabels.name.fontWeight"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "plotOptions.radialBar.dataLabels.name.color"
-      },
-      {
-        "type": "text",
-        "label": "offset-Y",
-        "key": "plotOptions.radialBar.dataLabels.name.offsetY"
-      },
-      {
-        "label": "value > dataLabels > radialBar > plotOptions",
+        "label": "radialBar > dataLabels > total",
         "heading": true
       },
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "plotOptions.radialBar.dataLabels.value.show"
-      },
-      {
-        "type": "text",
-        "label": "font Size",
-        "key": "plotOptions.radialBar.dataLabels.value.fontSize"
-      },
-      {
-        "type": "text",
-        "label": "font family",
-        "key": "plotOptions.radialBar.dataLabels.value.fontFamily"
-      },
-      {
-        "type": "text",
-        "label": "font Weight",
-        "key": "plotOptions.radialBar.dataLabels.value.fontWeight"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "plotOptions.radialBar.dataLabels.value.color"
-      },
-      {
-        "type": "text",
-        "label": "offset-Y",
-        "key": "plotOptions.radialBar.dataLabels.value.offsetY"
-      },
-      {
-        "label": "total > dataLabels > radialBar > plotOptions",
-        "heading": true
-      },
-      {
-        "type": "select",
-        "label": "show",
-        "options": ["true", "false"],
-        "key": "plotOptions.radialBar.dataLabels.total.show"
-      },
-      {
-        "type": "text",
-        "label": "label",
-        "key": "plotOptions.radialBar.dataLabels.total.label"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "plotOptions.radialBar.dataLabels.total.color"
-      },
-      {
-        "type": "text",
-        "label": "font Size",
-        "key": "plotOptions.radialBar.dataLabels.total.fontSize"
-      },
-      {
-        "type": "text",
-        "label": "font family",
-        "key": "plotOptions.radialBar.dataLabels.total.fontFamily"
-      },
-      {
-        "type": "text",
-        "label": "font Weight",
-        "key": "plotOptions.radialBar.dataLabels.total.fontWeight"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "plotOptions.radialBar.dataLabels.total.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "label",
+            "key": "plotOptions.radialBar.dataLabels.total.label"
+          },
+          {
+            "type": "color",
+            "label": "color",
+            "key": "plotOptions.radialBar.dataLabels.total.color"
+          },
+          {
+            "type": "text",
+            "label": "font Size",
+            "key": "plotOptions.radialBar.dataLabels.total.fontSize"
+          },
+          {
+            "type": "text",
+            "label": "font family",
+            "key": "plotOptions.radialBar.dataLabels.total.fontFamily"
+          },
+          {
+            "type": "text",
+            "label": "font Weight",
+            "key": "plotOptions.radialBar.dataLabels.total.fontWeight"
+          }
+        ]
       }
     ]
   }

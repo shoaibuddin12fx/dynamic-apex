@@ -7,7 +7,10 @@
       {
         "type": "select",
         "label": "mode",
-        "options": ["light", "dark"],
+        "options": [
+          "light",
+          "dark"
+        ],
         "key": "theme.mode"
       },
       {
@@ -22,25 +25,35 @@
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "theme.monochrome.enabled"
-      },
-      {
-        "type": "color",
-        "label": "color",
-        "key": "theme.monochrome.color"
-      },
-      {
-        "type": "select",
-        "label": " shadeTo",
-        "options": ["light", "dark"],
-        "key": "theme.monochrome.shadeTo"
-      },
-      {
-        "type": "range",
-        "label": "shadeIntensity",
-        "key": "theme.monochrome.shadeIntensity"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "theme.monochrome.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "color",
+            "label": "color",
+            "key": "theme.monochrome.color"
+          },
+          {
+            "type": "select",
+            "label": " shadeTo",
+            "options": [
+              "light",
+              "dark"
+            ],
+            "key": "theme.monochrome.shadeTo"
+          },
+          {
+            "type": "range",
+            "label": "shadeIntensity",
+            "key": "theme.monochrome.shadeIntensity"
+          }
+        ]
       }
+      
     ]
   }
 ]
