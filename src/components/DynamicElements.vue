@@ -282,6 +282,11 @@
                             type="text"
                             class="form-control"
                           />
+                          <input
+                            v-if="element.arrayOf == 'range'"
+                            type="range"
+                            class="form-control"
+                          />
 
                           <div v-if="element.arrayOf == 'objects'">
                             <div
@@ -316,6 +321,14 @@
                                     passChildOptions($event, vv, index)
                                   "
                                   type="color"
+                                  class="form-control"
+                                />
+                                <input
+                                  v-if="vv.type == 'range'"
+                                  v-on:change="
+                                    passChildOptions($event, vv, index)
+                                  "
+                                  type="range"
                                   class="form-control"
                                 />
                               </div>

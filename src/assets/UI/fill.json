@@ -108,8 +108,32 @@
                     {
                         "show": 0,
                         "label": "color stop",
-                        "type": "color",
-                        "key": "fill.gradient.colorStops"
+                        "type": "array",
+                        "arrayOf": "objects",
+                        "obj": [
+                            {
+                                "label": "offset",
+                                "type": "text",
+                                "min": 0,
+                                "max": 1,
+                                "step": 0.1,
+                                "key": "fill.gradient.colorStops.${index}.offset"
+                            },
+                            {
+                                "label": "color",
+                                "type": "color",
+                                "key": "fill.gradient.colorStops.${index}.color"
+                            },
+                            {
+                                "label": "opacity",
+                                "type": "range",
+                                "min": 0,
+                                "max": 1,
+                                "step": 0.1,
+                                "key": "fill.gradient.colorStops.${index}.opacity"
+                            }
+                        ],
+                        "values":[]
                     }
                 ]
             },
