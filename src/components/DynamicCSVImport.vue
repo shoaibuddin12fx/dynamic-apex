@@ -137,6 +137,26 @@ export default {
           console.log(obj)
           bus.$emit('update chart from csv', obj)
         }
+        
+        if (data_type == 'data_value') {
+          let x_axis = []
+          let y_axis = []
+          console.log(entries)
+          entries.forEach((x) => {
+            // console.log(Object.entries(x[1])[0][1]);
+            if (Object.entries(x[1])[1][1]) {
+              x_axis.push(Object.entries(x[1])[0][1])
+              y_axis.push(Object.entries(x[1])[1][1])
+            }
+          })
+          let obj = {
+            data_type,
+            x_axis,
+            y_axis,
+          }
+          console.log(obj)
+          bus.$emit('update chart from csv', obj)
+        }
       }
       reader.readAsText(file)
     },
