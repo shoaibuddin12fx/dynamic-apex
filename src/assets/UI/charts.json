@@ -89,15 +89,7 @@
           }
         ]
       },
-      {
-        "label": "background",
-        "heading": true
-      },
-      {
-        "label": "background",
-        "type": "color",
-        "key": "chart.background"
-      },
+
       {
         "label": "brush",
         "heading": true
@@ -109,7 +101,8 @@
           "false",
           "true"
         ],
-        "key": "chart.brush.enabled",
+        "key": "chart.dropShadow.enabled",
+        "shown": 0,
         "childs": [
           {
             "label": "target",
@@ -190,18 +183,14 @@
         "heading": true
       },
       {
-        "label": "Set Font Family",
-        "type": "text",
+        "label": "font family",
+        "type": "select",
+        "options": [
+          "Helvetica",
+          "Arial",
+          "sans-serif"
+        ],
         "key": "chart.fontFamily"
-      },
-      {
-        "label": "Fore Color",
-        "heading": true
-      },
-      {
-        "label": "Fore Color",
-        "type": "color",
-        "key": "chart.foreColor"
       },
       {
         "label": "Group",

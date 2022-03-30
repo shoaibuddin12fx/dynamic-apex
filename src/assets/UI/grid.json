@@ -10,7 +10,7 @@
           "false",
           "true"
         ],
-        "key": "grid.show",
+        "key": "grid.hide",
         "shown": 0,
         "childs": [
           {
@@ -43,8 +43,8 @@
         "label": "lines show",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "true"
         ],
         "key": "grid.xaxis.lines.show"
       },
@@ -56,8 +56,8 @@
         "label": "lines show",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "true"
         ],
         "key": "grid.yaxis.lines.show"
       },
