@@ -352,9 +352,12 @@
             "key": "xaxis.crosshairs.position"
           },
           {
-            "type": "text",
+            "type": "range",
             "label": "opacity",
-            "key": "xaxis.crosshairs.opacity"
+            "key": "xaxis.crosshairs.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
           }
         ]
       },
@@ -413,14 +416,20 @@
         "label": "stops"
       },
       {
-        "type": "text",
+        "type": "range",
         "label": "opacity From",
-        "key": "xaxis.crosshairs.fill.gradient.opacityFrom"
+        "key": "xaxis.crosshairs.fill.gradient.opacityFrom",
+        "min": 0,
+        "max": 1,
+        "step": 0.1
       },
       {
-        "type": "text",
+        "type": "range",
         "label": "opacity To",
-        "key": "xaxis.crosshairs.fill.gradient.opacityTo"
+        "key": "xaxis.crosshairs.fill.gradient.opacityTo",
+        "min": 0,
+        "max": 1,
+        "step": 0.1
       },
       {
         "label": "crosshairs > dropShadow",
@@ -449,9 +458,12 @@
             "key": "xaxis.crosshairs.dropShadow.blur"
           },
           {
-            "type": "text",
+            "type": "range",
             "label": "opacity",
-            "key": "xaxis.crosshairs.dropShadow.opacity"
+            "key": "xaxis.crosshairs.dropShadow.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
           }
         ]
       },

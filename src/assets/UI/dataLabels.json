@@ -151,7 +151,10 @@
           {
             "label": "opacity",
             "type": "range",
-            "key": "dataLabels.background.opacity"
+            "key": "dataLabels.background.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
           }
         ]
       },
@@ -191,8 +194,11 @@
           },
           {
             "label": "opacity",
-            "type": "text",
-            "key": "dataLabels.dropShadow.opacity"
+            "type": "range",
+            "key": "dataLabels.dropShadow.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
           }
         ]
       },
@@ -232,8 +238,11 @@
           },
           {
             "label": "opacity",
-            "type": "text",
-            "key": "dataLabels.dropShadow.opacity"
+            "type": "range",
+            "key": "dataLabels.dropShadow.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
           }
         ]
       }

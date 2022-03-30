@@ -73,7 +73,10 @@
       {
         "label": "opacity",
         "type": "range",
-        "key": "grid.row.opacity"
+        "key": "grid.row.opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1
       },
       {
         "label": "column",
@@ -87,7 +90,10 @@
       {
         "label": "opacity",
         "type": "range",
-        "key": "grid.column.opacity"
+        "key": "grid.column.opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1
       },
       {
         "label": "padding",

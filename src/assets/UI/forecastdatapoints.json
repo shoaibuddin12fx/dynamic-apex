@@ -11,7 +11,10 @@
         {
             "label": "fill opacity",
             "type": "range",
-            "key":"forecastDataPoints.fillOpacity"
+            "key":"forecastDataPoints.fillOpacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
         },
         {
             "label": "stroke width",

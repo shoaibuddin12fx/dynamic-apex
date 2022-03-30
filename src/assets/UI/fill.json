@@ -80,13 +80,19 @@
                         "show": 0,
                         "label": "opacity from",
                         "type": "range",
-                        "key": "fill.gradient.opacityFrom"
+                        "key": "fill.gradient.opacityFrom",
+                        "min": 0,
+                        "max": 1,
+                        "step": 0.1
                     },
                     {
                         "show": 0,
                         "label": "opacity to",
                         "type": "range",
-                        "key": "fill.gradient.opacityTo"
+                        "key": "fill.gradient.opacityTo",
+                        "min": 0,
+                        "max": 1,
+                        "step": 0.1
                     },
                     {
                         "show": 0,
