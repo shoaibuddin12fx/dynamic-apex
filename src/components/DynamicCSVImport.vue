@@ -76,7 +76,12 @@ export default {
         const arr = rows.map(function (row) {
           const values = row.split(',')
           const el = headers.reduce(function (object, header, index) {
+            if(index == 0){
+            object[header] = values[index]
+            }
+            if(index != 0){
             object[header] = parseInt(values[index])
+            }
             return object
           }, {})
           return el
@@ -85,7 +90,7 @@ export default {
         if (data_type == 'single_value') {
           let x_axis = []
           let y_axis = []
-          console.log(entries)
+          // console.log(entries)
           entries.forEach((x) => {
             // console.log(Object.entries(x[1])[0][1]);
             if (Object.entries(x[1])[1][1]) {
@@ -141,7 +146,7 @@ export default {
         if (data_type == 'data_value') {
           let x_axis = []
           let y_axis = []
-          console.log(entries)
+          // console.log(entries)
           entries.forEach((x) => {
             // console.log(Object.entries(x[1])[0][1]);
             if (Object.entries(x[1])[1][1]) {

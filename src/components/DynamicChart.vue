@@ -94,6 +94,16 @@ export default {
           },
         ]);
       }
+      if (value.data_type == "data_value") {
+        console.log(value);
+        this.$refs.realtimeChart.updateOptions({
+          chart: {
+            id: "vuechart-example",
+          },
+          labels: value.x_axis,
+          series: value.y_axis
+        });
+      }
     });
     bus.$on("send dynamic options", (data) => {
       console.log("send dynamic options called");

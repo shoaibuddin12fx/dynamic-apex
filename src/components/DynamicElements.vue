@@ -461,7 +461,7 @@ export default {
         ];
       }
 
-      if (value == "donut" || value == "pie") {
+      if (value == "donut" || value == "pie" || value == "radialBar") {
         options = {
           chart: {
             type: value,
@@ -533,17 +533,17 @@ export default {
         ];
       }
 
-      if (value == "radialBar") {
-        options = {
-          chart: {
-            height: 350,
-            type: "radialBar",
-          },
-          labels: ["Progress1", "Progress2"],
-        };
+      // if (value == "radialBar") {
+      //   options = {
+      //     chart: {
+      //       height: 350,
+      //       type: "radialBar",
+      //     },
+      //     labels: ["Progress1", "Progress2"],
+      //   };
 
-        series = [70, 20];
-      }
+      //   series = [70, 20];
+      // }
 
       if (value == "heatmap") {
         options = {
