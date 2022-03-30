@@ -64,7 +64,7 @@ export default {
     bus.$on("update chart from csv", (data) => {
       console.log("update chart from csv");
       const value = { ...data };
-      if(value.data_type == "single_value"){
+      if (value.data_type == "single_value") {
         this.$refs.realtimeChart.updateOptions({
           chart: {
             id: "vuechart-example",
@@ -79,7 +79,7 @@ export default {
           },
         ]);
       }
-      if(value.data_type == "paired_value"){
+      if (value.data_type == "paired_value") {
         this.$refs.realtimeChart.updateOptions({
           chart: {
             id: "vuechart-example",
@@ -99,7 +99,7 @@ export default {
       console.log("send dynamic options called");
       const value = { ...data };
       var op = { ...data };
-      console.log("here op",op);
+      console.log("here op", op);
       console.log("dynamic chart options", value);
       if (value.index != null) {
         console.log(value.index);
@@ -118,7 +118,7 @@ export default {
       console.log("change chart Type called");
       this.$refs.realtimeChart.updateSeries([]);
       this.$refs.realtimeChart.updateOptions({});
-      
+
       var opt = { ...data };
       // this.chart = opt.chart;
       this.type = opt.chart;
@@ -132,7 +132,7 @@ export default {
       console.log(opt.series);
       this.$refs.realtimeChart.updateSeries(opt.series);
       console.log(opt.options);
-       this.$refs.realtimeChart.updateOptions(opt.options);
+      this.$refs.realtimeChart.updateOptions(opt.options);
       window.dispatchEvent(new Event("resize"));
     });
     bus.$on("send uploaded json", (data) => {

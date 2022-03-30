@@ -20,7 +20,7 @@
                 <div class="col-8">
                   <select
                     class="form-control"
-                    v-on:change="changeChartType($event)"
+                    v-on:change="changeChartType($event.target.value)"
                   >
                     <option
                       v-for="type of chartType.chartTypes"
@@ -378,9 +378,9 @@ export default {
     };
   },
   methods: {
-    changeChartType($event) {
+    changeChartType(changeValue) {
       var options = {};
-      var value = $event.target.value;
+      var value = changeValue;
       var series = [];
 
       if (value == "line" || value == "bar" || value == "area") {
@@ -757,7 +757,7 @@ export default {
     ];
     console.log("json values", this.json);
     this.setOptionValues();
-    // this.changeChartType("line");
+    this.changeChartType("line");
   },
 };
 </script>
