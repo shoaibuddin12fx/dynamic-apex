@@ -4,204 +4,6 @@
     "label": "Charts",
     "elements": [
       {
-        "label": "animations",
-        "heading": true
-      },
-      {
-        "label": "enabled",
-        "type": "select",
-        "options": [
-          "false",
-          "true"
-        ],
-        "key": "chart.animations.enabled",
-        "shown": 0,
-        "childs": [
-          {
-            "label": "easing",
-            "type": "select",
-            "options": [
-              "linear",
-              "easein",
-              "easeout",
-              "easeinout"
-            ],
-            "key": "chart.animations.easing"
-          },
-          {
-            "label": "speed",
-            "type": "range",
-            "selected_value": 800,
-            "min": 200,
-            "max": 1600,
-            "step": 200,
-            "key": "chart.animations.speed"
-          }
-        ]
-      },
-      {
-        "label": "animate gradually",
-        "heading": true
-      },
-      {
-        "shown": 0,
-        "label": "Animation Gradually",
-        "type": "select",
-        "options": [
-          "false",
-          "true"
-        ],
-        "key": "chart.animations.animateGradually.enabled",
-        "childs": [
-          {
-            "label": "Delay For Gradual Animation",
-            "type": "range",
-            "selected_value": 150,
-            "min": 100,
-            "max": 900,
-            "step": 50,
-            "key": "chart.animations.animateGradually.delay"
-          }
-        ]
-      },
-      {
-        "label": "dynamic animation",
-        "heading": true
-      },
-      {
-        "label": "Dynamic Animation",
-        "type": "select",
-        "shown": 0,
-        "options": [
-          "false",
-          "true"
-        ],
-        "key": "chart.animations.dynamicAnimation.enabled",
-        "childs": [
-          {
-            "label": "Add Speed For Dynamic Animation",
-            "type": "range",
-            "selected_value": 350,
-            "min": 100,
-            "max": 1600,
-            "step": 50,
-            "key": "chart.animations.dynamicAnimation.speed"
-          }
-        ]
-      },
-
-      {
-        "label": "brush",
-        "heading": true
-      },
-      {
-        "label": "Enable Brush",
-        "type": "select",
-        "options": [
-          "false",
-          "true"
-        ],
-        "key": "chart.dropShadow.enabled",
-        "shown": 0,
-        "childs": [
-          {
-            "label": "target",
-            "type": "text",
-            "key": "chart.brush.target"
-          },
-          {
-            "label": "auto scale y-axis",
-            "type": "select",
-            "options": [
-              "true",
-              "false"
-            ],
-            "key": "chart.brush.autoScaleYaxis"
-          }
-        ]
-      },
-      {
-        "label": "default Locale",
-        "heading": true
-      },
-      {
-        "label": "locale",
-        "type": "select",
-        "options": [
-          "en"
-        ],
-        "key": "chart.defaultLocale"
-      },
-      {
-        "label": "drop shadow",
-        "heading": true
-      },
-      {
-        "label": "Enable Drop Shadow",
-        "shown": 0,
-        "type": "select",
-        "options": [
-          "false",
-          "true"
-        ],
-        "key": "chart.dropShadow.enabled",
-        "childs": [
-          {
-            "label": "Enable On Series",
-            "type": "text",
-            "key": "chart.dropShadow.enableOnSeries"
-          },
-          {
-            "label": "Top",
-            "type": "text",
-            "key": "chart.dropShadow.top"
-          },
-          {
-            "label": "Left",
-            "type": "text",
-            "key": "chart.dropShadow.left"
-          },
-          {
-            "label": "Blur",
-            "type": "text",
-            "key": "chart.dropShadow.blur"
-          },
-          {
-            "label": "Color",
-            "type": "color",
-            "key": "chart.dropShadow.color"
-          },
-          {
-            "label": "Opacity",
-            "type": "text",
-            "key": "chart.dropShadow.opacity"
-          }
-        ]
-      },
-      {
-        "label": "Font Family",
-        "heading": true
-      },
-      {
-        "label": "font family",
-        "type": "select",
-        "options": [
-          "Helvetica",
-          "Arial",
-          "sans-serif"
-        ],
-        "key": "chart.fontFamily"
-      },
-      {
-        "label": "Group",
-        "heading": true
-      },
-      {
-        "label": "Set Group",
-        "type": "text",
-        "key": "chart.group"
-      },
-      {
         "label": "Height",
         "heading": true
       },
@@ -211,13 +13,32 @@
         "key": "chart.height"
       },
       {
-        "label": "Id",
+        "label": "Font Family",
         "heading": true
       },
       {
-        "label": "Set Id",
-        "type": "text",
-        "key": "chart.id"
+        "label": "font family",
+        "type": "select",
+        "options": ["Helvetica", "Arial", "sans-serif", "serif"],
+        "key": "chart.fontFamily"
+      },
+      {
+        "label": "Style",
+        "heading": true
+      },
+      {
+        "label": "Color",
+        "type": "color",
+        "key": "chart.dropShadow.color"
+      },
+      {
+        "label": "Opacity",
+        "type": "range",
+        "selected_value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "key": "chart.dropShadow.opacity"
       },
       {
         "label": "Offset X",
@@ -247,16 +68,207 @@
         "key": "chart.parentHeightOffset"
       },
       {
+        "label": "Selection",
+        "heading": true
+      },
+      {
+        "label": "Enable Selection",
+        "type": "select",
+        "shown": 0,
+        "options": ["false", "true"],
+        "key": "chart.selection.enabled",
+        "childs": [
+          {
+            "label": "Type",
+            "type": "select",
+            "options": ["x", "y", "xy"],
+            "key": "chart.selection.type"
+          },
+          {
+            "label": "fill color",
+            "type": "color",
+            "key": "chart.selection.fillColors"
+          },
+          {
+            "label": "fill opacity",
+            "type": "range",
+            "selected_value": 1,
+            "min": 0,
+            "max": 1,
+            "step": 0.1,
+            "key": "chart.selection.fill.opacity"
+          }
+        ]
+      },
+      {
+        "label": "animations",
+        "heading": true
+      },
+      {
+        "label": "enabled",
+        "type": "select",
+        "options": ["false", "true"],
+        "key": "chart.animations.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "label": "easing",
+            "type": "select",
+            "options": ["linear", "easein", "easeout", "easeinout"],
+            "key": "chart.animations.easing"
+          },
+          {
+            "label": "speed",
+            "type": "range",
+            "selected_value": 800,
+            "min": 200,
+            "max": 1600,
+            "step": 200,
+            "key": "chart.animations.speed"
+          }
+        ]
+      },
+      {
+        "label": "animate gradually",
+        "heading": true
+      },
+      {
+        "shown": 0,
+        "label": "Animation Gradually",
+        "type": "select",
+        "options": ["false", "true"],
+        "key": "chart.animations.animateGradually.enabled",
+        "childs": [
+          {
+            "label": "Delay For Gradual Animation",
+            "type": "range",
+            "selected_value": 150,
+            "min": 100,
+            "max": 900,
+            "step": 50,
+            "key": "chart.animations.animateGradually.delay"
+          }
+        ]
+      },
+      {
+        "label": "dynamic animation",
+        "heading": true
+      },
+      {
+        "label": "Dynamic Animation",
+        "type": "select",
+        "shown": 0,
+        "options": ["false", "true"],
+        "key": "chart.animations.dynamicAnimation.enabled",
+        "childs": [
+          {
+            "label": "Add Speed For Dynamic Animation",
+            "type": "range",
+            "selected_value": 350,
+            "min": 100,
+            "max": 1600,
+            "step": 50,
+            "key": "chart.animations.dynamicAnimation.speed"
+          }
+        ]
+      },
+      {
+        "label": "brush",
+        "heading": true
+      },
+      {
+        "label": "Enable Brush",
+        "type": "select",
+        "options": ["false", "true"],
+        "key": "chart.brush.${index}.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "label": "target",
+            "type": "text",
+            "key": "chart.brush.${index}.target"
+          },
+          {
+            "label": "auto scale y-axis",
+            "type": "select",
+            "options": ["false", "true"],
+            "key": "chart.brush.autoScaleYaxis"
+          }
+        ]
+      },
+      {
+        "label": "default Locale",
+        "heading": true
+      },
+      {
+        "label": "locale",
+        "type": "select",
+        "options": ["en"],
+        "key": "chart.defaultLocale"
+      },
+      {
+        "label": "drop shadow",
+        "heading": true
+      },
+      {
+        "label": "Enable Drop Shadow",
+        "shown": 0,
+        "type": "select",
+        "options": ["false", "true"],
+        "key": "chart.dropShadow.enabled",
+        "childs": [
+          {
+            "label": "Enable On Series",
+            "type": "range",
+            "selected_value": 800,
+            "min": 200,
+            "max": 1600,
+            "step": 200,
+            "key": "chart.dropShadow.enableOnSeries"
+          },
+          {
+            "label": "Top",
+            "type": "text",
+            "key": "chart.dropShadow.top"
+          },
+          {
+            "label": "Left",
+            "type": "text",
+            "key": "chart.dropShadow.left"
+          },
+          {
+            "label": "Blur",
+            "type": "text",
+            "key": "chart.dropShadow.blur"
+          }
+        ]
+      },
+      {
+        "label": "Group",
+        "heading": true
+      },
+      {
+        "label": "Set Group",
+        "type": "text",
+        "key": "chart.group"
+      },
+      {
+        "label": "Id",
+        "heading": true
+      },
+      {
+        "label": "Set Id",
+        "type": "text",
+        "key": "chart.id"
+      },
+      {
         "label": "Redraw On Parent Resize",
         "heading": true
       },
       {
         "label": "Set Redraw On Parent Resize",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.redrawOnParentResize"
       },
       {
@@ -266,39 +278,9 @@
       {
         "label": "Set Redraw On Window Resize",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.redrawOnWindowResize"
       },
-      {
-        "label": "Selection",
-        "heading": true
-      },
-      {
-        "label": "Enable Selection",
-        "type": "select",
-        "shown": 0,
-        "options": [
-          "true",
-          "false"
-        ],
-        "key": "chart.selection.enabled",
-        "childs": [
-          {
-            "label": "Type",
-            "type": "select",
-            "options": [
-              "x",
-              "y",
-              "xy"
-            ],
-            "key": "chart.selection.type"
-          }
-        ]
-      },
-      
       {
         "label": "Selection > Fill",
         "heading": true
@@ -310,7 +292,11 @@
       },
       {
         "label": "Opacity",
-        "type": "text",
+        "type": "range",
+        "selected_value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
         "key": "chart.selection.fill.opacity"
       },
       {
@@ -334,7 +320,11 @@
       },
       {
         "label": "Set Stroke Opacity",
-        "type": "text",
+        "type": "range",
+        "selected_value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
         "key": "chart.selection.stroke.opacity"
       },
       {
@@ -372,10 +362,7 @@
       {
         "label": "Set Sparkline",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["false", "true"],
         "key": "chart.sparkline.enabled"
       },
       {
@@ -385,10 +372,7 @@
       {
         "label": "Stack",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.stacked"
       },
       {
@@ -398,10 +382,7 @@
       {
         "label": "Set Stack Type",
         "type": "select",
-        "options": [
-          "normal",
-          "100%"
-        ],
+        "options": ["normal", "100%"],
         "key": "chart.stackType"
       },
       {
@@ -411,10 +392,7 @@
       {
         "label": "toolbar show",
         "type": "select",
-        "options": [
-          "false",
-          "true"
-        ],
+        "options": ["false", "true"],
         "key": "chart.toolbar.show",
         "childs": [
           {
@@ -436,64 +414,43 @@
       {
         "label": "download",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.toolbar.tools.download"
       },
       {
         "label": "selection",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.toolbar.tools.selection"
       },
       {
         "label": "zoom",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.toolbar.tools.zoom"
       },
       {
         "label": "zoom in",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.toolbar.tools.zoomin"
       },
       {
         "label": "zoom out",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.toolbar.tools.zoomout"
       },
       {
         "label": "pan",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.toolbar.tools.pan"
       },
       {
         "label": "reset",
         "type": "select",
-        "options": [
-          "true",
-          "false"
-        ],
+        "options": ["true", "false"],
         "key": "chart.toolbar.tools.reset"
       },
       {
@@ -541,11 +498,7 @@
       {
         "label": "auto Selected",
         "type": "select",
-        "options": [
-          "zoom",
-          "selection",
-          "pan"
-        ],
+        "options": ["zoom", "selection", "pan"],
         "key": "toolbar.autoSelected.enabled"
       }
     ]
