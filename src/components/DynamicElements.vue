@@ -732,12 +732,12 @@ export default {
   },
   mounted() {
     this.json = [
-      ...annotations,
-      ...charts,
       ...colors,
-      ...dataLabels,
       ...fill,
+      ...charts,
       ...forecastDataPoints,
+      ...annotations,
+      ...dataLabels,
       ...grid,
       ...labels,
       ...legend,

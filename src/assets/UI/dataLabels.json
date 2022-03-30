@@ -100,7 +100,11 @@
           },
           {
             "label": "colors",
-            "type": "color",
+            "type": "select",
+            "options": [
+              "#333",
+              "#999"
+            ],
             "key": "dataLabels.style.colors"
           }
         ]
