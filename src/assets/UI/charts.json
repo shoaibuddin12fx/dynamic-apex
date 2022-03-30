@@ -4,6 +4,115 @@
     "label": "Charts",
     "elements": [
       {
+        "label": "Height",
+        "heading": true
+      },
+      {
+        "label": "Set height",
+        "type": "text",
+        "key": "chart.height"
+      },
+      {
+        "label": "Font Family",
+        "heading": true
+      },
+      {
+        "label": "font family",
+        "type": "select",
+        "options": [
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+          "serif"
+        ],
+        "key": "chart.fontFamily"
+      },
+      {
+        "label": "Style",
+        "heading": true
+      },
+      {
+        "label": "Color",
+        "type": "color",
+        "key": "chart.dropShadow.color"
+      },
+      {
+        "label": "Opacity",
+        "type": "range",
+        "selected_value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "key": "chart.dropShadow.opacity"
+      },
+      {
+        "label": "Offset X",
+        "heading": true
+      },
+      {
+        "label": "offsetX",
+        "type": "text",
+        "key": "chart.offsetX"
+      },
+      {
+        "label": "Offset Y",
+        "heading": true
+      },
+      {
+        "label": "Offset Y",
+        "type": "text",
+        "key": "chart.offsetY"
+      },
+      {
+        "label": "Parent Height Offset",
+        "heading": true
+      },
+      {
+        "label": "Set Parent Height Offset",
+        "type": "text",
+        "key": "chart.parentHeightOffset"
+      },
+      {
+        "label": "Selection",
+        "heading": true
+      },
+      {
+        "label": "Enable Selection",
+        "type": "select",
+        "shown": 0,
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "chart.selection.enabled",
+        "childs": [
+          {
+            "label": "Type",
+            "type": "select",
+            "options": [
+              "x",
+              "y",
+              "xy"
+            ],
+            "key": "chart.selection.type"
+          },
+          {
+            "label": "fill color",
+            "type": "color",
+            "key":"chart.selection.fillColors"
+          },
+          {
+            "label": "fill opacity",
+            "type": "range",
+            "selected_value": 1,
+            "min": 0,
+            "max": 1,
+            "step": 0.1,
+            "key":"chart.selection.fill.opacity"
+          }
+        ]
+      },
+      {
         "label": "animations",
         "heading": true
       },
@@ -89,7 +198,6 @@
           }
         ]
       },
-
       {
         "label": "brush",
         "heading": true
@@ -101,20 +209,20 @@
           "false",
           "true"
         ],
-        "key": "chart.dropShadow.enabled",
+        "key": "chart.brush.${index}.enabled",
         "shown": 0,
         "childs": [
           {
             "label": "target",
             "type": "text",
-            "key": "chart.brush.target"
+            "key": "chart.brush.${index}.target"
           },
           {
             "label": "auto scale y-axis",
             "type": "select",
             "options": [
-              "true",
-              "false"
+              "false",
+              "true"
             ],
             "key": "chart.brush.autoScaleYaxis"
           }
@@ -148,7 +256,11 @@
         "childs": [
           {
             "label": "Enable On Series",
-            "type": "text",
+            "type": "range",
+            "selected_value": 800,
+            "min": 200,
+            "max": 1600,
+            "step": 200,
             "key": "chart.dropShadow.enableOnSeries"
           },
           {
@@ -165,32 +277,8 @@
             "label": "Blur",
             "type": "text",
             "key": "chart.dropShadow.blur"
-          },
-          {
-            "label": "Color",
-            "type": "color",
-            "key": "chart.dropShadow.color"
-          },
-          {
-            "label": "Opacity",
-            "type": "text",
-            "key": "chart.dropShadow.opacity"
           }
         ]
-      },
-      {
-        "label": "Font Family",
-        "heading": true
-      },
-      {
-        "label": "font family",
-        "type": "select",
-        "options": [
-          "Helvetica",
-          "Arial",
-          "sans-serif"
-        ],
-        "key": "chart.fontFamily"
       },
       {
         "label": "Group",
@@ -202,15 +290,6 @@
         "key": "chart.group"
       },
       {
-        "label": "Height",
-        "heading": true
-      },
-      {
-        "label": "Set height",
-        "type": "text",
-        "key": "chart.height"
-      },
-      {
         "label": "Id",
         "heading": true
       },
@@ -218,33 +297,6 @@
         "label": "Set Id",
         "type": "text",
         "key": "chart.id"
-      },
-      {
-        "label": "Offset X",
-        "heading": true
-      },
-      {
-        "label": "offsetX",
-        "type": "text",
-        "key": "chart.offsetX"
-      },
-      {
-        "label": "Offset Y",
-        "heading": true
-      },
-      {
-        "label": "Offset Y",
-        "type": "text",
-        "key": "chart.offsetY"
-      },
-      {
-        "label": "Parent Height Offset",
-        "heading": true
-      },
-      {
-        "label": "Set Parent Height Offset",
-        "type": "text",
-        "key": "chart.parentHeightOffset"
       },
       {
         "label": "Redraw On Parent Resize",
@@ -273,33 +325,6 @@
         "key": "chart.redrawOnWindowResize"
       },
       {
-        "label": "Selection",
-        "heading": true
-      },
-      {
-        "label": "Enable Selection",
-        "type": "select",
-        "shown": 0,
-        "options": [
-          "true",
-          "false"
-        ],
-        "key": "chart.selection.enabled",
-        "childs": [
-          {
-            "label": "Type",
-            "type": "select",
-            "options": [
-              "x",
-              "y",
-              "xy"
-            ],
-            "key": "chart.selection.type"
-          }
-        ]
-      },
-      
-      {
         "label": "Selection > Fill",
         "heading": true
       },
@@ -310,7 +335,11 @@
       },
       {
         "label": "Opacity",
-        "type": "text",
+        "type": "range",
+        "selected_value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
         "key": "chart.selection.fill.opacity"
       },
       {
@@ -334,7 +363,11 @@
       },
       {
         "label": "Set Stroke Opacity",
-        "type": "text",
+        "type": "range",
+        "selected_value": 1,
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
         "key": "chart.selection.stroke.opacity"
       },
       {
@@ -373,8 +406,8 @@
         "label": "Set Sparkline",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "true"
         ],
         "key": "chart.sparkline.enabled"
       },
