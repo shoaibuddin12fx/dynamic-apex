@@ -15,6 +15,42 @@
           }
         ],
         "values": []
+      },
+      {
+        "label": "background",
+        "heading": true
+      },
+      {
+        "label": "background",
+        "type": "color",
+        "key": "chart.background"
+      },
+      {
+        "label": "Fill Color",
+        "heading": true
+      },
+      {
+        "label": "colors",
+        "type": "color",
+        "key": "fill.colors"
+      },
+      {
+        "label": "Fore Color",
+        "heading": true
+      },
+      {
+        "label": "Fore Color",
+        "type": "color",
+        "key": "chart.foreColor"
+      },
+      {
+        "label": "Fore Color",
+        "heading": true
+      },
+      {
+        "label": "center lines color",
+        "type": "color",
+        "key": "grid.borderColor"
       }
     ]
   }

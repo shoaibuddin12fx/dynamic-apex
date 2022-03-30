@@ -10,7 +10,7 @@
           "false",
           "true"
         ],
-        "key": "grid.show",
+        "key": "grid.hide",
         "shown": 0,
         "childs": [
           {
@@ -43,8 +43,8 @@
         "label": "lines show",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "true"
         ],
         "key": "grid.xaxis.lines.show"
       },
@@ -56,8 +56,8 @@
         "label": "lines show",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "true"
         ],
         "key": "grid.yaxis.lines.show"
       },
@@ -73,7 +73,10 @@
       {
         "label": "opacity",
         "type": "range",
-        "key": "grid.row.opacity"
+        "key": "grid.row.opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1
       },
       {
         "label": "column",
@@ -87,7 +90,10 @@
       {
         "label": "opacity",
         "type": "range",
-        "key": "grid.column.opacity"
+        "key": "grid.column.opacity",
+        "min": 0,
+        "max": 1,
+        "step": 0.1
       },
       {
         "label": "padding",

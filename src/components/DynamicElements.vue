@@ -20,7 +20,7 @@
                 <div class="col-8">
                   <select
                     class="form-control"
-                    v-on:change="changeChartType($event)"
+                    v-on:change="changeChartType($event.target.value)"
                   >
                     <option
                       v-for="type of chartType.chartTypes"
@@ -282,6 +282,11 @@
                             type="text"
                             class="form-control"
                           />
+                          <input
+                            v-if="element.arrayOf == 'range'"
+                            type="range"
+                            class="form-control"
+                          />
 
                           <div v-if="element.arrayOf == 'objects'">
                             <div
@@ -295,11 +300,12 @@
                               >
                                 {{ vv.label }}
                               </div>
-
                               <label
                                 v-if="!vv.heading"
                                 class="col-sm-6 col-form-label"
-                                >{{ vv.label }}</label
+                                >{{ vv.label }}<span v-if="vv.type == 'range'"
+                                >({{ element.selected_value }})</span
+                              ></label
                               >
                               <div class="col-sm-6">
                                 <input
@@ -316,6 +322,18 @@
                                     passChildOptions($event, vv, index)
                                   "
                                   type="color"
+                                  class="form-control"
+                                />
+                                <input
+                                  v-on:change="
+                                    passChildOptions($event, vv, index)
+                                  "
+                                  v-model="element.selected_value"
+                                  :min="vv.min"
+                                  :max="vv.max"
+                                  :step="vv.step"
+                                  v-if="vv.type == 'range'"
+                                  type="range"
                                   class="form-control"
                                 />
                               </div>
@@ -378,9 +396,9 @@ export default {
     };
   },
   methods: {
-    changeChartType($event) {
+    changeChartType(changeValue) {
       var options = {};
-      var value = $event.target.value;
+      var value = changeValue;
       var series = [];
 
       if (value == "line" || value == "bar" || value == "area") {
@@ -732,12 +750,12 @@ export default {
   },
   mounted() {
     this.json = [
-      ...annotations,
-      ...charts,
       ...colors,
-      ...dataLabels,
       ...fill,
+      ...charts,
       ...forecastDataPoints,
+      ...annotations,
+      ...dataLabels,
       ...grid,
       ...labels,
       ...legend,
@@ -757,7 +775,7 @@ export default {
     ];
     console.log("json values", this.json);
     this.setOptionValues();
-    // this.changeChartType("line");
+    this.changeChartType("line");
   },
 };
 </script>
