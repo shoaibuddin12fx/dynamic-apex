@@ -300,11 +300,12 @@
                               >
                                 {{ vv.label }}
                               </div>
-
                               <label
                                 v-if="!vv.heading"
                                 class="col-sm-6 col-form-label"
-                                >{{ vv.label }}</label
+                                >{{ vv.label }}<span v-if="vv.type == 'range'"
+                                >({{ element.selected_value }})</span
+                              ></label
                               >
                               <div class="col-sm-6">
                                 <input
@@ -324,10 +325,14 @@
                                   class="form-control"
                                 />
                                 <input
-                                  v-if="vv.type == 'range'"
                                   v-on:change="
                                     passChildOptions($event, vv, index)
                                   "
+                                  v-model="element.selected_value"
+                                  :min="vv.min"
+                                  :max="vv.max"
+                                  :step="vv.step"
+                                  v-if="vv.type == 'range'"
                                   type="range"
                                   class="form-control"
                                 />
