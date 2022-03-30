@@ -7,10 +7,7 @@
       {
         "type": "select",
         "label": "mode",
-        "options": [
-          "light",
-          "dark"
-        ],
+        "options": ["light", "dark"],
         "key": "theme.mode"
       },
       {
@@ -25,10 +22,7 @@
       {
         "type": "select",
         "label": "enabled",
-        "options": [
-          "false",
-          "true"
-        ],
+        "options": ["false", "true"],
         "key": "theme.monochrome.enabled",
         "shown": 0,
         "childs": [
@@ -40,20 +34,19 @@
           {
             "type": "select",
             "label": " shadeTo",
-            "options": [
-              "light",
-              "dark"
-            ],
+            "options": ["light", "dark"],
             "key": "theme.monochrome.shadeTo"
           },
           {
             "type": "range",
             "label": "shadeIntensity",
+            "min": 0.1,
+            "max": 1,
+            "step": 0.1,
             "key": "theme.monochrome.shadeIntensity"
           }
         ]
       }
-      
     ]
   }
 ]
