@@ -7,49 +7,73 @@
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "tooltip.enabled"
-      },
-      {
-        "type": "text",
-        "label": "Enabled On Series",
-        "key": "tooltip.enabledOnSeries"
-      },
-      {
-        "type": "select",
-        "label": "shared",
-        "options": ["true", "false"],
-        "key": "tooltip.shared"
-      },
-      {
-        "type": "select",
-        "label": "followCursor",
-        "options": ["true", "false"],
-        "key": "tooltip.followCursor"
-      },
-      {
-        "type": "select",
-        "label": "intersect",
-        "options": ["true", "false"],
-        "key": "tooltip.intersect"
-      },
-      {
-        "type": "select",
-        "label": "inverseOrder",
-        "options": ["true", "false"],
-        "key": "tooltip.inverseOrder"
-      },
-      {
-        "type": "select",
-        "label": " Fill Series Color",
-        "options": ["true", "false"],
-        "key": "tooltip.fillSeriesColor"
-      },
-      {
-        "type": "select",
-        "label": "theme",
-        "options": ["true", "false"],
-        "key": "tooltip.theme"
+        "options": [
+          "true",
+          "false"
+        ],
+        "key": "tooltip.enabled",
+        "shown": 1,
+        "childs": [
+          {
+            "type": "text",
+            "label": "Enabled On Series",
+            "key": "tooltip.enabledOnSeries"
+          },
+          {
+            "type": "select",
+            "label": "shared",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "tooltip.shared"
+          },
+          {
+            "type": "select",
+            "label": "followCursor",
+            "options": [
+              "false",
+              "true"
+            ],
+            "key": "tooltip.followCursor"
+          },
+          {
+            "type": "select",
+            "label": "intersect",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "tooltip.intersect"
+          },
+          {
+            "type": "select",
+            "label": "inverseOrder",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "tooltip.inverseOrder"
+          },
+          {
+            "type": "select",
+            "label": " Fill Series Color",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "tooltip.fillSeriesColor"
+          },
+          {
+            "type": "select",
+            "label": "theme",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "tooltip.theme"
+          }
+        ]
       },
       {
         "label": "tooltip > style",
@@ -72,7 +96,10 @@
       {
         "type": "select",
         "label": "Highlight Data Series",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "tooltip.onDatasetHover.highlightDataSeries"
       },
       {
@@ -82,13 +109,19 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
-        "key": "tooltip.x.show"
-      },
-      {
-        "type": "text",
-        "label": "format",
-        "key": "tooltip.x.format"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "tooltip.x.show",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "text",
+            "label": "format",
+            "key": "tooltip.x.format"
+          }
+        ]
       },
       {
         "label": "tooltip > z",
@@ -106,7 +139,10 @@
       {
         "type": "select",
         "label": "show",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "tooltip.marker.show"
       },
       {
@@ -125,24 +161,35 @@
       {
         "type": "select",
         "label": "enabled",
-        "options": ["true", "false"],
-        "key": "tooltip.fixed.enabled"
-      },
-      {
-        "type": "select",
-        "label": "position",
-        "options": ["topLeft", "topRight", "bottomLeft", "bottomRight"],
-        "key": "tooltip.fixed.position"
-      },
-      {
-        "type": "text",
-        "label": "offsetX",
-        "key": "tooltip.fixed.offsetX"
-      },
-      {
-        "type": "text",
-        "label": "offsetY",
-        "key": "tooltip.fixed.offsetY"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "tooltip.fixed.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "type": "select",
+            "label": "position",
+            "options": [
+              "topLeft",
+              "topRight",
+              "bottomLeft",
+              "bottomRight"
+            ],
+            "key": "tooltip.fixed.position"
+          },
+          {
+            "type": "text",
+            "label": "offsetX",
+            "key": "tooltip.fixed.offsetX"
+          },
+          {
+            "type": "text",
+            "label": "offsetY",
+            "key": "tooltip.fixed.offsetY"
+          }
+        ]
       }
     ]
   }

@@ -3,6 +3,7 @@
     <apexchart
       ref="realtimeChart"
       width="500"
+      type="line"
       :options="options"
       :series="series"
     ></apexchart>
@@ -27,10 +28,26 @@ export default {
       options: {
         chart: {
           id: "vuechart-example",
+          type: this.type,
         },
         xaxis: {
           categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
         },
+        // responsive: [
+        //   {
+        //     breakpoint: 1000,
+        //     options: {
+        //       plotOptions: {
+        //         bar: {
+        //           horizontal: false,
+        //         },
+        //       },
+        //       legend: {
+        //         position: "bottom",
+        //       },
+        //     },
+        //   },
+        // ],
       },
       series: [
         {
@@ -39,7 +56,6 @@ export default {
           data: [30, 40, 45, 50, 49, 60, 70, 91, 40],
         },
       ],
-      theme: null,
       chart: "line",
     };
   },
@@ -63,24 +79,52 @@ export default {
     bus.$on("update chart from csv", (data) => {
       console.log("update chart from csv");
       const value = { ...data };
-      this.$refs.realtimeChart.updateOptions({
-        chart: {
-          id: "vuechart-example",
-        },
-        xaxis: {
-          categories: value.x_axis,
-        },
-      });
-      this.$refs.realtimeChart.updateSeries([
-        {
-          data: value.y_axis,
-        },
-      ]);
+      if (value.data_type == "single_value") {
+        this.$refs.realtimeChart.updateOptions({
+          chart: {
+            id: "vuechart-example",
+          },
+          xaxis: {
+            categories: value.x_axis,
+          },
+        });
+        this.$refs.realtimeChart.updateSeries([
+          {
+            data: value.y_axis,
+          },
+        ]);
+      }
+      if (value.data_type == "paired_value") {
+        this.$refs.realtimeChart.updateOptions({
+          chart: {
+            id: "vuechart-example",
+          },
+          xaxis: {
+            categories: value.x_axis,
+          },
+        });
+        this.$refs.realtimeChart.updateSeries([
+          {
+            data: value.y_axis,
+          },
+        ]);
+      }
+      if (value.data_type == "data_value") {
+        console.log(value);
+        this.$refs.realtimeChart.updateOptions({
+          chart: {
+            id: "vuechart-example",
+          },
+          labels: value.x_axis,
+          series: value.y_axis,
+        });
+      }
     });
     bus.$on("send dynamic options", (data) => {
       console.log("send dynamic options called");
       const value = { ...data };
-      var op = { ...this.options };
+      var op = { ...data };
+      console.log("here op", op);
       console.log("dynamic chart options", value);
       if (value.index != null) {
         console.log(value.index);
@@ -97,10 +141,12 @@ export default {
     });
     bus.$on("change chart Type", (data) => {
       console.log("change chart Type called");
+      this.$refs.realtimeChart.updateSeries([]);
+      this.$refs.realtimeChart.updateOptions({});
+
       var opt = { ...data };
       // this.chart = opt.chart;
-      this.type = opt.chart.type;
-      console.log(this.chart);
+      this.type = opt.chart;
 
       if (opt.series) {
         this.series = opt.series;
@@ -108,6 +154,8 @@ export default {
 
       // this.series = data.series;
       // const chart_data = data.data;
+      console.log(opt.series);
+      this.$refs.realtimeChart.updateSeries(opt.series);
       console.log(opt.options);
       this.$refs.realtimeChart.updateOptions(opt.options);
       window.dispatchEvent(new Event("resize"));

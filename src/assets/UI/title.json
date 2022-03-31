@@ -12,7 +12,7 @@
       {
         "type": "select",
         "label": "Align",
-        "options": ["Top", "Bottom", "Left", "Right"],
+        "options": ["left", "right", "center"],
         "key": "title.align"
       },
       {

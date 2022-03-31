@@ -6,185 +6,255 @@
       {
         "label": "data label",
         "type": "select",
-        "options": ["true", "false"],
-        "key": "dataLabels.enable"
-      },
-      {
-        "label": "enabledOnSeries",
-        "type": "text",
-        "key": "dataLabels.enabledOnSeries"
-      },
-      {
-        "label": "text anchor",
-        "type": "select",
-        "options": ["start", "middle", "end"],
-        "key": "dataLabels.textAnchor"
-      },
-      {
-        "label": "distributed",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "dataLabels.distributed"
-      },
-      {
-        "label": "offsetX",
-        "type": "text",
-        "key": "dataLabels.offsetX"
-      },
-      {
-        "label": "offsetY",
-        "type": "text",
-        "key": "dataLabels.offsetY"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "dataLabels.enable",
+        "shown": 0,
+        "childs": [
+          {
+            "label": "enabledOnSeries",
+            "type": "text",
+            "key": "dataLabels.enabledOnSeries"
+          },
+          {
+            "label": "text anchor",
+            "type": "select",
+            "options": [
+              "start",
+              "middle",
+              "end"
+            ],
+            "key": "dataLabels.textAnchor"
+          },
+          {
+            "label": "distributed",
+            "type": "select",
+            "options": [
+              "true",
+              "false"
+            ],
+            "key": "dataLabels.distributed"
+          },
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "dataLabels.offsetX",
+            "eg": "10px"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "dataLabels.offsetY",
+            "eg": "10 px"
+          }
+        ]
       },
       {
         "label": "style",
         "heading": "true"
       },
       {
-        "label": "font size",
-        "type": "text",
-        "key": "dataLabels.style.fontSize"
-      },
-      {
-        "label": "font family",
-        "type": "select",
-        "options": ["Helvetica", "Arial", "sans-serif"],
-        "key": "dataLabels.style.fontFamily"
-      },
-      {
-        "label": "font weight",
+        "label": "style",
         "type": "select",
         "options": [
-          "100",
-          "200",
-          "300",
-          "400",
-          "500",
-          "600",
-          "700",
-          "800",
-          "900",
-          "bold",
-          "bolder",
-          "light",
-          "normal"
+          "false",
+          "true"
         ],
-        "key": "dataLabels.style.fontWeight"
-      },
-      {
-        "label": "colors",
-        "type": "color",
-        "key": "dataLabels.style.colors"
+        "key": "dataLabels.background.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "label": "font size",
+            "type": "text",
+            "key": "dataLabels.style.fontSize",
+            "eg": "18px"
+          },
+          {
+            "label": "font family",
+            "type": "select",
+            "options": [
+              "Helvetica",
+              "Arial",
+              "sans-serif",
+              "serif"
+            ],
+            "key": "dataLabels.style.fontFamily"
+          },
+          {
+            "label": "font weight",
+            "type": "select",
+            "options": [
+              "100",
+              "200",
+              "300",
+              "400",
+              "500",
+              "600",
+              "700",
+              "800",
+              "900",
+              "bold",
+              "bolder",
+              "light",
+              "normal"
+            ],
+            "key": "dataLabels.style.fontWeight"
+          },
+          {
+            "label": "colors",
+            "type": "color",
+            "key": "dataLabels.style.color"
+          }
+        ]
       },
       {
         "label": "background",
         "heading": "true"
       },
       {
-        "label": "Enabled",
+        "label": "background",
         "type": "select",
-        "options": ["true", "false"],
-        "key": "dataLabels.background.enabled"
-      },
-      {
-        "label": "fore color",
-        "type": "color",
-        "key": "dataLabels.background.foreColor"
-      },
-      {
-        "label": "padding",
-        "type": "text",
-        "key": "dataLabels.background.padding"
-      },
-      {
-        "label": "border-radius",
-        "type": "range",
-        "key": "dataLabels.background.borderRadius"
-      },
-      {
-        "label": "border width",
-        "type": "text",
-        "key": "dataLabels.background.borderWidth"
-      },
-      {
-        "label": "border color",
-        "type": "color",
-        "key": "dataLabels.background.borderColor"
-      },
-      {
-        "label": "opacity",
-        "type": "range",
-        "key": "dataLabels.background.opacity"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "dataLabels.background.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "label": "fore color",
+            "type": "color",
+            "key": "dataLabels.background.foreColor"
+          },
+          {
+            "label": "padding",
+            "type": "text",
+            "key": "dataLabels.background.padding",
+            "eg": "10"
+          },
+          {
+            "label": "border-radius",
+            "type": "range",
+            "key": "dataLabels.background.borderRadius",
+            "eg": "10"
+          },
+          {
+            "label": "border width",
+            "type": "text",
+            "key": "dataLabels.background.borderWidth",
+            "eg": "10"
+          },
+          {
+            "label": "border color",
+            "type": "color",
+            "key": "dataLabels.background.borderColor"
+          },
+          {
+            "label": "opacity",
+            "type": "range",
+            "key": "dataLabels.background.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
+          }
+        ]
       },
       {
         "label": "drop shadow",
         "heading": "true"
       },
       {
-        "label": "enabled",
+        "label": "drop shadow",
         "type": "select",
-        "options": ["true", "false"],
-        "key": "dataLabels.dropShadow.enabled"
-      },
-      {
-        "label": "top",
-        "type": "text",
-        "key": "dataLabels.dropShadow.top"
-      },
-      {
-        "label": "left",
-        "type": "text",
-        "key": "dataLabels.dropShadow.left"
-      },
-      {
-        "label": "blur",
-        "type": "text",
-        "key": "dataLabels.dropShadow.blur"
-      },
-      {
-        "label": "color",
-        "type": "text",
-        "key": "dataLabels.dropShadow.color"
-      },
-      {
-        "label": "opacity",
-        "type": "text",
-        "key": "dataLabels.dropShadow.opacity"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "dataLabels.dropShadow.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "label": "top",
+            "type": "text",
+            "key": "dataLabels.dropShadow.top",
+            "eg": "2"
+          },
+          {
+            "label": "left",
+            "type": "text",
+            "key": "dataLabels.dropShadow.left",
+            "eg": "2"
+          },
+          {
+            "label": "blur",
+            "type": "text",
+            "key": "dataLabels.dropShadow.blur",
+            "eg": "2"
+          },
+          {
+            "label": "color",
+            "type": "color",
+            "key": "dataLabels.dropShadow.color"
+          },
+          {
+            "label": "opacity",
+            "type": "range",
+            "key": "dataLabels.dropShadow.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
+          }
+        ]
       },
       {
         "label": "drop shadow > Datalabels",
         "heading": "true"
       },
       {
-        "label": "enabled",
+        "label": "data labels",
         "type": "select",
-        "options": ["true", "false"],
-        "key": "dataLabels.dropShadow.enabled"
-      },
-      {
-        "label": "top",
-        "type": "text",
-        "key": "dataLabels.dropShadow.top"
-      },
-      {
-        "label": "left",
-        "type": "text",
-        "key": "dataLabels.dropShadow.left"
-      },
-      {
-        "label": "blur",
-        "type": "text",
-        "key": "dataLabels.dropShadow.blur"
-      },
-      {
-        "label": "color",
-        "type": "text",
-        "key": "dataLabels.dropShadow.color"
-      },
-      {
-        "label": "opacity",
-        "type": "text",
-        "key": "dataLabels.dropShadow.opacity"
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "dataLabels.dropShadow.enabled",
+        "shown": 0,
+        "childs": [
+          {
+            "label": "top",
+            "type": "text",
+            "key": "dataLabels.dropShadow.top",
+            "eg": "2"
+          },
+          {
+            "label": "left",
+            "type": "text",
+            "key": "dataLabels.dropShadow.left",
+            "eg": "2"
+          },
+          {
+            "label": "blur",
+            "type": "text",
+            "key": "dataLabels.dropShadow.blur",
+            "eg": "2"
+          },
+          {
+            "label": "color",
+            "type": "text",
+            "key": "dataLabels.dropShadow.color",
+            "eg": "2"
+          },
+          {
+            "label": "opacity",
+            "type": "range",
+            "key": "dataLabels.dropShadow.opacity",
+            "min": 0,
+            "max": 1,
+            "step": 0.1
+          }
+        ]
       }
     ]
   }
