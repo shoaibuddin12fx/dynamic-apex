@@ -32,8 +32,8 @@
             "type": "select",
             "label": "followCursor",
             "options": [
-              "true",
-              "false"
+              "false",
+              "true"
             ],
             "key": "tooltip.followCursor"
           },
