@@ -6,7 +6,19 @@
         {
           "type": "text",
           "label": "breakpoint",
-          "key": "responsive.${index}.breakpoint"
+          "key": "responsive.breakpoint"
+        },
+        {
+              "label": "Horizontal",
+              "type": "select",
+              "options": ["true", "false"],
+              "key": "responsive.options.plotOptions.bar.horizontal"
+        },
+        {
+          "label": "legend Position",
+          "type": "select",
+          "options": ["top", "bottom"],
+          "key": "responsive.options.legend.position"
         }
       ]
     }
