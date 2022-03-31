@@ -6,7 +6,8 @@
         {
             "label": "count",
             "type": "text",
-            "key":"forecastDataPoints.count"
+            "key":"forecastDataPoints.count",
+            "eg": 3
         },
         {
             "label": "fill opacity",
@@ -19,12 +20,14 @@
         {
             "label": "stroke width",
             "type": "text",
-            "key":"forecastDataPoints.strokeWidth"
+            "key":"forecastDataPoints.strokeWidth",
+            "eg": "10px or 10%"
         },
         {
             "label": "dash array",
             "type": "text",
-            "key":"forecastDataPoints.dashArray"
+            "key":"forecastDataPoints.dashArray",
+            "eg": "20"
         }
     ]
 }

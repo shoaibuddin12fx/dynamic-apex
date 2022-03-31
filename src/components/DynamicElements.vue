@@ -113,7 +113,7 @@
                         v-on:change="passOptions($event, element)"
                         type="text"
                         class="form-control"
-                      />
+                      /><span v-if="element.type == 'text' && element.eg">example: {{element.eg}}</span>
                       <input
                         v-on:change="passOptions($event, element)"
                         v-model="element.selected_value"
@@ -183,7 +183,7 @@
                                   "
                                   type="text"
                                   class="form-control"
-                                />
+                                /><span v-if="vv.type == 'text' && vv.eg">example: {{vv.eg}}</span>
                                 <input
                                   v-if="vv.type == 'color'"
                                   v-on:change="
@@ -239,7 +239,7 @@
                         v-on:change="passOptions($event, element)"
                         type="text"
                         class="form-control"
-                      />
+                      /><span v-if="element.type == 'text' && element.eg">example: {{element.eg}}</span>
                       <input
                         v-on:change="passOptions($event, element)"
                         v-model="element.selected_value"
@@ -315,7 +315,7 @@
                                   "
                                   type="text"
                                   class="form-control"
-                                />
+                                /><span v-if="vv.type == 'text' && vv.eg">example: {{vv.eg}}</span>
                                 <input
                                   v-if="vv.type == 'color'"
                                   v-on:change="
@@ -754,8 +754,8 @@ export default {
       ...fill,
       ...charts,
       ...forecastDataPoints,
-      ...annotations,
       ...dataLabels,
+      ...annotations,
       ...grid,
       ...labels,
       ...legend,
