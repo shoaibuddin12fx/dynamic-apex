@@ -152,13 +152,15 @@
                         "show": 0,
                         "label": "width",
                         "type": "text",
-                        "key": "fill.image.width"
+                        "key": "fill.image.width",
+                        "eg": 10
                     },
                     {
                         "show": 0,
                         "label": "height",
                         "type": "text",
-                        "key": "fill.image.height"
+                        "key": "fill.image.height",
+                        "eg": 10
                     }
                 ]
             },
@@ -184,19 +186,22 @@
                         "show": 0,
                         "label": "width",
                         "type": "text",
-                        "key": "fill.pattern.width"
+                        "key": "fill.pattern.width",
+                        "eg": 10
                     },
                     {
                         "show": 0,
                         "label": "height",
                         "type": "text",
-                        "key": "fill.pattern.height"
+                        "key": "fill.pattern.height",
+                        "eg": 10
                     },
                     {
                         "show": 0,
                         "label": "stroke width",
                         "type": "text",
-                        "key": "fill.pattern.strokeWidth"
+                        "key": "fill.pattern.strokeWidth",
+                        "eg": 10
                     }
                 ]
             }

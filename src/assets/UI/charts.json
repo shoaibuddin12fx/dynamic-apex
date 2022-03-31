@@ -151,10 +151,10 @@
         "label": "download",
         "type": "select",
         "options": [
-          "<img src='../assets/car-icon.jpg' />",
-          "<v-icon aria-hidden='false' mdi-account </v-icon>",
-          "false",
-          "<h3>download</h3>"
+          "<h3>download</h3>",
+          "<img src='https://upload.wikimedia.org/wikipedia/commons/1/1e/Download-Icon.png' width='30px' />",
+          "<img src='https://icon-library.com/images/download-png-icon/download-png-icon-8.jpg' width='30px' />",
+          "<img src='https://pixsector.com/cache/5d353540/av3544fca9fdc10112f68.png' width='30px' />"
         ],
         "key": "chart.toolbar.tools.download"
       },
@@ -162,8 +162,10 @@
         "label": "selection",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "<img src='http://cdn.onlinewebfonts.com/svg/img_431660.png' width='30px' />",
+          "<img src='https://www.clipartmax.com/png/middle/51-510362_hand-link-icon-png.png' width='30px' />",
+          "<img src='https://www.seekpng.com/png/detail/907-9072659_hand-grab-icon-png-hand-icon-free.png' width='30px' />"
         ],
         "key": "chart.toolbar.tools.selection"
       },
@@ -171,8 +173,8 @@
         "label": "zoom",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "<img src='https://i.ibb.co/xhMYYRD/Screen-Shot-2019-03-04-at-4-45-20-PM.png' width='30px' />"
         ],
         "key": "chart.toolbar.tools.zoom"
       },
@@ -180,8 +182,8 @@
         "label": "zoom in",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "<img src='https://i.ibb.co/xhMYYRD/Screen-Shot-2019-03-04-at-4-45-20-PM.png' width='30px' />"
         ],
         "key": "chart.toolbar.tools.zoomin"
       },
@@ -189,8 +191,8 @@
         "label": "zoom out",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "<img src='https://i.ibb.co/xhMYYRD/Screen-Shot-2019-03-04-at-4-45-20-PM.png' width='30px' />"
         ],
         "key": "chart.toolbar.tools.zoomout"
       },
@@ -198,8 +200,8 @@
         "label": "pan",
         "type": "select",
         "options": [
-          "true",
-          "false"
+          "false",
+          "<img src='https://i.ibb.co/xhMYYRD/Screen-Shot-2019-03-04-at-4-45-20-PM.png' width='30px' />"
         ],
         "key": "chart.toolbar.tools.pan"
       },
@@ -208,7 +210,8 @@
         "type": "select",
         "options": [
           "false",
-          "true"
+          "<img src='https://www.seekpng.com/png/detail/339-3392184_home-icons-blue-home-icon-blue-png.png' width='30px' />",
+          "<img src='https://www.clipartmax.com/png/middle/51-519830_white-home-5-icon-vector-png-logo-home.png' width='30px' />"
         ],
         "key": "chart.toolbar.tools.reset"
       },
