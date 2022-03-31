@@ -362,7 +362,7 @@ const dataLabels = require("./../assets/UI/dataLabels.json");
 const fill = require("./../assets/UI/fill.json");
 const forecastDataPoints = require("./../assets/UI/forecastdatapoints.json");
 const grid = require("./../assets/UI/grid.json");
-// const labels = require("./../assets/UI/labels.json");
+const labels = require("./../assets/UI/labels.json");
 const legend = require("./../assets/UI/legend.json");
 const markers = require("./../assets/UI/markers.json");
 const noData = require("./../assets/UI/noData.json");
@@ -757,6 +757,7 @@ export default {
       ...dataLabels,
       ...annotations,
       ...grid,
+      ...labels,
       ...legend,
       ...markers,
       ...noData,
