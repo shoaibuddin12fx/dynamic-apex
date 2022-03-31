@@ -11,7 +11,7 @@
           {
             "label": "color",
             "type": "color",
-            "key": "colors.${index}"
+            "key": "colors[0]"
           }
         ],
         "values": []

@@ -40,12 +40,14 @@
           {
             "label": "offsetX",
             "type": "text",
-            "key": "dataLabels.offsetX"
+            "key": "dataLabels.offsetX",
+            "eg": "10px"
           },
           {
             "label": "offsetY",
             "type": "text",
-            "key": "dataLabels.offsetY"
+            "key": "dataLabels.offsetY",
+            "eg": "10 px"
           }
         ]
       },
@@ -66,7 +68,8 @@
           {
             "label": "font size",
             "type": "text",
-            "key": "dataLabels.style.fontSize"
+            "key": "dataLabels.style.fontSize",
+            "eg": "18px"
           },
           {
             "label": "font family",
@@ -74,7 +77,8 @@
             "options": [
               "Helvetica",
               "Arial",
-              "sans-serif"
+              "sans-serif",
+              "serif"
             ],
             "key": "dataLabels.style.fontFamily"
           },
@@ -100,12 +104,8 @@
           },
           {
             "label": "colors",
-            "type": "select",
-            "options": [
-              "#333",
-              "#999"
-            ],
-            "key": "dataLabels.style.colors"
+            "type": "color",
+            "key": "dataLabels.style.color"
           }
         ]
       },
@@ -131,17 +131,20 @@
           {
             "label": "padding",
             "type": "text",
-            "key": "dataLabels.background.padding"
+            "key": "dataLabels.background.padding",
+            "eg": "10"
           },
           {
             "label": "border-radius",
             "type": "range",
-            "key": "dataLabels.background.borderRadius"
+            "key": "dataLabels.background.borderRadius",
+            "eg": "10"
           },
           {
             "label": "border width",
             "type": "text",
-            "key": "dataLabels.background.borderWidth"
+            "key": "dataLabels.background.borderWidth",
+            "eg": "10"
           },
           {
             "label": "border color",
@@ -175,21 +178,24 @@
           {
             "label": "top",
             "type": "text",
-            "key": "dataLabels.dropShadow.top"
+            "key": "dataLabels.dropShadow.top",
+            "eg": "2"
           },
           {
             "label": "left",
             "type": "text",
-            "key": "dataLabels.dropShadow.left"
+            "key": "dataLabels.dropShadow.left",
+            "eg": "2"
           },
           {
             "label": "blur",
             "type": "text",
-            "key": "dataLabels.dropShadow.blur"
+            "key": "dataLabels.dropShadow.blur",
+            "eg": "2"
           },
           {
             "label": "color",
-            "type": "text",
+            "type": "color",
             "key": "dataLabels.dropShadow.color"
           },
           {
@@ -219,22 +225,26 @@
           {
             "label": "top",
             "type": "text",
-            "key": "dataLabels.dropShadow.top"
+            "key": "dataLabels.dropShadow.top",
+            "eg": "2"
           },
           {
             "label": "left",
             "type": "text",
-            "key": "dataLabels.dropShadow.left"
+            "key": "dataLabels.dropShadow.left",
+            "eg": "2"
           },
           {
             "label": "blur",
             "type": "text",
-            "key": "dataLabels.dropShadow.blur"
+            "key": "dataLabels.dropShadow.blur",
+            "eg": "2"
           },
           {
             "label": "color",
             "type": "text",
-            "key": "dataLabels.dropShadow.color"
+            "key": "dataLabels.dropShadow.color",
+            "eg": "2"
           },
           {
             "label": "opacity",

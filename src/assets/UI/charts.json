@@ -10,6 +10,7 @@
       {
         "label": "Set height",
         "type": "text",
+        "eg": "500px",
         "key": "chart.height"
       },
       {
@@ -19,7 +20,12 @@
       {
         "label": "font family",
         "type": "select",
-        "options": ["Helvetica", "Arial", "sans-serif", "serif"],
+        "options": [
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+          "serif"
+        ],
         "key": "chart.fontFamily"
       },
       {
@@ -47,7 +53,8 @@
       {
         "label": "offsetX",
         "type": "text",
-        "key": "chart.offsetX"
+        "key": "chart.offsetX",
+        "eg": 100
       },
       {
         "label": "Offset Y",
@@ -56,7 +63,8 @@
       {
         "label": "Offset Y",
         "type": "text",
-        "key": "chart.offsetY"
+        "key": "chart.offsetY",
+        "eg": 100
       },
       {
         "label": "Parent Height Offset",
@@ -65,7 +73,8 @@
       {
         "label": "Set Parent Height Offset",
         "type": "text",
-        "key": "chart.parentHeightOffset"
+        "key": "chart.parentHeightOffset",
+        "eg": 15
       },
       {
         "label": "Selection",
@@ -75,13 +84,20 @@
         "label": "Enable Selection",
         "type": "select",
         "shown": 0,
-        "options": ["false", "true"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "chart.selection.enabled",
         "childs": [
           {
             "label": "Type",
             "type": "select",
-            "options": ["x", "y", "xy"],
+            "options": [
+              "x",
+              "y",
+              "xy"
+            ],
             "key": "chart.selection.type"
           },
           {
@@ -101,20 +117,124 @@
         ]
       },
       {
+        "label": "toolbar",
+        "heading": true
+      },
+      {
+        "label": "toolbar show",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ],
+        "key": "chart.toolbar.show",
+        "childs": [
+          {
+            "label": "offsetX",
+            "type": "text",
+            "key": "chart.toolbar.offsetX",
+            "eg": "100"
+          },
+          {
+            "label": "offsetY",
+            "type": "text",
+            "key": "chart.toolbar.offsetY",
+            "eg": "100"
+          }
+        ]
+      },
+      {
+        "label": "toolbar > tools",
+        "heading": true
+      },
+      {
+        "label": "download",
+        "type": "select",
+        "options": [
+          "<img src='../assets/car-icon.jpg' />",
+          "<v-icon aria-hidden='false' mdi-account </v-icon>",
+          "false",
+          "<h3>download</h3>"
+        ],
+        "key": "chart.toolbar.tools.download"
+      },
+      {
+        "label": "selection",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ],
+        "key": "chart.toolbar.tools.selection"
+      },
+      {
+        "label": "zoom",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ],
+        "key": "chart.toolbar.tools.zoom"
+      },
+      {
+        "label": "zoom in",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ],
+        "key": "chart.toolbar.tools.zoomin"
+      },
+      {
+        "label": "zoom out",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ],
+        "key": "chart.toolbar.tools.zoomout"
+      },
+      {
+        "label": "pan",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ],
+        "key": "chart.toolbar.tools.pan"
+      },
+      {
+        "label": "reset",
+        "type": "select",
+        "options": [
+          "false",
+          "true"
+        ],
+        "key": "chart.toolbar.tools.reset"
+      },
+      {
         "label": "animations",
         "heading": true
       },
       {
         "label": "enabled",
         "type": "select",
-        "options": ["false", "true"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "chart.animations.enabled",
         "shown": 0,
         "childs": [
           {
             "label": "easing",
             "type": "select",
-            "options": ["linear", "easein", "easeout", "easeinout"],
+            "options": [
+              "linear",
+              "easein",
+              "easeout",
+              "easeinout"
+            ],
             "key": "chart.animations.easing"
           },
           {
@@ -136,7 +256,10 @@
         "shown": 0,
         "label": "Animation Gradually",
         "type": "select",
-        "options": ["false", "true"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "chart.animations.animateGradually.enabled",
         "childs": [
           {
@@ -158,7 +281,10 @@
         "label": "Dynamic Animation",
         "type": "select",
         "shown": 0,
-        "options": ["false", "true"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "chart.animations.dynamicAnimation.enabled",
         "childs": [
           {
@@ -179,19 +305,26 @@
       {
         "label": "Enable Brush",
         "type": "select",
-        "options": ["false", "true"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "chart.brush.${index}.enabled",
         "shown": 0,
         "childs": [
           {
             "label": "target",
             "type": "text",
-            "key": "chart.brush.${index}.target"
+            "key": "chart.brush.${index}.target",
+            "eg": "chart1"
           },
           {
             "label": "auto scale y-axis",
             "type": "select",
-            "options": ["false", "true"],
+            "options": [
+              "false",
+              "true"
+            ],
             "key": "chart.brush.autoScaleYaxis"
           }
         ]
@@ -203,7 +336,9 @@
       {
         "label": "locale",
         "type": "select",
-        "options": ["en"],
+        "options": [
+          "en"
+        ],
         "key": "chart.defaultLocale"
       },
       {
@@ -214,7 +349,10 @@
         "label": "Enable Drop Shadow",
         "shown": 0,
         "type": "select",
-        "options": ["false", "true"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "chart.dropShadow.enabled",
         "childs": [
           {
@@ -229,17 +367,20 @@
           {
             "label": "Top",
             "type": "text",
-            "key": "chart.dropShadow.top"
+            "key": "chart.dropShadow.top",
+            "eg": "10"
           },
           {
             "label": "Left",
             "type": "text",
-            "key": "chart.dropShadow.left"
+            "key": "chart.dropShadow.left",
+            "eg":"10"
           },
           {
             "label": "Blur",
             "type": "text",
-            "key": "chart.dropShadow.blur"
+            "key": "chart.dropShadow.blur",
+            "eg": "100"
           }
         ]
       },
@@ -250,7 +391,8 @@
       {
         "label": "Set Group",
         "type": "text",
-        "key": "chart.group"
+        "key": "chart.group",
+        "eg": "abc"
       },
       {
         "label": "Id",
@@ -259,7 +401,8 @@
       {
         "label": "Set Id",
         "type": "text",
-        "key": "chart.id"
+        "key": "chart.id",
+        "eg": "unique : myChart"
       },
       {
         "label": "Redraw On Parent Resize",
@@ -268,7 +411,10 @@
       {
         "label": "Set Redraw On Parent Resize",
         "type": "select",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "chart.redrawOnParentResize"
       },
       {
@@ -278,7 +424,10 @@
       {
         "label": "Set Redraw On Window Resize",
         "type": "select",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "chart.redrawOnWindowResize"
       },
       {
@@ -306,12 +455,14 @@
       {
         "label": "Width",
         "type": "text",
-        "key": "chart.selection.stroke.width"
+        "key": "chart.selection.stroke.width",
+        "eg": "10px or 10%"
       },
       {
         "label": "Dash Array",
         "type": "text",
-        "key": "chart.selection.stroke.dashArray"
+        "key": "chart.selection.stroke.dashArray",
+        "eg":"10"
       },
       {
         "label": "Set Stroke Color",
@@ -334,12 +485,14 @@
       {
         "label": "Min",
         "type": "text",
-        "key": "chart.selection.xaxis.min"
+        "key": "chart.selection.xaxis.min",
+        "eg": "10px or 10%"
       },
       {
         "label": "Max",
         "type": "text",
-        "key": "chart.selection.xaxis.max"
+        "key": "chart.selection.xaxis.max",
+        "eg": "100px or 100%"
       },
       {
         "label": "Selection > Y axis",
@@ -348,12 +501,14 @@
       {
         "label": "Min",
         "type": "text",
-        "key": "chart.selection.yaxis.min"
+        "key": "chart.selection.yaxis.min",
+        "eg": "10px or 10%"
       },
       {
         "label": "Max",
         "type": "text",
-        "key": "chart.selection.yaxis.max"
+        "key": "chart.selection.yaxis.max",
+        "eg": "100px or 100%"
       },
       {
         "label": "Sparkline",
@@ -362,7 +517,10 @@
       {
         "label": "Set Sparkline",
         "type": "select",
-        "options": ["false", "true"],
+        "options": [
+          "false",
+          "true"
+        ],
         "key": "chart.sparkline.enabled"
       },
       {
@@ -372,7 +530,10 @@
       {
         "label": "Stack",
         "type": "select",
-        "options": ["true", "false"],
+        "options": [
+          "true",
+          "false"
+        ],
         "key": "chart.stacked"
       },
       {
@@ -382,76 +543,15 @@
       {
         "label": "Set Stack Type",
         "type": "select",
-        "options": ["normal", "100%"],
+        "options": [
+          "normal",
+          "100%"
+        ],
         "key": "chart.stackType"
       },
       {
         "label": "toolbar",
         "heading": true
-      },
-      {
-        "label": "toolbar show",
-        "type": "select",
-        "options": ["false", "true"],
-        "key": "chart.toolbar.show",
-        "childs": [
-          {
-            "label": "offsetX",
-            "type": "text",
-            "key": "chart.toolbar.offsetX"
-          },
-          {
-            "label": "offsetY",
-            "type": "text",
-            "key": "chart.toolbar.offsetY"
-          }
-        ]
-      },
-      {
-        "label": "toolbar > tools",
-        "heading": true
-      },
-      {
-        "label": "download",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "chart.toolbar.tools.download"
-      },
-      {
-        "label": "selection",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "chart.toolbar.tools.selection"
-      },
-      {
-        "label": "zoom",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "chart.toolbar.tools.zoom"
-      },
-      {
-        "label": "zoom in",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "chart.toolbar.tools.zoomin"
-      },
-      {
-        "label": "zoom out",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "chart.toolbar.tools.zoomout"
-      },
-      {
-        "label": "pan",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "chart.toolbar.tools.pan"
-      },
-      {
-        "label": "reset",
-        "type": "select",
-        "options": ["true", "false"],
-        "key": "chart.toolbar.tools.reset"
       },
       {
         "label": "tolbar > export > csv",
@@ -460,22 +560,26 @@
       {
         "label": "file name",
         "type": "text",
-        "key": "chart.export.csv.filename"
+        "key": "chart.export.csv.filename",
+        "eg": "apex-chart"
       },
       {
         "label": "columnDelimiter",
         "type": "text",
-        "key": "chart.export.csv.columnDelimiter"
+        "key": "chart.export.csv.columnDelimiter",
+        "eg": ","
       },
       {
         "label": "haeder catagory",
         "type": "text",
-        "key": "chart.export.csv.headerCategory"
+        "key": "chart.export.csv.headerCategory",
+        "eg": "y-catagory"
       },
       {
         "label": "header value",
         "type": "text",
-        "key": "chart.export.csv.headerValue"
+        "key": "chart.export.csv.headerValue",
+        "eg": "apex value"
       },
       {
         "label": "toolbar > export > svg",
@@ -484,7 +588,8 @@
       {
         "label": "file name",
         "type": "text",
-        "key": "chart.toolbar.svg.filename"
+        "key": "chart.toolbar.svg.filename",
+        "eg": "apex-chart-svg"
       },
       {
         "label": "toolbar > export > png",
@@ -493,12 +598,17 @@
       {
         "label": "file name",
         "type": "text",
-        "key": "chart.toolbar.png.filename"
+        "key": "chart.toolbar.png.filename",
+        "eg": "apex-chart-png"
       },
       {
         "label": "auto Selected",
         "type": "select",
-        "options": ["zoom", "selection", "pan"],
+        "options": [
+          "zoom",
+          "selection",
+          "pan"
+        ],
         "key": "toolbar.autoSelected.enabled"
       }
     ]
