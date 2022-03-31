@@ -8,11 +8,11 @@
         "type": "select",
         "label": "enabled",
         "options": [
-          "false",
-          "true"
+          "true",
+          "false"
         ],
         "key": "tooltip.enabled",
-        "shown": 0,
+        "shown": 1,
         "childs": [
           {
             "type": "text",

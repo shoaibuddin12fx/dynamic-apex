@@ -2,14 +2,12 @@
   {
     "id": 13,
     "label": "responsive",
-    "type": "array",
-    "arrayOf": "objects",
-    "obj": [
-      {
-        "type": "text",
-        "label": "breakpoint",
-        "key": "responsive.${index}.breakpoint"
-      }
-    ]
-  }
-]
+    "elements": [
+        {
+          "type": "text",
+          "label": "breakpoint",
+          "key": "responsive.${index}.breakpoint"
+        }
+      ]
+    }
+  ]

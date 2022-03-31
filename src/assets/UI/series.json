@@ -2,19 +2,17 @@
   {
     "id": 14,
     "label": "series",
-    "type": "array",
-    "arrayOf": "objects",
-    "obj": [
-      {
-        "type": "text",
-        "label": "name",
-        "key": "series.${index}.name"
-      },
-      {
-        "type": "text",
-        "label": "data",
-        "key": "series.${index}.data"
-      }
+    "elements": [
+          {
+            "label": "Series Name",
+            "type": "text",
+            "key": "series.${index}.name"
+          },
+          {
+            "type": "text",
+            "label": "data",
+            "key": "series.${index}.data"
+          }
     ]
   }
 ]
